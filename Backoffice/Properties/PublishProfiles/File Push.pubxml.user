@@ -1,0 +1,1649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/Dashboard/Views/Dashboard/Index.cshtml">
+      <publishTime>03/19/2013 14:33:22</publishTime>
+    </File>
+    <File Include="Areas/Dashboard/Views/Web.config">
+      <publishTime>03/19/2013 13:08:59</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>04/29/2013 19:56:16</publishTime>
+    </File>
+    <File Include="bin/Backoffice.dll">
+      <publishTime>04/29/2013 20:33:29</publishTime>
+    </File>
+    <File Include="bin/Backoffice.XmlSerializers.dll">
+      <publishTime>04/29/2013 20:33:31</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/29/2013 19:56:16</publishTime>
+    </File>
+    <File Include="bin/ExigoMobile.dll">
+      <publishTime>03/14/2013 16:49:56</publishTime>
+    </File>
+    <File Include="bin/ExigoMobile.XmlSerializers.dll">
+      <publishTime>03/14/2013 16:49:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>04/29/2013 20:01:57</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>04/29/2013 20:01:57</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Services.Client.dll">
+      <publishTime>04/29/2013 20:01:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>03/08/2012 08:20:10</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/29/2013 19:56:16</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>07/10/2012 21:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>04/29/2013 20:01:57</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/10/2012 21:53:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>07/10/2012 21:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>07/10/2012 21:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/10/2012 21:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>04/29/2013 19:56:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>04/29/2013 19:56:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/10/2012 21:53:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/10/2012 21:53:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/10/2012 21:53:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/10/2012 21:53:02</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>04/29/2013 19:56:16</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/demo.html">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Bold-webfont.eot">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Bold-webfont.svg">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Bold-webfont.ttf">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Bold-webfont.woff">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Light-webfont.eot">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Light-webfont.svg">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Light-webfont.ttf">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Light-webfont.woff">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Regular-webfont.eot">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Regular-webfont.svg">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Regular-webfont.ttf">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Regular-webfont.woff">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Stencil-webfont.eot">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Stencil-webfont.svg">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Stencil-webfont.ttf">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/Oswald-Stencil-webfont.woff">
+      <publishTime>07/27/2012 15:40:31</publishTime>
+    </File>
+    <File Include="Content/fonts/oswald/stylesheet.css">
+      <publishTime>02/07/2013 14:18:19</publishTime>
+    </File>
+    <File Include="Content/images/ajax-loader.gif">
+      <publishTime>02/05/2013 10:55:10</publishTime>
+    </File>
+    <File Include="Content/images/ajax-model-loader.gif">
+      <publishTime>02/22/2013 16:44:15</publishTime>
+    </File>
+    <File Include="Content/images/banners/1.png">
+      <publishTime>03/12/2013 17:24:25</publishTime>
+    </File>
+    <File Include="Content/images/banners/2.png">
+      <publishTime>03/13/2013 09:50:09</publishTime>
+    </File>
+    <File Include="Content/images/bgDashboard.png">
+      <publishTime>02/07/2013 11:02:51</publishTime>
+    </File>
+    <File Include="Content/images/bgGrayChevronRight.png">
+      <publishTime>02/14/2013 12:01:13</publishTime>
+    </File>
+    <File Include="Content/images/bgHatch.png">
+      <publishTime>02/07/2013 11:17:45</publishTime>
+    </File>
+    <File Include="Content/images/bgNoiseTexture.png">
+      <publishTime>03/12/2013 15:25:21</publishTime>
+    </File>
+    <File Include="Content/images/bgSiteNavigationIconSprite%402x.png">
+      <publishTime>02/15/2013 10:48:23</publishTime>
+    </File>
+    <File Include="Content/images/btnDashboard%402x.png">
+      <publishTime>02/07/2013 09:04:39</publishTime>
+    </File>
+    <File Include="Content/images/btnDashboard.png">
+      <publishTime>02/06/2013 16:03:14</publishTime>
+    </File>
+    <File Include="Content/images/btnDashboardSprite%402x.png">
+      <publishTime>02/07/2013 10:35:14</publishTime>
+    </File>
+    <File Include="Content/images/btnDashboardSprite.png">
+      <publishTime>02/06/2013 16:15:26</publishTime>
+    </File>
+    <File Include="Content/images/btnMenu.png">
+      <publishTime>02/14/2013 14:48:51</publishTime>
+    </File>
+    <File Include="Content/images/btnRefresh.png">
+      <publishTime>02/15/2013 12:08:24</publishTime>
+    </File>
+    <File Include="Content/images/btnRefreshAnimated.gif">
+      <publishTime>02/15/2013 11:32:45</publishTime>
+    </File>
+    <File Include="Content/images/glyphicons-halflings-white.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/glyphicons-halflings.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/icons-18-black.png">
+      <publishTime>02/05/2013 10:55:10</publishTime>
+    </File>
+    <File Include="Content/images/icons-18-white.png">
+      <publishTime>02/05/2013 10:55:10</publishTime>
+    </File>
+    <File Include="Content/images/icons-36-black.png">
+      <publishTime>02/05/2013 10:55:10</publishTime>
+    </File>
+    <File Include="Content/images/icons-36-white.png">
+      <publishTime>02/05/2013 10:55:10</publishTime>
+    </File>
+    <File Include="Content/images/imgBlankAvatar.png">
+      <publishTime>10/25/2012 11:14:57</publishTime>
+    </File>
+    <File Include="Content/images/imgProductImagePlaceholder.jpg">
+      <publishTime>10/25/2012 11:14:56</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/animated-overlay.gif">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-bg_diagonals-thick_18_b81900_40x40.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-bg_diagonals-thick_20_666666_40x40.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-bg_flat_10_000000_40x100.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-bg_glass_100_f6f6f6_1x400.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-bg_glass_100_fdf5ce_1x400.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-bg_gloss-wave_35_f6a828_500x100.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-bg_highlight-soft_100_eeeeee_1x100.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-bg_highlight-soft_75_ffe45c_1x100.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-icons_222222_256x240.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-icons_228ef1_256x240.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-icons_ef8c08_256x240.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-icons_ffd27a_256x240.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/jquery-ui/ui-icons_ffffff_256x240.png">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/images/spriteIcons%402x.png">
+      <publishTime>02/15/2013 16:06:49</publishTime>
+    </File>
+    <File Include="Content/images/spriteIconsWhite%402x.png">
+      <publishTime>02/15/2013 16:06:51</publishTime>
+    </File>
+    <File Include="Content/images/spriteOrderStatusIcons%402x.png">
+      <publishTime>03/13/2013 17:10:00</publishTime>
+    </File>
+    <File Include="Content/images/spriteQuickLinks%402x.png">
+      <publishTime>03/12/2013 16:44:59</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile.css">
+      <publishTime>03/12/2013 15:46:09</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile.min.css">
+      <publishTime>03/12/2013 15:46:09</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile.scss">
+      <publishTime>02/20/2013 17:40:41</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile.theme.css">
+      <publishTime>02/06/2013 10:03:06</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile.theme.min.css">
+      <publishTime>02/06/2013 10:03:06</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile.theme.scss">
+      <publishTime>02/06/2013 10:03:05</publishTime>
+    </File>
+    <File Include="Content/jquery.ui.css">
+      <publishTime>03/19/2013 12:28:32</publishTime>
+    </File>
+    <File Include="Content/jquery.ui.min.css">
+      <publishTime>03/19/2013 12:28:32</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/contrib/other-validations.js">
+      <publishTime>04/29/2013 19:56:16</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/jquery.validationEngine.css">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/jquery.validationEngine.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-cz.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-da.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-de.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-en.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-es.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-et.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-fa.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-fi.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-fr.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-hr.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-hu.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-it.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-ja.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-nl.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-no.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-pl.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-pt.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-pt_BR.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-ro.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-ru.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-se.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-tr.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-vi.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-zh_CN.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/plugins/jquery.validationEngine/languages/jquery.validationEngine-zh_TW.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/scripts/bootstrap.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/scripts/cookies.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/scripts/custom.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/scripts/jquery-easing.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/scripts/jquery-ui.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/scripts/jquery.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/scripts/knockout.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/scripts/modernizr.js">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/site.css">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/site.min.css">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/site.scss">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/animated-overlay.gif">
+      <publishTime>02/06/2013 10:56:47</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>02/06/2013 10:56:50</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>02/06/2013 10:56:47</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>02/06/2013 10:56:47</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>02/06/2013 10:56:47</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>02/06/2013 10:56:47</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>02/06/2013 10:56:47</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>02/06/2013 10:56:48</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>02/06/2013 10:56:48</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>02/06/2013 10:56:51</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>02/06/2013 10:56:48</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>02/06/2013 10:56:51</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>02/06/2013 10:56:48</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>02/06/2013 10:56:48</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.css">
+      <publishTime>02/06/2013 11:04:18</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.min.css">
+      <publishTime>02/06/2013 11:04:19</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.scss">
+      <publishTime>02/06/2013 11:04:17</publishTime>
+    </File>
+    <File Include="Content/vcard.vcf">
+      <publishTime>02/20/2013 15:06:56</publishTime>
+    </File>
+    <File Include="Content/Web.config">
+      <publishTime>02/21/2013 17:18:06</publishTime>
+    </File>
+    <File Include="Content/_accordion.scss">
+      <publishTime>03/01/2013 09:52:47</publishTime>
+    </File>
+    <File Include="Content/_bootstrap-icons.scss">
+      <publishTime>02/20/2013 10:29:17</publishTime>
+    </File>
+    <File Include="Content/_bootstrap-responsive.scss">
+      <publishTime>04/29/2013 19:56:16</publishTime>
+    </File>
+    <File Include="Content/_bootstrap.scss">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/_buttons.scss">
+      <publishTime>03/01/2013 09:48:58</publishTime>
+    </File>
+    <File Include="Content/_carousel.scss">
+      <publishTime>03/12/2013 16:50:17</publishTime>
+    </File>
+    <File Include="Content/_contacts.scss">
+      <publishTime>02/20/2013 10:28:56</publishTime>
+    </File>
+    <File Include="Content/_detailgroups.scss">
+      <publishTime>03/13/2013 17:26:40</publishTime>
+    </File>
+    <File Include="Content/_faq.scss">
+      <publishTime>02/21/2013 13:01:15</publishTime>
+    </File>
+    <File Include="Content/_fonts.scss">
+      <publishTime>02/20/2013 10:28:48</publishTime>
+    </File>
+    <File Include="Content/_forms.scss">
+      <publishTime>02/21/2013 14:31:33</publishTime>
+    </File>
+    <File Include="Content/_icons.scss">
+      <publishTime>03/12/2013 16:13:56</publishTime>
+    </File>
+    <File Include="Content/_jquery-ui.scss">
+      <publishTime>04/29/2013 19:56:17</publishTime>
+    </File>
+    <File Include="Content/_labelsbadges.scss">
+      <publishTime>02/20/2013 10:28:22</publishTime>
+    </File>
+    <File Include="Content/_messages.scss">
+      <publishTime>02/20/2013 10:28:13</publishTime>
+    </File>
+    <File Include="Content/_mixins.scss">
+      <publishTime>03/12/2013 15:46:07</publishTime>
+    </File>
+    <File Include="Content/_navs.scss">
+      <publishTime>03/01/2013 10:40:13</publishTime>
+    </File>
+    <File Include="Content/_ordering.scss">
+      <publishTime>03/13/2013 17:39:03</publishTime>
+    </File>
+    <File Include="Content/_orderstatusicons.scss">
+      <publishTime>03/13/2013 17:22:29</publishTime>
+    </File>
+    <File Include="Content/_profile.scss">
+      <publishTime>03/12/2013 14:47:03</publishTime>
+    </File>
+    <File Include="Content/_progressbars.scss">
+      <publishTime>02/21/2013 13:03:15</publishTime>
+    </File>
+    <File Include="Content/_reports.scss">
+      <publishTime>02/20/2013 17:59:36</publishTime>
+    </File>
+    <File Include="Content/_responsive.scss">
+      <publishTime>02/14/2013 10:20:55</publishTime>
+    </File>
+    <File Include="Content/_shopping.scss">
+      <publishTime>03/01/2013 10:42:37</publishTime>
+    </File>
+    <File Include="Content/_swatch-dark.scss">
+      <publishTime>02/08/2013 11:37:46</publishTime>
+    </File>
+    <File Include="Content/_swatch-light.scss">
+      <publishTime>02/08/2013 15:54:58</publishTime>
+    </File>
+    <File Include="Content/_tables.scss">
+      <publishTime>02/15/2013 13:10:37</publishTime>
+    </File>
+    <File Include="Content/_transitions.scss">
+      <publishTime>03/01/2013 11:57:14</publishTime>
+    </File>
+    <File Include="Content/_utilities.scss">
+      <publishTime>03/12/2013 17:25:36</publishTime>
+    </File>
+    <File Include="Content/_variables.scss">
+      <publishTime>02/19/2013 11:37:47</publishTime>
+    </File>
+    <File Include="Content/_wells.scss">
+      <publishTime>03/07/2013 09:23:28</publishTime>
+    </File>
+    <File Include="Content/_widgets.scss">
+      <publishTime>03/12/2013 14:44:11</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>04/29/2013 19:56:13</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/29/2013 19:56:13</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/29/2013 20:02:01</publishTime>
+    </File>
+    <File Include="Properties/Settings.settings">
+      <publishTime>04/29/2013 19:56:13</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>03/07/2013 17:17:46</publishTime>
+    </File>
+    <File Include="Scripts/custom.js">
+      <publishTime>03/14/2013 16:46:47</publishTime>
+    </File>
+    <File Include="Scripts/hammer.js">
+      <publishTime>02/19/2013 17:05:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.min.js">
+      <publishTime>02/06/2013 10:55:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.easing.js">
+      <publishTime>02/22/2013 17:26:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery.hammer.js">
+      <publishTime>02/19/2013 17:05:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.min.js">
+      <publishTime>02/06/2013 10:05:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mobile.config.min.js">
+      <publishTime>02/08/2013 15:17:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mobile.min.js">
+      <publishTime>02/25/2013 16:14:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery.retina.js">
+      <publishTime>02/07/2013 09:13:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>02/06/2013 09:55:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>02/06/2013 09:55:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.extended.js">
+      <publishTime>02/06/2013 11:02:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>02/06/2013 11:01:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>02/06/2013 09:55:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>02/06/2013 09:55:24</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.1.0.debug.js">
+      <publishTime>02/06/2013 09:55:27</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.1.0.js">
+      <publishTime>02/06/2013 09:55:27</publishTime>
+    </File>
+    <File Include="Scripts/knockout.js">
+      <publishTime>03/01/2013 13:01:46</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.5.3.js">
+      <publishTime>02/06/2013 09:55:25</publishTime>
+    </File>
+    <File Include="Scripts/ordering.js">
+      <publishTime>03/14/2013 11:33:07</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>02/06/2013 09:55:20</publishTime>
+    </File>
+    <File Include="Service References/Exigo.OData/Reference.datasvcmap">
+      <publishTime>02/21/2013 15:47:00</publishTime>
+    </File>
+    <File Include="Service References/Exigo.OData/service.edmx">
+      <publishTime>02/21/2013 15:46:59</publishTime>
+    </File>
+    <File Include="Views/Activity/Index.cshtml">
+      <publishTime>02/13/2013 11:57:56</publishTime>
+    </File>
+    <File Include="Views/Authentication/Login.cshtml">
+      <publishTime>04/29/2013 20:24:58</publishTime>
+    </File>
+    <File Include="Views/Commissions/Current.cshtml">
+      <publishTime>02/15/2013 17:03:33</publishTime>
+    </File>
+    <File Include="Views/Commissions/Index.cshtml">
+      <publishTime>03/12/2013 17:06:59</publishTime>
+    </File>
+    <File Include="Views/Commissions/PriorList.cshtml">
+      <publishTime>02/20/2013 11:44:32</publishTime>
+    </File>
+    <File Include="Views/Contacts/AddContact.cshtml">
+      <publishTime>02/27/2013 17:18:51</publishTime>
+    </File>
+    <File Include="Views/Contacts/Index.cshtml">
+      <publishTime>03/12/2013 17:41:24</publishTime>
+    </File>
+    <File Include="Views/Contacts/ViewContact.cshtml">
+      <publishTime>02/27/2013 17:19:04</publishTime>
+    </File>
+    <File Include="Views/Dashboard/Index.cshtml">
+      <publishTime>04/29/2013 20:25:13</publishTime>
+    </File>
+    <File Include="Views/Errors/Contacts/AddContact.cshtml">
+      <publishTime>03/12/2013 17:06:59</publishTime>
+    </File>
+    <File Include="Views/Errors/Contacts/Index.cshtml">
+      <publishTime>03/12/2013 17:06:59</publishTime>
+    </File>
+    <File Include="Views/Errors/Contacts/ViewContact.cshtml">
+      <publishTime>03/12/2013 17:06:59</publishTime>
+    </File>
+    <File Include="Views/Errors/NoUnilevelTreeFound.cshtml">
+      <publishTime>03/12/2013 17:06:59</publishTime>
+    </File>
+    <File Include="Views/Errors/PageNotFound.cshtml">
+      <publishTime>03/12/2013 17:06:59</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>03/13/2013 12:06:53</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>02/07/2013 11:15:54</publishTime>
+    </File>
+    <File Include="Views/Messages/Create.cshtml">
+      <publishTime>03/12/2013 17:06:59</publishTime>
+    </File>
+    <File Include="Views/Messages/Index.cshtml">
+      <publishTime>03/12/2013 17:06:59</publishTime>
+    </File>
+    <File Include="Views/Messages/ViewMessage.cshtml">
+      <publishTime>03/12/2013 17:06:59</publishTime>
+    </File>
+    <File Include="Views/Ordering/History.cshtml">
+      <publishTime>03/14/2013 13:04:02</publishTime>
+    </File>
+    <File Include="Views/Ordering/Index.cshtml">
+      <publishTime>03/12/2013 11:21:21</publishTime>
+    </File>
+    <File Include="Views/Organization/Downline.cshtml">
+      <publishTime>03/14/2013 13:21:43</publishTime>
+    </File>
+    <File Include="Views/Organization/Index.cshtml">
+      <publishTime>03/14/2013 15:15:38</publishTime>
+    </File>
+    <File Include="Views/Organization/NewDistributors.cshtml">
+      <publishTime>03/14/2013 13:36:53</publishTime>
+    </File>
+    <File Include="Views/Organization/PersonallyEnrolled.cshtml">
+      <publishTime>03/14/2013 14:56:53</publishTime>
+    </File>
+    <File Include="Views/Organization/Search.cshtml">
+      <publishTime>03/14/2013 16:49:42</publishTime>
+    </File>
+    <File Include="Views/Organization/Upline.cshtml">
+      <publishTime>03/14/2013 13:02:51</publishTime>
+    </File>
+    <File Include="Views/Overview/Index.cshtml">
+      <publishTime>02/08/2013 17:17:24</publishTime>
+    </File>
+    <File Include="Views/Profile/Index.cshtml">
+      <publishTime>03/14/2013 13:29:02</publishTime>
+    </File>
+    <File Include="Views/Rank/Index.cshtml">
+      <publishTime>03/14/2013 12:58:38</publishTime>
+    </File>
+    <File Include="Views/Settings/EditProfile.cshtml">
+      <publishTime>02/13/2013 11:44:30</publishTime>
+    </File>
+    <File Include="Views/Settings/Index.cshtml">
+      <publishTime>03/14/2013 11:36:23</publishTime>
+    </File>
+    <File Include="Views/Settings/Profile.cshtml">
+      <publishTime>02/13/2013 11:44:30</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>04/29/2013 19:56:13</publishTime>
+    </File>
+    <File Include="Views/Shared/_BackButtonPartial.cshtml">
+      <publishTime>02/21/2013 13:43:47</publishTime>
+    </File>
+    <File Include="Views/Shared/_ElementSamples.cshtml">
+      <publishTime>03/14/2013 13:15:54</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>04/29/2013 20:21:52</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>02/06/2013 11:17:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_NavigationPanelButtonPartial.cshtml">
+      <publishTime>02/27/2013 17:17:50</publishTime>
+    </File>
+    <File Include="Views/Shared/_NavigationPanelPartial.cshtml">
+      <publishTime>03/14/2013 13:09:19</publishTime>
+    </File>
+    <File Include="Views/Shared/_RecentActivityPanelButtonPartial.cshtml">
+      <publishTime>02/26/2013 16:36:18</publishTime>
+    </File>
+    <File Include="Views/Shared/_RecentActivityPanelPartial.cshtml">
+      <publishTime>02/25/2013 14:01:28</publishTime>
+    </File>
+    <File Include="Views/Shared/_ReportNavigationPartial.cshtml">
+      <publishTime>03/14/2013 13:33:36</publishTime>
+    </File>
+    <File Include="Views/Shared/_Samples.cshtml">
+      <publishTime>02/14/2013 14:22:49</publishTime>
+    </File>
+    <File Include="Views/Support/FAQ.cshtml">
+      <publishTime>03/12/2013 17:07:00</publishTime>
+    </File>
+    <File Include="Views/Support/Feedback.cshtml">
+      <publishTime>03/12/2013 17:07:00</publishTime>
+    </File>
+    <File Include="Views/Support/Index.cshtml">
+      <publishTime>03/12/2013 17:07:00</publishTime>
+    </File>
+    <File Include="Views/Support/Policies.cshtml">
+      <publishTime>03/12/2013 17:07:00</publishTime>
+    </File>
+    <File Include="Views/Volumes/Index.cshtml">
+      <publishTime>03/14/2013 13:03:30</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>04/29/2013 19:56:13</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/29/2013 19:56:13</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/AddProductsToCategoryResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/AddProductsToCategoryResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/AdjustInventoryResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/AdjustInventoryResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/AuthenticateCustomerResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/AuthenticateCustomerResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/AuthenticateUserResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/AuthenticateUserResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/AuthorizeOnlyCreditCardResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/AuthorizeOnlyCreditCardResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CalculateOrderResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CalculateOrderResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ChangeAutoOrderStatusResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ChangeAutoOrderStatusResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ChangeOrderStatusBatchResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ChangeOrderStatusBatchResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ChangeOrderStatusResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ChangeOrderStatusResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ChargeCreditCardResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ChargeCreditCardResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateAutoOrderResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateAutoOrderResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateBillResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateBillResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCalendarItemResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCalendarItemResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerContactResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerContactResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerExtendedResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerExtendedResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerFileResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerFileResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerInquiryResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerInquiryResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerLeadResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerLeadResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerWallItemResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateCustomerWallItemResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateEmailResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateEmailResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateEmailTemplateResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateEmailTemplateResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateExpectedBankWireResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateExpectedBankWireResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateExpectedPaymentResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateExpectedPaymentResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateItemResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateItemResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateMailFolderResponse.datasource">
+      <publishTime>03/12/2013 11:24:30</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateMailFolderResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateOrderImportResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateOrderImportResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateOrderResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateOrderResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreatePaymentCreditCardResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreatePaymentCreditCardResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreatePaymentResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreatePaymentResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreatePayoutResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreatePayoutResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreatePointTransactionResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreatePointTransactionResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateVendorBillResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateVendorBillResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateWebCategoryResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/CreateWebCategoryResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DebitBankAccountResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DebitBankAccountResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteCalendarItemResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteCalendarItemResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteCustomerContactResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteCustomerContactResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteCustomerLeadResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteCustomerLeadResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteCustomerWallItemResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteCustomerWallItemResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteEmailResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteEmailResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteEmailTemplateResponse.datasource">
+      <publishTime>03/12/2013 11:24:30</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteEmailTemplateResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteMailFolderResponse.datasource">
+      <publishTime>03/12/2013 11:24:30</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteMailFolderResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteProductFromCategoryResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteProductFromCategoryResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteWebCategoryResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DeleteWebCategoryResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DequeueCustomerEventsResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/DequeueCustomerEventsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/EmptyMailFolderResponse.datasource">
+      <publishTime>03/12/2013 11:24:30</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/EmptyMailFolderResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/EnsureMailFoldersResponse.datasource">
+      <publishTime>03/12/2013 11:24:30</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/EnsureMailFoldersResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ExigoApi.disco">
+      <publishTime>02/21/2013 15:41:12</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ExigoApi.wsdl">
+      <publishTime>02/21/2013 15:41:12</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/FireResponderResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/FireResponderResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetAccountDirectDepositResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetAccountDirectDepositResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetAutoOrdersResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetAutoOrdersResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetBinaryPlacementTypeResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetBinaryPlacementTypeResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetBinaryPreferenceResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetBinaryPreferenceResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCompanyCurrencyResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCompanyCurrencyResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCompanyNewsItemResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCompanyNewsItemResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCompanyNewsResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCompanyNewsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCompanyTaxTypeResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCompanyTaxTypeResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCountryRegionsResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCountryRegionsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerAccountingBalanceResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerAccountingBalanceResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerBillingResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerBillingResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerExtendedResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerExtendedResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerLeadSocialNetworksResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerLeadSocialNetworksResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerLeadsResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerLeadsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerRankResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerRankResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerSiteResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerSiteResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerSocialNetworksResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerSocialNetworksResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomersPagingResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomersPagingResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomersResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomersResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerStatusTypeResponse.datasource">
+      <publishTime>03/12/2013 11:24:30</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerStatusTypeResponse1.datasource">
+      <publishTime>03/19/2013 11:56:35</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerTypeResponse.datasource">
+      <publishTime>03/12/2013 11:24:30</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerTypeResponse1.datasource">
+      <publishTime>03/19/2013 11:56:35</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerWallResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomerWallResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomReportResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetCustomReportResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetDownlineResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetDownlineResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetEmailAttachmentResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetEmailAttachmentResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetItemCountryRegionResponse.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetItemsResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetItemsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetLanguagesResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetLanguagesResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetLocalTimeByRegionResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetLocalTimeByRegionResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetLoginSessionResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetLoginSessionResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetNewsHeadlinesResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetNewsHeadlinesResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetNewsHeadlinesSettingsResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetNewsHeadlinesSettingsResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetOrdersPagingResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetOrdersPagingResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetOrdersResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetOrdersResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetOrderTotalsResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetOrderTotalsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetPayableTypeResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetPayableTypeResponse1.datasource">
+      <publishTime>03/19/2013 11:56:37</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetPaymentsResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetPaymentsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetPaymentTermResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetPaymentTermResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetPointAccountResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetPointAccountResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetRankQualificationsResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetRankQualificationsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetRealTimeCommissionDetailResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetRealTimeCommissionDetailResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetRealTimeCommissionsResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetRealTimeCommissionsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetSessionResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetSessionResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetShipMethodsResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetShipMethodsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetShoppingCartResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetShoppingCartResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetSubscriptionResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetSubscriptionResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetUplineResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetUplineResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetUserCultureCodeResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetUserCultureCodeResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetUserLocationResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetUserLocationResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetUserPermissionsResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetUserPermissionsResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetUserRegionWeatherResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetUserRegionWeatherResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetVolumesResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetVolumesResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetWarehousesResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetWarehousesResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetWeatherForecastByLocationResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/GetWeatherForecastByLocationResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/LoginCustomerResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/LoginCustomerResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/MergeCustomerResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/MergeCustomerResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/MoveEmailResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/MoveEmailResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/OptOutEmailResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/OptOutEmailResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/PlaceBinaryNodeResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/PlaceBinaryNodeResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/PlaceEnrollerNodeResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/PlaceEnrollerNodeResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/PlaceMatrixNodeResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/PlaceMatrixNodeResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/PlaceStackNodeResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/PlaceStackNodeResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/PlaceUniLevelNodeResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/PlaceUniLevelNodeResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/Reference.map">
+      <publishTime>02/21/2013 15:41:12</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetAccountResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetAccountResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetBinaryPreferenceResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetBinaryPreferenceResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetCustomerLeadSocialNetworksResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetCustomerLeadSocialNetworksResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetCustomerSiteImageResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetCustomerSiteImageResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetCustomerSiteResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetCustomerSiteResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetCustomerSocialNetworksResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetCustomerSocialNetworksResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetItemCountryRegionResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetItemCountryRegionResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetItemPriceResponse.datasource">
+      <publishTime>03/12/2013 11:24:30</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetItemPriceResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetItemWarehouseResponse.datasource">
+      <publishTime>03/12/2013 11:24:30</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetItemWarehouseResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetSessionResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/SetSessionResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/TransactionalResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/TransactionalResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateCalendarItemResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateCalendarItemResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateCustomerContactResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateCustomerContactResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateCustomerExtendedResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateCustomerExtendedResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateCustomerLeadResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateCustomerLeadResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateCustomerResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateCustomerResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateEmailStatusResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateEmailStatusResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateEmailTemplateResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateEmailTemplateResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateItemResponse.datasource">
+      <publishTime>03/12/2013 11:24:34</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateItemResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateMailFolderResponse.datasource">
+      <publishTime>03/12/2013 11:24:30</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateMailFolderResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateNewsHeadlinesSettingsResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateNewsHeadlinesSettingsResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateOrderResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateOrderResponse1.datasource">
+      <publishTime>04/29/2013 20:02:23</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateUserCultureCodeResponse.datasource">
+      <publishTime>03/12/2013 11:24:32</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateUserCultureCodeResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateUserLocationResponse.datasource">
+      <publishTime>03/12/2013 11:24:33</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateUserLocationResponse1.datasource">
+      <publishTime>03/19/2013 11:56:36</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateWebCategoryResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/UpdateWebCategoryResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ValidateResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/ValidateResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/VerifyAddressResponse.datasource">
+      <publishTime>03/12/2013 11:24:31</publishTime>
+    </File>
+    <File Include="Web References/Exigo.WebService/VerifyAddressResponse1.datasource">
+      <publishTime>04/29/2013 20:02:22</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/29/2013 20:34:37</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2446 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="Exigo.Api.Models" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="Customer">
+        <Key>
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="FirstName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LastName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Company" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="CustomerTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerStatusID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Email" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Phone" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Phone2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MobilePhone" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Fax" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MainAddress1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MainAddress2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MainCity" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MainState" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MainZip" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MainCountry" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MainCounty" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailAddress1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailAddress2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailCity" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailState" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailZip" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailCountry" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailCounty" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="OtherAddress1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="OtherAddress2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="OtherCity" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="OtherState" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="OtherZip" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="OtherCountry" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="OtherCounty" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LoginName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="RankID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="EnrollerID" Type="Edm.Int32" Nullable="true" />
+        <Property Name="SponsorID" Type="Edm.Int32" Nullable="true" />
+        <Property Name="BirthDate" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="CurrencyCode" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="PayableToName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="DefaultWarehouseID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PayableTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CheckThreshold" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="LanguageID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Gender" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="SalesTaxCode" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="IsSalesTaxExempt" Type="Edm.Boolean" Nullable="false" />
+        <Property Name="UseBinaryHoldingTank" Type="Edm.Boolean" Nullable="false" />
+        <Property Name="IsInBinaryHoldingTank" Type="Edm.Boolean" Nullable="false" />
+        <Property Name="Field1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field3" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field4" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field5" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field6" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field7" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field8" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field9" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field10" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field11" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field12" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field13" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field14" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field15" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Date1" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="Date2" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="Date3" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="Date4" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="Date5" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="CreatedDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="ModifiedDate" Type="Edm.DateTime" Nullable="false" />
+        <NavigationProperty Name="Rank" Relationship="Exigo.Api.Models.Customer_Rank" FromRole="Customer_Rank_Source" ToRole="Customer_Rank_Target" />
+        <NavigationProperty Name="CustomerType" Relationship="Exigo.Api.Models.Customer_CustomerType" FromRole="Customer_CustomerType_Source" ToRole="Customer_CustomerType_Target" />
+        <NavigationProperty Name="CustomerStatus" Relationship="Exigo.Api.Models.Customer_CustomerStatus" FromRole="Customer_CustomerStatus_Source" ToRole="Customer_CustomerStatus_Target" />
+      </EntityType>
+      <EntityType Name="Rank">
+        <Key>
+          <PropertyRef Name="RankID" />
+        </Key>
+        <Property Name="RankID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="RankDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="CustomerType">
+        <Key>
+          <PropertyRef Name="CustomerTypeID" />
+        </Key>
+        <Property Name="CustomerTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="PriceTypeID" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="PriceType" Relationship="Exigo.Api.Models.CustomerType_PriceType" FromRole="CustomerType_PriceType_Source" ToRole="CustomerType_PriceType_Target" />
+      </EntityType>
+      <EntityType Name="PriceType">
+        <Key>
+          <PropertyRef Name="PriceTypeID" />
+        </Key>
+        <Property Name="PriceTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="PriceTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="CustomerStatus">
+        <Key>
+          <PropertyRef Name="CustomerStatusID" />
+        </Key>
+        <Property Name="CustomerStatusID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerStatusDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="Order">
+        <Key>
+          <PropertyRef Name="OrderID" />
+        </Key>
+        <Property Name="OrderID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="OrderStatusID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="OrderDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="CurrencyCode" Type="Edm.String" Nullable="true" MaxLength="3" Unicode="false" FixedLength="true" />
+        <Property Name="WarehouseID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ShipMethodID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="OrderTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PriceTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="FirstName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LastName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Company" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Address1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Address2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="City" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="State" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Zip" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Country" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="County" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Email" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Phone" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Notes" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="SubTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="TaxTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="ShippingTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="DiscountTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="DiscountPercent" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="WeightTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="BusinessVolumeTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CommissionableVolumeTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="TrackingNumber1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TrackingNumber2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TrackingNumber3" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TrackingNumber4" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TrackingNumber5" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Other1Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other2Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other3Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other4Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other5Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other6Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other7Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other8Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other9Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other10Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="ShippingTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="OrderTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="FedTaxTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="StateTaxTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="FedShippingTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="StateShippingTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CityShippingTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CityLocalShippingTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CountyShippingTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CountyLocalShippingTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other11" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Other12" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Other13" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Other14" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Other15" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Other16" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Other17" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Other18" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Other19" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Other20" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ReturnOrderID" Type="Edm.Int32" Nullable="true" />
+        <Property Name="ParentOrderID" Type="Edm.Int32" Nullable="true" />
+        <Property Name="ShippedDate" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="CreatedDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="TaxFedRate" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="TaxStateRate" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="TaxCityRate" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="TaxCityLocalRate" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="TaxCountyRate" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="TaxCountyLocalRate" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="TaxManualRate" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="TaxCity" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TaxCounty" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TaxState" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TaxZip" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TaxCountry" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TaxIsExempt" Type="Edm.Boolean" Nullable="false" />
+        <Property Name="TaxIsOverRide" Type="Edm.Boolean" Nullable="false" />
+        <Property Name="ModifiedDate" Type="Edm.DateTime" Nullable="false" />
+        <NavigationProperty Name="Details" Relationship="Exigo.Api.Models.Order_Details" FromRole="Order_Details_Source" ToRole="Order_Details_Target" />
+        <NavigationProperty Name="Payments" Relationship="Exigo.Api.Models.Payment_Order" FromRole="Payment_Order_Target" ToRole="Payment_Order_Source" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.Order_Customer" FromRole="Order_Customer_Source" ToRole="Order_Customer_Target" />
+        <NavigationProperty Name="OrderStatus" Relationship="Exigo.Api.Models.Order_OrderStatus" FromRole="Order_OrderStatus_Source" ToRole="Order_OrderStatus_Target" />
+        <NavigationProperty Name="Warehouse" Relationship="Exigo.Api.Models.Order_Warehouse" FromRole="Order_Warehouse_Source" ToRole="Order_Warehouse_Target" />
+        <NavigationProperty Name="ShipMethod" Relationship="Exigo.Api.Models.Order_ShipMethod" FromRole="Order_ShipMethod_Source" ToRole="Order_ShipMethod_Target" />
+        <NavigationProperty Name="PriceType" Relationship="Exigo.Api.Models.Order_PriceType" FromRole="Order_PriceType_Source" ToRole="Order_PriceType_Target" />
+        <NavigationProperty Name="OrderType" Relationship="Exigo.Api.Models.Order_OrderType" FromRole="Order_OrderType_Source" ToRole="Order_OrderType_Target" />
+      </EntityType>
+      <EntityType Name="OrderDetail">
+        <Key>
+          <PropertyRef Name="OrderDetailID" />
+        </Key>
+        <Property Name="OrderDetailID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="OrderID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ItemID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ItemCode" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ItemDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Quantity" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="PriceEach" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="PriceTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Tax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="WeightEach" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Weight" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="BusinessVolumeEach" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="BusinessVolume" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CommissionableVolumeEach" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CommissionableVolume" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other1Each" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other1" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other2Each" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other2" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other3Each" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other3" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other4Each" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other4" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other5Each" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other5" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other6Each" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other6" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other7Each" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other7" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other8Each" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other8" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other9Each" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other9" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other10Each" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other10" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Taxable" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="FedTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="StateTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CityTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CityLocalTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CountyTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CountyLocalTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="ManualTax" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="IsStateTaxOverride" Type="Edm.Boolean" Nullable="false" />
+        <NavigationProperty Name="Order" Relationship="Exigo.Api.Models.Order_Details" FromRole="Order_Details_Target" ToRole="Order_Details_Source" />
+      </EntityType>
+      <EntityType Name="Payment">
+        <Key>
+          <PropertyRef Name="PaymentID" />
+        </Key>
+        <Property Name="PaymentID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="OrderID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PaymentTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PaymentDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="Amount" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CurrencyCode" Type="Edm.String" Nullable="true" MaxLength="3" Unicode="false" FixedLength="true" />
+        <Property Name="WarehouseID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="BillingName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="CreditCardNumber" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="AuthorizationCode" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="PaymentType" Relationship="Exigo.Api.Models.Payment_PaymentType" FromRole="Payment_PaymentType_Source" ToRole="Payment_PaymentType_Target" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.Payment_Customer" FromRole="Payment_Customer_Source" ToRole="Payment_Customer_Target" />
+        <NavigationProperty Name="Order" Relationship="Exigo.Api.Models.Payment_Order" FromRole="Payment_Order_Source" ToRole="Payment_Order_Target" />
+      </EntityType>
+      <EntityType Name="PaymentType">
+        <Key>
+          <PropertyRef Name="PaymentTypeID" />
+        </Key>
+        <Property Name="PaymentTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="PaymentTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="OrderStatus">
+        <Key>
+          <PropertyRef Name="OrderStatusID" />
+        </Key>
+        <Property Name="OrderStatusID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="OrderStatusDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="Warehouse">
+        <Key>
+          <PropertyRef Name="WarehouseID" />
+        </Key>
+        <Property Name="WarehouseID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="WarehouseDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="ShipMethod">
+        <Key>
+          <PropertyRef Name="ShipMethodID" />
+        </Key>
+        <Property Name="ShipMethodID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="ShipMethodDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="WarehouseID" Type="Edm.Int32" Nullable="false" />
+      </EntityType>
+      <EntityType Name="OrderType">
+        <Key>
+          <PropertyRef Name="OrderTypeID" />
+        </Key>
+        <Property Name="OrderTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="OrderTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="EmailAttachment">
+        <Key>
+          <PropertyRef Name="AttachmentID" />
+        </Key>
+        <Property Name="AttachmentID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="MailID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="FileName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ContentLength" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Email" Relationship="Exigo.Api.Models.Email_Attachments" FromRole="Email_Attachments_Target" ToRole="Email_Attachments_Source" />
+      </EntityType>
+      <EntityType Name="Email">
+        <Key>
+          <PropertyRef Name="MailID" />
+        </Key>
+        <Property Name="MailID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="MailFolderID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="MailSize" Type="Edm.Int32" Nullable="false" />
+        <Property Name="MailStatusTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="MailDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="HasAttachment" Type="Edm.Boolean" Nullable="false" />
+        <Property Name="Importance" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Subject" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Body" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailFromDisplay" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailFrom" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailTo" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ReplyTo" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailCC" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MailBCC" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="MailFolder" Relationship="Exigo.Api.Models.Email_MailFolder" FromRole="Email_MailFolder_Source" ToRole="Email_MailFolder_Target" />
+        <NavigationProperty Name="MailStatusType" Relationship="Exigo.Api.Models.Email_MailStatusType" FromRole="Email_MailStatusType_Source" ToRole="Email_MailStatusType_Target" />
+        <NavigationProperty Name="Attachments" Relationship="Exigo.Api.Models.Email_Attachments" FromRole="Email_Attachments_Source" ToRole="Email_Attachments_Target" />
+      </EntityType>
+      <EntityType Name="EmailFolder">
+        <Key>
+          <PropertyRef Name="MailFolderID" />
+        </Key>
+        <Property Name="MailFolderID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="MailCount" Type="Edm.Int32" Nullable="false" />
+        <Property Name="UnreadCount" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="FolderSize" Type="Edm.Int32" Nullable="false" />
+        <Property Name="MailFolderTypeID" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="MailFolderType" Relationship="Exigo.Api.Models.EmailFolder_MailFolderType" FromRole="EmailFolder_MailFolderType_Source" ToRole="EmailFolder_MailFolderType_Target" />
+      </EntityType>
+      <EntityType Name="EmailFolderType">
+        <Key>
+          <PropertyRef Name="MailFolderTypeID" />
+        </Key>
+        <Property Name="MailFolderTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="MailFolderTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="EmailStatusType">
+        <Key>
+          <PropertyRef Name="MailStatusTypeID" />
+        </Key>
+        <Property Name="MailStatusTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="MailStatusTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="AutoOrder">
+        <Key>
+          <PropertyRef Name="AutoOrderID" />
+        </Key>
+        <Property Name="AutoOrderID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="AutoOrderStatusID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="FrequencyTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="StartDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="StopDate" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="LastRunDate" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="NextRunDate" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="CurrencyCode" Type="Edm.String" Nullable="true" MaxLength="3" Unicode="false" FixedLength="true" />
+        <Property Name="WarehouseID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ShipMethodID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="AutoOrderPaymentTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="AutoOrderProcessTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="FirstName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LastName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Company" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Address1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Address2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="City" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="State" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Zip" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Country" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="County" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Email" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Phone" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Notes" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="SubTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="TaxTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="ShippingTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="DiscountTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="BusinessVolumeTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CommissionableVolumeTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="AutoOrderDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="CreatedDate" Type="Edm.DateTime" Nullable="false" />
+        <NavigationProperty Name="Details" Relationship="Exigo.Api.Models.AutoOrderDetail_AutoOrder" FromRole="AutoOrderDetail_AutoOrder_Target" ToRole="AutoOrderDetail_AutoOrder_Source" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.AutoOrder_Customer" FromRole="AutoOrder_Customer_Source" ToRole="AutoOrder_Customer_Target" />
+        <NavigationProperty Name="AutoOrderStatus" Relationship="Exigo.Api.Models.AutoOrder_AutoOrderStatus" FromRole="AutoOrder_AutoOrderStatus_Source" ToRole="AutoOrder_AutoOrderStatus_Target" />
+        <NavigationProperty Name="FrequencyType" Relationship="Exigo.Api.Models.AutoOrder_FrequencyType" FromRole="AutoOrder_FrequencyType_Source" ToRole="AutoOrder_FrequencyType_Target" />
+        <NavigationProperty Name="Warehouse" Relationship="Exigo.Api.Models.AutoOrder_Warehouse" FromRole="AutoOrder_Warehouse_Source" ToRole="AutoOrder_Warehouse_Target" />
+        <NavigationProperty Name="ShipMethod" Relationship="Exigo.Api.Models.AutoOrder_ShipMethod" FromRole="AutoOrder_ShipMethod_Source" ToRole="AutoOrder_ShipMethod_Target" />
+        <NavigationProperty Name="AutoOrderPaymentType" Relationship="Exigo.Api.Models.AutoOrder_AutoOrderPaymentType" FromRole="AutoOrder_AutoOrderPaymentType_Source" ToRole="AutoOrder_AutoOrderPaymentType_Target" />
+        <NavigationProperty Name="AutoOrderProcessType" Relationship="Exigo.Api.Models.AutoOrder_AutoOrderProcessType" FromRole="AutoOrder_AutoOrderProcessType_Source" ToRole="AutoOrder_AutoOrderProcessType_Target" />
+      </EntityType>
+      <EntityType Name="AutoOrderDetail">
+        <Key>
+          <PropertyRef Name="AutoOrderDetailID" />
+        </Key>
+        <Property Name="AutoOrderDetailID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="AutoOrderID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ItemID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ItemCode" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ItemDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Quantity" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="PriceEach" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="PriceTotal" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="BusinessVolumeEach" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="BusinessVolume" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CommissionableVolumeEach" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CommissionableVolume" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="PriceEachOverride" Type="Edm.Decimal" Nullable="true" Precision="18" Scale="2" />
+        <Property Name="TaxableEachOverride" Type="Edm.Decimal" Nullable="true" Precision="18" Scale="2" />
+        <Property Name="ShippingPriceEachOverride" Type="Edm.Decimal" Nullable="true" Precision="18" Scale="2" />
+        <Property Name="BusinessVolumeEachOverride" Type="Edm.Decimal" Nullable="true" Precision="18" Scale="2" />
+        <Property Name="CommissionableVolumeEachOverride" Type="Edm.Decimal" Nullable="true" Precision="18" Scale="2" />
+        <NavigationProperty Name="AutoOrder" Relationship="Exigo.Api.Models.AutoOrderDetail_AutoOrder" FromRole="AutoOrderDetail_AutoOrder_Source" ToRole="AutoOrderDetail_AutoOrder_Target" />
+      </EntityType>
+      <EntityType Name="AutoOrderStatus">
+        <Key>
+          <PropertyRef Name="AutoOrderStatusID" />
+        </Key>
+        <Property Name="AutoOrderStatusID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="AutoOrderStatusDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="FrequencyType">
+        <Key>
+          <PropertyRef Name="FrequencyTypeID" />
+        </Key>
+        <Property Name="FrequencyTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="FrequencyTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="AutoOrderPaymentType">
+        <Key>
+          <PropertyRef Name="AutoOrderPaymentTypeID" />
+        </Key>
+        <Property Name="AutoOrderPaymentTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="AutoOrderPaymentTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="AutoOrderProcessType">
+        <Key>
+          <PropertyRef Name="AutoOrderProcessTypeID" />
+        </Key>
+        <Property Name="AutoOrderProcessTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="AutoOrderProcessTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="Item">
+        <Key>
+          <PropertyRef Name="ItemID" />
+        </Key>
+        <Property Name="ItemID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="ItemCode" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="false" FixedLength="false" />
+        <Property Name="ItemDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ShortDetail" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ShortDetail2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ShortDetail3" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ShortDetail4" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LongDetail" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LongDetail2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LongDetail3" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LongDetail4" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TinyImageUrl" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="SmallImageUrl" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LargeImageUrl" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="ItemPrice">
+        <Key>
+          <PropertyRef Name="ItemID" />
+          <PropertyRef Name="CurrencyCode" />
+          <PropertyRef Name="PriceTypeID" />
+        </Key>
+        <Property Name="ItemID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CurrencyCode" Type="Edm.String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+        <Property Name="PriceTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CommissionableVolume" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="BusinessVolume" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other1Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other2Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other3Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other4Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other5Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other6Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other7Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other8Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other9Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other10Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <NavigationProperty Name="Item" Relationship="Exigo.Api.Models.ItemPrice_Item" FromRole="ItemPrice_Item_Source" ToRole="ItemPrice_Item_Target" />
+      </EntityType>
+      <EntityType Name="ItemWarehousePrice">
+        <Key>
+          <PropertyRef Name="ItemID" />
+          <PropertyRef Name="WarehouseID" />
+          <PropertyRef Name="CurrencyCode" />
+          <PropertyRef Name="PriceTypeID" />
+        </Key>
+        <Property Name="ItemID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="WarehouseID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CurrencyCode" Type="Edm.String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+        <Property Name="PriceTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CommissionableVolume" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="BusinessVolume" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other1Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other2Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other3Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other4Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other5Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other6Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other7Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other8Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other9Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Other10Price" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <NavigationProperty Name="Item" Relationship="Exigo.Api.Models.ItemWarehousePrice_Item" FromRole="ItemWarehousePrice_Item_Source" ToRole="ItemWarehousePrice_Item_Target" />
+      </EntityType>
+      <EntityType Name="EnrollerNode">
+        <Key>
+          <PropertyRef Name="TopCustomerID" />
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="TopCustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="EnrollerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Level" Type="Edm.Int32" Nullable="false" />
+        <Property Name="IndentedSort" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.EnrollerNode_Customer" FromRole="EnrollerNode_Customer_Source" ToRole="EnrollerNode_Customer_Target" />
+      </EntityType>
+      <EntityType Name="EnrollerNodePeriodVolume">
+        <Key>
+          <PropertyRef Name="TopCustomerID" />
+          <PropertyRef Name="PeriodTypeID" />
+          <PropertyRef Name="PeriodID" />
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="TopCustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PeriodTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PeriodID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="EnrollerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Level" Type="Edm.Int32" Nullable="false" />
+        <Property Name="IndentedSort" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.EnrollerNodePeriodVolume_Customer" FromRole="EnrollerNodePeriodVolume_Customer_Source" ToRole="EnrollerNodePeriodVolume_Customer_Target" />
+        <NavigationProperty Name="PeriodVolume" Relationship="Exigo.Api.Models.EnrollerNodePeriodVolume_PeriodVolume" FromRole="EnrollerNodePeriodVolume_PeriodVolume_Source" ToRole="EnrollerNodePeriodVolume_PeriodVolume_Target" />
+        <NavigationProperty Name="Period" Relationship="Exigo.Api.Models.EnrollerNodePeriodVolume_Period" FromRole="EnrollerNodePeriodVolume_Period_Source" ToRole="EnrollerNodePeriodVolume_Period_Target" />
+      </EntityType>
+      <EntityType Name="PeriodVolume">
+        <Key>
+          <PropertyRef Name="PeriodTypeID" />
+          <PropertyRef Name="PeriodID" />
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="PeriodTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PeriodID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="RankID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PaidRankID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Volume1" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume2" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume3" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume4" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume5" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume6" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume7" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume8" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume9" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume10" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume11" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume12" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume13" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume14" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume15" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume16" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume17" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume18" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume19" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume20" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume21" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume22" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume23" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume24" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume25" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume26" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume27" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume28" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume29" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume30" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume31" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume32" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume33" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume34" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume35" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume36" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume37" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume38" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume39" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume40" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume41" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume42" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume43" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume44" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume45" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume46" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume47" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume48" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume49" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume50" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume51" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume52" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume53" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume54" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume55" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume56" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume57" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume58" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume59" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume60" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume61" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume62" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume63" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume64" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume65" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume66" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume67" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume68" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume69" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume70" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume71" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume72" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume73" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume74" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume75" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume76" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume77" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume78" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume79" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume80" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume81" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume82" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume83" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume84" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume85" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume86" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume87" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume88" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume89" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume90" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume91" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume92" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume93" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume94" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume95" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume96" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume97" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume98" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume99" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Volume100" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <NavigationProperty Name="Rank" Relationship="Exigo.Api.Models.PeriodVolume_Rank" FromRole="PeriodVolume_Rank_Source" ToRole="PeriodVolume_Rank_Target" />
+        <NavigationProperty Name="PaidRank" Relationship="Exigo.Api.Models.PeriodVolume_PaidRank" FromRole="PeriodVolume_PaidRank_Source" ToRole="PeriodVolume_PaidRank_Target" />
+        <NavigationProperty Name="Period" Relationship="Exigo.Api.Models.PeriodVolume_Period" FromRole="PeriodVolume_Period_Source" ToRole="PeriodVolume_Period_Target" />
+      </EntityType>
+      <EntityType Name="Period">
+        <Key>
+          <PropertyRef Name="PeriodTypeID" />
+          <PropertyRef Name="PeriodID" />
+        </Key>
+        <Property Name="PeriodTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PeriodID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PeriodDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="IsCurrentPeriod" Type="Edm.Boolean" Nullable="false" />
+        <Property Name="StartDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="EndDate" Type="Edm.DateTime" Nullable="false" />
+        <NavigationProperty Name="PeriodType" Relationship="Exigo.Api.Models.Period_PeriodType" FromRole="Period_PeriodType_Source" ToRole="Period_PeriodType_Target" />
+      </EntityType>
+      <EntityType Name="PeriodType">
+        <Key>
+          <PropertyRef Name="PeriodTypeID" />
+        </Key>
+        <Property Name="PeriodTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="PeriodTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="UniLevelNode">
+        <Key>
+          <PropertyRef Name="TopCustomerID" />
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="TopCustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="SponsorID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Placement" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Level" Type="Edm.Int32" Nullable="false" />
+        <Property Name="IndentedSort" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.UniLevelNode_Customer" FromRole="UniLevelNode_Customer_Source" ToRole="UniLevelNode_Customer_Target" />
+      </EntityType>
+      <EntityType Name="UniLevelNodePeriodVolume">
+        <Key>
+          <PropertyRef Name="TopCustomerID" />
+          <PropertyRef Name="PeriodTypeID" />
+          <PropertyRef Name="PeriodID" />
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="TopCustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PeriodTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PeriodID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="SponsorID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Placement" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Level" Type="Edm.Int32" Nullable="false" />
+        <Property Name="IndentedSort" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.UniLevelNodePeriodVolume_Customer" FromRole="UniLevelNodePeriodVolume_Customer_Source" ToRole="UniLevelNodePeriodVolume_Customer_Target" />
+        <NavigationProperty Name="PeriodVolume" Relationship="Exigo.Api.Models.UniLevelNodePeriodVolume_PeriodVolume" FromRole="UniLevelNodePeriodVolume_PeriodVolume_Source" ToRole="UniLevelNodePeriodVolume_PeriodVolume_Target" />
+        <NavigationProperty Name="Period" Relationship="Exigo.Api.Models.UniLevelNodePeriodVolume_Period" FromRole="UniLevelNodePeriodVolume_Period_Source" ToRole="UniLevelNodePeriodVolume_Period_Target" />
+      </EntityType>
+      <EntityType Name="BinaryNode">
+        <Key>
+          <PropertyRef Name="TopCustomerID" />
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="TopCustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ParentID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Placement" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Level" Type="Edm.Int32" Nullable="false" />
+        <Property Name="IndentedSort" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.BinaryNode_Customer" FromRole="BinaryNode_Customer_Source" ToRole="BinaryNode_Customer_Target" />
+      </EntityType>
+      <EntityType Name="BinaryNodePeriodVolume">
+        <Key>
+          <PropertyRef Name="TopCustomerID" />
+          <PropertyRef Name="PeriodTypeID" />
+          <PropertyRef Name="PeriodID" />
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="TopCustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PeriodTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PeriodID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ParentID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Placement" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Level" Type="Edm.Int32" Nullable="false" />
+        <Property Name="IndentedSort" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.BinaryNodePeriodVolume_Customer" FromRole="BinaryNodePeriodVolume_Customer_Source" ToRole="BinaryNodePeriodVolume_Customer_Target" />
+        <NavigationProperty Name="PeriodVolume" Relationship="Exigo.Api.Models.BinaryNodePeriodVolume_PeriodVolume" FromRole="BinaryNodePeriodVolume_PeriodVolume_Source" ToRole="BinaryNodePeriodVolume_PeriodVolume_Target" />
+        <NavigationProperty Name="Period" Relationship="Exigo.Api.Models.BinaryNodePeriodVolume_Period" FromRole="BinaryNodePeriodVolume_Period_Source" ToRole="BinaryNodePeriodVolume_Period_Target" />
+      </EntityType>
+      <EntityType Name="ShipCarrier">
+        <Key>
+          <PropertyRef Name="ShipCarrierID" />
+        </Key>
+        <Property Name="ShipCarrierID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="ShipCarrierDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="CustomerContact">
+        <Key>
+          <PropertyRef Name="CustomerID" />
+          <PropertyRef Name="CustomerEntityID" />
+        </Key>
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerEntityID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="FirstName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MiddleName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LastName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Company" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Email" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="BusinessPhone" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="HomePhone" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Fax" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Mobile" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LinkedIn" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Facebook" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Blog" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="MySpace" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="GooglePlus" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Twitter" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Birthday" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="Notes" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Address1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Address2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="City" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="State" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Zip" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Country" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="Subscription">
+        <Key>
+          <PropertyRef Name="SubscriptionID" />
+        </Key>
+        <Property Name="SubscriptionID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="SubscriptionDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="SubscriptionStatus">
+        <Key>
+          <PropertyRef Name="SubscriptionStatusID" />
+        </Key>
+        <Property Name="SubscriptionStatusID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="SubscriptionStatusDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="CustomerSubscription">
+        <Key>
+          <PropertyRef Name="CustomerID" />
+          <PropertyRef Name="SubscriptionID" />
+        </Key>
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="SubscriptionID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="SubscriptionStatusID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="StartDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="ExpireDate" Type="Edm.DateTime" Nullable="false" />
+        <NavigationProperty Name="Subscription" Relationship="Exigo.Api.Models.CustomerSubscription_Subscription" FromRole="CustomerSubscription_Subscription_Source" ToRole="CustomerSubscription_Subscription_Target" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.CustomerSubscription_Customer" FromRole="CustomerSubscription_Customer_Source" ToRole="CustomerSubscription_Customer_Target" />
+        <NavigationProperty Name="SubscriptionStatus" Relationship="Exigo.Api.Models.CustomerSubscription_SubscriptionStatus" FromRole="CustomerSubscription_SubscriptionStatus_Source" ToRole="CustomerSubscription_SubscriptionStatus_Target" />
+      </EntityType>
+      <EntityType Name="PointAccount">
+        <Key>
+          <PropertyRef Name="PointAccountID" />
+        </Key>
+        <Property Name="PointAccountID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="PointAccountDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="CustomerPointAccount">
+        <Key>
+          <PropertyRef Name="CustomerID" />
+          <PropertyRef Name="PointAccountID" />
+        </Key>
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PointAccountID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PointBalance" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <NavigationProperty Name="PointAccount" Relationship="Exigo.Api.Models.CustomerPointAccount_PointAccount" FromRole="CustomerPointAccount_PointAccount_Source" ToRole="CustomerPointAccount_PointAccount_Target" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.CustomerPointAccount_Customer" FromRole="CustomerPointAccount_Customer_Source" ToRole="CustomerPointAccount_Customer_Target" />
+      </EntityType>
+      <EntityType Name="CommissionRun">
+        <Key>
+          <PropertyRef Name="CommissionRunID" />
+        </Key>
+        <Property Name="CommissionRunID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CommissionRunDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="PeriodTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PeriodID" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Period" Relationship="Exigo.Api.Models.CommissionRun_Period" FromRole="CommissionRun_Period_Source" ToRole="CommissionRun_Period_Target" />
+      </EntityType>
+      <EntityType Name="Commission">
+        <Key>
+          <PropertyRef Name="CommissionRunID" />
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="CommissionRunID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CurrencyCode" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Earnings" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="PreviousBalance" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="BalanceForward" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Fee" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Total" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="PaidRankID" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="CommissionRun" Relationship="Exigo.Api.Models.Commission_CommissionRun" FromRole="Commission_CommissionRun_Source" ToRole="Commission_CommissionRun_Target" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.Commission_Customer" FromRole="Commission_Customer_Source" ToRole="Commission_Customer_Target" />
+      </EntityType>
+      <EntityType Name="CommissionBonus">
+        <Key>
+          <PropertyRef Name="CommissionRunID" />
+          <PropertyRef Name="CustomerID" />
+          <PropertyRef Name="BonusID" />
+        </Key>
+        <Property Name="CommissionRunID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="BonusID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="BonusDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Amount" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <NavigationProperty Name="Commission" Relationship="Exigo.Api.Models.CommissionBonus_Commission" FromRole="CommissionBonus_Commission_Source" ToRole="CommissionBonus_Commission_Target" />
+        <NavigationProperty Name="CommissionRun" Relationship="Exigo.Api.Models.CommissionBonus_CommissionRun" FromRole="CommissionBonus_CommissionRun_Source" ToRole="CommissionBonus_CommissionRun_Target" />
+      </EntityType>
+      <EntityType Name="CommissionDetail">
+        <Key>
+          <PropertyRef Name="CommissionRunID" />
+          <PropertyRef Name="CommissionDetailID" />
+        </Key>
+        <Property Name="CommissionRunID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CommissionDetailID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="BonusID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="FromCustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="OrderID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="SourceAmount" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Percentage" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="CommissionAmount" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="Level" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PaidLevel" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="FromCustomer" Relationship="Exigo.Api.Models.CommissionDetail_FromCustomer" FromRole="CommissionDetail_FromCustomer_Source" ToRole="CommissionDetail_FromCustomer_Target" />
+        <NavigationProperty Name="Commission" Relationship="Exigo.Api.Models.CommissionDetail_Commission" FromRole="CommissionDetail_Commission_Source" ToRole="CommissionDetail_Commission_Target" />
+        <NavigationProperty Name="Bonus" Relationship="Exigo.Api.Models.CommissionDetail_Bonus" FromRole="CommissionDetail_Bonus_Source" ToRole="CommissionDetail_Bonus_Target" />
+        <NavigationProperty Name="CommissionRun" Relationship="Exigo.Api.Models.CommissionDetail_CommissionRun" FromRole="CommissionDetail_CommissionRun_Source" ToRole="CommissionDetail_CommissionRun_Target" />
+      </EntityType>
+      <EntityType Name="CustomerExtendedGroup">
+        <Key>
+          <PropertyRef Name="CustomerExtendedGroupID" />
+        </Key>
+        <Property Name="CustomerExtendedGroupID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerExtendedGroupDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field1Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field2Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field3Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field4Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field5Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field6Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field7Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field8Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field9Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field10Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field11Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field12Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field13Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field14Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field15Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field16Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field17Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field18Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field19Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field20Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field21Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field22Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field23Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field24Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field25Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field26Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field27Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field28Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field29Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field30Name" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="CustomerExtendedDetail">
+        <Key>
+          <PropertyRef Name="CustomerExtendedDetailID" />
+        </Key>
+        <Property Name="CustomerExtendedDetailID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerExtendedGroupID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Field1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field3" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field4" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field5" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field6" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field7" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field8" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field9" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field10" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field11" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field12" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field13" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field14" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field15" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field16" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field17" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field18" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field19" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field20" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field21" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field22" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field23" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field24" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field25" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field26" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field27" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field28" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field29" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field30" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ModifiedDate" Type="Edm.DateTime" Nullable="false" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.CustomerExtendedDetail_Customer" FromRole="CustomerExtendedDetail_Customer_Source" ToRole="CustomerExtendedDetail_Customer_Target" />
+        <NavigationProperty Name="CustomerExtendedGroup" Relationship="Exigo.Api.Models.CustomerExtendedDetail_CustomerExtendedGroup" FromRole="CustomerExtendedDetail_CustomerExtendedGroup_Source" ToRole="CustomerExtendedDetail_CustomerExtendedGroup_Target" />
+      </EntityType>
+      <EntityType Name="PaymentTotal">
+        <Key>
+          <PropertyRef Name="CurrencyCode" />
+          <PropertyRef Name="PaymentTypeID" />
+          <PropertyRef Name="WarehouseID" />
+        </Key>
+        <Property Name="CurrencyCode" Type="Edm.String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+        <Property Name="PaymentTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="WarehouseID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="WarehouseDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="CurrencyCodeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="PaymentTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="PaymentAmount" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="PaymentCount" Type="Edm.Int32" Nullable="false" />
+      </EntityType>
+      <EntityType Name="NodeSearchResult">
+        <Key>
+          <PropertyRef Name="NodeID" />
+        </Key>
+        <Property Name="NodeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="ParentID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Level" Type="Edm.Int32" Nullable="false" />
+        <Property Name="FirstName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="LastName" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Company" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="WallItem">
+        <Key>
+          <PropertyRef Name="WallItemID" />
+        </Key>
+        <Property Name="WallItemID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="EntryDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="Text" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Field3" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="ImageFile">
+        <Key>
+          <PropertyRef Name="Path" />
+          <PropertyRef Name="FileName" />
+        </Key>
+        <Property Name="Path" Type="Edm.String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+        <Property Name="FileName" Type="Edm.String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+        <Property Name="Url" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="CreatedDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="Size" Type="Edm.Int32" Nullable="false" />
+      </EntityType>
+      <EntityType Name="CalendarItem">
+        <Key>
+          <PropertyRef Name="CalendarID" />
+          <PropertyRef Name="CalendarItemID" />
+        </Key>
+        <Property Name="CalendarID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CalendarItemID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="UserID" Type="Edm.Int32" Nullable="true" />
+        <Property Name="CalendarItemTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CalendarItemStatusTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CalendarItemPriorityTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Subject" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="StartDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="EndDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="Location" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Notes" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="TimeZone" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Address1" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Address2" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="City" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="State" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Country" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="PostalCode" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ContactInfo" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ContactPhone" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ContactPhoneType" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ContactEmail" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="EventHost" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="SpecialGuests" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="EventFlyer" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="EventCostInfo" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="EventConferenceCallOrWebinar" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="EventRegistrationInfo" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="EventTags" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="HasReminder" Type="Edm.Boolean" Nullable="false" />
+        <Property Name="IsShared" Type="Edm.Boolean" Nullable="false" />
+      </EntityType>
+      <EntityType Name="CalendarType">
+        <Key>
+          <PropertyRef Name="CalendarTypeID" />
+        </Key>
+        <Property Name="CalendarTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CalendarTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="CalendarViewType">
+        <Key>
+          <PropertyRef Name="CalendarViewTypeID" />
+        </Key>
+        <Property Name="CalendarViewTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CalendarViewTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="CalendarItemType">
+        <Key>
+          <PropertyRef Name="CalendarItemTypeID" />
+        </Key>
+        <Property Name="CalendarItemTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CalendarItemTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="CalendarItemStatusType">
+        <Key>
+          <PropertyRef Name="CalendarItemStatusTypeID" />
+        </Key>
+        <Property Name="CalendarItemStatusTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CalendarItemStatusTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="CalendarItemPriorityType">
+        <Key>
+          <PropertyRef Name="CalendarItemPriorityTypeID" />
+        </Key>
+        <Property Name="CalendarItemPriorityTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CalendarItemPriorityTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="Calendar">
+        <Key>
+          <PropertyRef Name="CalendarID" />
+          <PropertyRef Name="UserID" />
+        </Key>
+        <Property Name="CalendarID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="UserID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CalendarTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CalendarTitle" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="EmailFromSetting">
+        <Key>
+          <PropertyRef Name="CustomerID" />
+          <PropertyRef Name="MailFrom" />
+        </Key>
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="MailFrom" Type="Edm.String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.EmailFromSetting_Customer" FromRole="EmailFromSetting_Customer_Source" ToRole="EmailFromSetting_Customer_Target" />
+      </EntityType>
+      <EntityType Name="EmailTemplate">
+        <Key>
+          <PropertyRef Name="CustomerID" />
+          <PropertyRef Name="TemplateID" />
+        </Key>
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="TemplateID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Content" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="PointTransactionType">
+        <Key>
+          <PropertyRef Name="PointTransactionTypeID" />
+        </Key>
+        <Property Name="PointTransactionTypeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="PointTransactionTypeDescription" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="PointTransaction">
+        <Key>
+          <PropertyRef Name="PointTransactionID" />
+        </Key>
+        <Property Name="PointTransactionID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CustomerID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="PointAccountID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Amount" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+        <Property Name="PointTransactionTypeID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="TransactionDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="OrderID" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Reference" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="Customer" Relationship="Exigo.Api.Models.PointTransaction_Customer" FromRole="PointTransaction_Customer_Source" ToRole="PointTransaction_Customer_Target" />
+        <NavigationProperty Name="PointAccount" Relationship="Exigo.Api.Models.PointTransaction_PointAccount" FromRole="PointTransaction_PointAccount_Source" ToRole="PointTransaction_PointAccount_Target" />
+        <NavigationProperty Name="PointTransactionType" Relationship="Exigo.Api.Models.PointTransaction_PointTransactionType" FromRole="PointTransaction_PointTransactionType_Source" ToRole="PointTransaction_PointTransactionType_Target" />
+      </EntityType>
+      <Association Name="Customer_Rank">
+        <End Role="Customer_Rank_Source" Type="Exigo.Api.Models.Customer" Multiplicity="*" />
+        <End Role="Customer_Rank_Target" Type="Exigo.Api.Models.Rank" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Customer_Rank_Target">
+            <PropertyRef Name="RankID" />
+          </Principal>
+          <Dependent Role="Customer_Rank_Source">
+            <PropertyRef Name="RankID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CustomerType_PriceType">
+        <End Role="CustomerType_PriceType_Source" Type="Exigo.Api.Models.CustomerType" Multiplicity="*" />
+        <End Role="CustomerType_PriceType_Target" Type="Exigo.Api.Models.PriceType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CustomerType_PriceType_Target">
+            <PropertyRef Name="PriceTypeID" />
+          </Principal>
+          <Dependent Role="CustomerType_PriceType_Source">
+            <PropertyRef Name="PriceTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Customer_CustomerType">
+        <End Role="Customer_CustomerType_Source" Type="Exigo.Api.Models.Customer" Multiplicity="*" />
+        <End Role="Customer_CustomerType_Target" Type="Exigo.Api.Models.CustomerType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Customer_CustomerType_Target">
+            <PropertyRef Name="CustomerTypeID" />
+          </Principal>
+          <Dependent Role="Customer_CustomerType_Source">
+            <PropertyRef Name="CustomerTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Customer_CustomerStatus">
+        <End Role="Customer_CustomerStatus_Source" Type="Exigo.Api.Models.Customer" Multiplicity="*" />
+        <End Role="Customer_CustomerStatus_Target" Type="Exigo.Api.Models.CustomerStatus" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Customer_CustomerStatus_Target">
+            <PropertyRef Name="CustomerStatusID" />
+          </Principal>
+          <Dependent Role="Customer_CustomerStatus_Source">
+            <PropertyRef Name="CustomerStatusID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Order_Details">
+        <End Role="Order_Details_Source" Type="Exigo.Api.Models.Order" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <End Role="Order_Details_Target" Type="Exigo.Api.Models.OrderDetail" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="Order_Details_Source">
+            <PropertyRef Name="OrderID" />
+          </Principal>
+          <Dependent Role="Order_Details_Target">
+            <PropertyRef Name="OrderID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Payment_PaymentType">
+        <End Role="Payment_PaymentType_Source" Type="Exigo.Api.Models.Payment" Multiplicity="*" />
+        <End Role="Payment_PaymentType_Target" Type="Exigo.Api.Models.PaymentType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Payment_PaymentType_Target">
+            <PropertyRef Name="PaymentTypeID" />
+          </Principal>
+          <Dependent Role="Payment_PaymentType_Source">
+            <PropertyRef Name="PaymentTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Payment_Customer">
+        <End Role="Payment_Customer_Source" Type="Exigo.Api.Models.Payment" Multiplicity="*" />
+        <End Role="Payment_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Payment_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="Payment_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Payment_Order">
+        <End Role="Payment_Order_Source" Type="Exigo.Api.Models.Payment" Multiplicity="*" />
+        <End Role="Payment_Order_Target" Type="Exigo.Api.Models.Order" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Payment_Order_Target">
+            <PropertyRef Name="OrderID" />
+          </Principal>
+          <Dependent Role="Payment_Order_Source">
+            <PropertyRef Name="OrderID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Order_Customer">
+        <End Role="Order_Customer_Source" Type="Exigo.Api.Models.Order" Multiplicity="*" />
+        <End Role="Order_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Order_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="Order_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Order_OrderStatus">
+        <End Role="Order_OrderStatus_Source" Type="Exigo.Api.Models.Order" Multiplicity="*" />
+        <End Role="Order_OrderStatus_Target" Type="Exigo.Api.Models.OrderStatus" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Order_OrderStatus_Target">
+            <PropertyRef Name="OrderStatusID" />
+          </Principal>
+          <Dependent Role="Order_OrderStatus_Source">
+            <PropertyRef Name="OrderStatusID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Order_Warehouse">
+        <End Role="Order_Warehouse_Source" Type="Exigo.Api.Models.Order" Multiplicity="*" />
+        <End Role="Order_Warehouse_Target" Type="Exigo.Api.Models.Warehouse" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Order_Warehouse_Target">
+            <PropertyRef Name="WarehouseID" />
+          </Principal>
+          <Dependent Role="Order_Warehouse_Source">
+            <PropertyRef Name="WarehouseID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Order_ShipMethod">
+        <End Role="Order_ShipMethod_Source" Type="Exigo.Api.Models.Order" Multiplicity="*" />
+        <End Role="Order_ShipMethod_Target" Type="Exigo.Api.Models.ShipMethod" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Order_ShipMethod_Target">
+            <PropertyRef Name="ShipMethodID" />
+          </Principal>
+          <Dependent Role="Order_ShipMethod_Source">
+            <PropertyRef Name="ShipMethodID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Order_PriceType">
+        <End Role="Order_PriceType_Source" Type="Exigo.Api.Models.Order" Multiplicity="*" />
+        <End Role="Order_PriceType_Target" Type="Exigo.Api.Models.PriceType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Order_PriceType_Target">
+            <PropertyRef Name="PriceTypeID" />
+          </Principal>
+          <Dependent Role="Order_PriceType_Source">
+            <PropertyRef Name="PriceTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Order_OrderType">
+        <End Role="Order_OrderType_Source" Type="Exigo.Api.Models.Order" Multiplicity="*" />
+        <End Role="Order_OrderType_Target" Type="Exigo.Api.Models.OrderType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Order_OrderType_Target">
+            <PropertyRef Name="OrderTypeID" />
+          </Principal>
+          <Dependent Role="Order_OrderType_Source">
+            <PropertyRef Name="OrderTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="EmailFolder_MailFolderType">
+        <End Role="EmailFolder_MailFolderType_Source" Type="Exigo.Api.Models.EmailFolder" Multiplicity="*" />
+        <End Role="EmailFolder_MailFolderType_Target" Type="Exigo.Api.Models.EmailFolderType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="EmailFolder_MailFolderType_Target">
+            <PropertyRef Name="MailFolderTypeID" />
+          </Principal>
+          <Dependent Role="EmailFolder_MailFolderType_Source">
+            <PropertyRef Name="MailFolderTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Email_MailFolder">
+        <End Role="Email_MailFolder_Source" Type="Exigo.Api.Models.Email" Multiplicity="*" />
+        <End Role="Email_MailFolder_Target" Type="Exigo.Api.Models.EmailFolder" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Email_MailFolder_Target">
+            <PropertyRef Name="MailFolderID" />
+          </Principal>
+          <Dependent Role="Email_MailFolder_Source">
+            <PropertyRef Name="MailFolderID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Email_MailStatusType">
+        <End Role="Email_MailStatusType_Source" Type="Exigo.Api.Models.Email" Multiplicity="*" />
+        <End Role="Email_MailStatusType_Target" Type="Exigo.Api.Models.EmailStatusType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Email_MailStatusType_Target">
+            <PropertyRef Name="MailStatusTypeID" />
+          </Principal>
+          <Dependent Role="Email_MailStatusType_Source">
+            <PropertyRef Name="MailStatusTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Email_Attachments">
+        <End Role="Email_Attachments_Source" Type="Exigo.Api.Models.Email" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <End Role="Email_Attachments_Target" Type="Exigo.Api.Models.EmailAttachment" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="Email_Attachments_Source">
+            <PropertyRef Name="MailID" />
+          </Principal>
+          <Dependent Role="Email_Attachments_Target">
+            <PropertyRef Name="MailID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="AutoOrderDetail_AutoOrder">
+        <End Role="AutoOrderDetail_AutoOrder_Source" Type="Exigo.Api.Models.AutoOrderDetail" Multiplicity="*" />
+        <End Role="AutoOrderDetail_AutoOrder_Target" Type="Exigo.Api.Models.AutoOrder" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="AutoOrderDetail_AutoOrder_Target">
+            <PropertyRef Name="AutoOrderID" />
+          </Principal>
+          <Dependent Role="AutoOrderDetail_AutoOrder_Source">
+            <PropertyRef Name="AutoOrderID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="AutoOrder_Customer">
+        <End Role="AutoOrder_Customer_Source" Type="Exigo.Api.Models.AutoOrder" Multiplicity="*" />
+        <End Role="AutoOrder_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="AutoOrder_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="AutoOrder_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="AutoOrder_AutoOrderStatus">
+        <End Role="AutoOrder_AutoOrderStatus_Source" Type="Exigo.Api.Models.AutoOrder" Multiplicity="*" />
+        <End Role="AutoOrder_AutoOrderStatus_Target" Type="Exigo.Api.Models.AutoOrderStatus" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="AutoOrder_AutoOrderStatus_Target">
+            <PropertyRef Name="AutoOrderStatusID" />
+          </Principal>
+          <Dependent Role="AutoOrder_AutoOrderStatus_Source">
+            <PropertyRef Name="AutoOrderStatusID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="AutoOrder_FrequencyType">
+        <End Role="AutoOrder_FrequencyType_Source" Type="Exigo.Api.Models.AutoOrder" Multiplicity="*" />
+        <End Role="AutoOrder_FrequencyType_Target" Type="Exigo.Api.Models.FrequencyType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="AutoOrder_FrequencyType_Target">
+            <PropertyRef Name="FrequencyTypeID" />
+          </Principal>
+          <Dependent Role="AutoOrder_FrequencyType_Source">
+            <PropertyRef Name="FrequencyTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="AutoOrder_Warehouse">
+        <End Role="AutoOrder_Warehouse_Source" Type="Exigo.Api.Models.AutoOrder" Multiplicity="*" />
+        <End Role="AutoOrder_Warehouse_Target" Type="Exigo.Api.Models.Warehouse" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="AutoOrder_Warehouse_Target">
+            <PropertyRef Name="WarehouseID" />
+          </Principal>
+          <Dependent Role="AutoOrder_Warehouse_Source">
+            <PropertyRef Name="WarehouseID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="AutoOrder_ShipMethod">
+        <End Role="AutoOrder_ShipMethod_Source" Type="Exigo.Api.Models.AutoOrder" Multiplicity="*" />
+        <End Role="AutoOrder_ShipMethod_Target" Type="Exigo.Api.Models.ShipMethod" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="AutoOrder_ShipMethod_Target">
+            <PropertyRef Name="ShipMethodID" />
+          </Principal>
+          <Dependent Role="AutoOrder_ShipMethod_Source">
+            <PropertyRef Name="ShipMethodID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="AutoOrder_AutoOrderPaymentType">
+        <End Role="AutoOrder_AutoOrderPaymentType_Source" Type="Exigo.Api.Models.AutoOrder" Multiplicity="*" />
+        <End Role="AutoOrder_AutoOrderPaymentType_Target" Type="Exigo.Api.Models.AutoOrderPaymentType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="AutoOrder_AutoOrderPaymentType_Target">
+            <PropertyRef Name="AutoOrderPaymentTypeID" />
+          </Principal>
+          <Dependent Role="AutoOrder_AutoOrderPaymentType_Source">
+            <PropertyRef Name="AutoOrderPaymentTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="AutoOrder_AutoOrderProcessType">
+        <End Role="AutoOrder_AutoOrderProcessType_Source" Type="Exigo.Api.Models.AutoOrder" Multiplicity="*" />
+        <End Role="AutoOrder_AutoOrderProcessType_Target" Type="Exigo.Api.Models.AutoOrderProcessType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="AutoOrder_AutoOrderProcessType_Target">
+            <PropertyRef Name="AutoOrderProcessTypeID" />
+          </Principal>
+          <Dependent Role="AutoOrder_AutoOrderProcessType_Source">
+            <PropertyRef Name="AutoOrderProcessTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="ItemPrice_Item">
+        <End Role="ItemPrice_Item_Source" Type="Exigo.Api.Models.ItemPrice" Multiplicity="*" />
+        <End Role="ItemPrice_Item_Target" Type="Exigo.Api.Models.Item" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="ItemPrice_Item_Target">
+            <PropertyRef Name="ItemID" />
+          </Principal>
+          <Dependent Role="ItemPrice_Item_Source">
+            <PropertyRef Name="ItemID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="ItemWarehousePrice_Item">
+        <End Role="ItemWarehousePrice_Item_Source" Type="Exigo.Api.Models.ItemWarehousePrice" Multiplicity="*" />
+        <End Role="ItemWarehousePrice_Item_Target" Type="Exigo.Api.Models.Item" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="ItemWarehousePrice_Item_Target">
+            <PropertyRef Name="ItemID" />
+          </Principal>
+          <Dependent Role="ItemWarehousePrice_Item_Source">
+            <PropertyRef Name="ItemID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="EnrollerNode_Customer">
+        <End Role="EnrollerNode_Customer_Source" Type="Exigo.Api.Models.EnrollerNode" Multiplicity="*" />
+        <End Role="EnrollerNode_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="EnrollerNode_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="EnrollerNode_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="EnrollerNodePeriodVolume_Customer">
+        <End Role="EnrollerNodePeriodVolume_Customer_Source" Type="Exigo.Api.Models.EnrollerNodePeriodVolume" Multiplicity="*" />
+        <End Role="EnrollerNodePeriodVolume_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="EnrollerNodePeriodVolume_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="EnrollerNodePeriodVolume_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="PeriodVolume_Rank">
+        <End Role="PeriodVolume_Rank_Source" Type="Exigo.Api.Models.PeriodVolume" Multiplicity="*" />
+        <End Role="PeriodVolume_Rank_Target" Type="Exigo.Api.Models.Rank" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="PeriodVolume_Rank_Target">
+            <PropertyRef Name="RankID" />
+          </Principal>
+          <Dependent Role="PeriodVolume_Rank_Source">
+            <PropertyRef Name="RankID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="PeriodVolume_PaidRank">
+        <End Role="PeriodVolume_PaidRank_Source" Type="Exigo.Api.Models.PeriodVolume" Multiplicity="*" />
+        <End Role="PeriodVolume_PaidRank_Target" Type="Exigo.Api.Models.Rank" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="PeriodVolume_PaidRank_Target">
+            <PropertyRef Name="RankID" />
+          </Principal>
+          <Dependent Role="PeriodVolume_PaidRank_Source">
+            <PropertyRef Name="PaidRankID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Period_PeriodType">
+        <End Role="Period_PeriodType_Source" Type="Exigo.Api.Models.Period" Multiplicity="*" />
+        <End Role="Period_PeriodType_Target" Type="Exigo.Api.Models.PeriodType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Period_PeriodType_Target">
+            <PropertyRef Name="PeriodTypeID" />
+          </Principal>
+          <Dependent Role="Period_PeriodType_Source">
+            <PropertyRef Name="PeriodTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="PeriodVolume_Period">
+        <End Role="PeriodVolume_Period_Source" Type="Exigo.Api.Models.PeriodVolume" Multiplicity="*" />
+        <End Role="PeriodVolume_Period_Target" Type="Exigo.Api.Models.Period" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="PeriodVolume_Period_Target">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+          </Principal>
+          <Dependent Role="PeriodVolume_Period_Source">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="EnrollerNodePeriodVolume_PeriodVolume">
+        <End Role="EnrollerNodePeriodVolume_PeriodVolume_Source" Type="Exigo.Api.Models.EnrollerNodePeriodVolume" Multiplicity="*" />
+        <End Role="EnrollerNodePeriodVolume_PeriodVolume_Target" Type="Exigo.Api.Models.PeriodVolume" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="EnrollerNodePeriodVolume_PeriodVolume_Target">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="EnrollerNodePeriodVolume_PeriodVolume_Source">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="EnrollerNodePeriodVolume_Period">
+        <End Role="EnrollerNodePeriodVolume_Period_Source" Type="Exigo.Api.Models.EnrollerNodePeriodVolume" Multiplicity="*" />
+        <End Role="EnrollerNodePeriodVolume_Period_Target" Type="Exigo.Api.Models.Period" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="EnrollerNodePeriodVolume_Period_Target">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+          </Principal>
+          <Dependent Role="EnrollerNodePeriodVolume_Period_Source">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="UniLevelNode_Customer">
+        <End Role="UniLevelNode_Customer_Source" Type="Exigo.Api.Models.UniLevelNode" Multiplicity="*" />
+        <End Role="UniLevelNode_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="UniLevelNode_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="UniLevelNode_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="UniLevelNodePeriodVolume_Customer">
+        <End Role="UniLevelNodePeriodVolume_Customer_Source" Type="Exigo.Api.Models.UniLevelNodePeriodVolume" Multiplicity="*" />
+        <End Role="UniLevelNodePeriodVolume_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="UniLevelNodePeriodVolume_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="UniLevelNodePeriodVolume_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="UniLevelNodePeriodVolume_PeriodVolume">
+        <End Role="UniLevelNodePeriodVolume_PeriodVolume_Source" Type="Exigo.Api.Models.UniLevelNodePeriodVolume" Multiplicity="*" />
+        <End Role="UniLevelNodePeriodVolume_PeriodVolume_Target" Type="Exigo.Api.Models.PeriodVolume" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="UniLevelNodePeriodVolume_PeriodVolume_Target">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="UniLevelNodePeriodVolume_PeriodVolume_Source">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="UniLevelNodePeriodVolume_Period">
+        <End Role="UniLevelNodePeriodVolume_Period_Source" Type="Exigo.Api.Models.UniLevelNodePeriodVolume" Multiplicity="*" />
+        <End Role="UniLevelNodePeriodVolume_Period_Target" Type="Exigo.Api.Models.Period" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="UniLevelNodePeriodVolume_Period_Target">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+          </Principal>
+          <Dependent Role="UniLevelNodePeriodVolume_Period_Source">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="BinaryNode_Customer">
+        <End Role="BinaryNode_Customer_Source" Type="Exigo.Api.Models.BinaryNode" Multiplicity="*" />
+        <End Role="BinaryNode_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="BinaryNode_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="BinaryNode_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="BinaryNodePeriodVolume_Customer">
+        <End Role="BinaryNodePeriodVolume_Customer_Source" Type="Exigo.Api.Models.BinaryNodePeriodVolume" Multiplicity="*" />
+        <End Role="BinaryNodePeriodVolume_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="BinaryNodePeriodVolume_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="BinaryNodePeriodVolume_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="BinaryNodePeriodVolume_PeriodVolume">
+        <End Role="BinaryNodePeriodVolume_PeriodVolume_Source" Type="Exigo.Api.Models.BinaryNodePeriodVolume" Multiplicity="*" />
+        <End Role="BinaryNodePeriodVolume_PeriodVolume_Target" Type="Exigo.Api.Models.PeriodVolume" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="BinaryNodePeriodVolume_PeriodVolume_Target">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="BinaryNodePeriodVolume_PeriodVolume_Source">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="BinaryNodePeriodVolume_Period">
+        <End Role="BinaryNodePeriodVolume_Period_Source" Type="Exigo.Api.Models.BinaryNodePeriodVolume" Multiplicity="*" />
+        <End Role="BinaryNodePeriodVolume_Period_Target" Type="Exigo.Api.Models.Period" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="BinaryNodePeriodVolume_Period_Target">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+          </Principal>
+          <Dependent Role="BinaryNodePeriodVolume_Period_Source">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CustomerSubscription_Subscription">
+        <End Role="CustomerSubscription_Subscription_Source" Type="Exigo.Api.Models.CustomerSubscription" Multiplicity="*" />
+        <End Role="CustomerSubscription_Subscription_Target" Type="Exigo.Api.Models.Subscription" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CustomerSubscription_Subscription_Target">
+            <PropertyRef Name="SubscriptionID" />
+          </Principal>
+          <Dependent Role="CustomerSubscription_Subscription_Source">
+            <PropertyRef Name="SubscriptionID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CustomerSubscription_Customer">
+        <End Role="CustomerSubscription_Customer_Source" Type="Exigo.Api.Models.CustomerSubscription" Multiplicity="*" />
+        <End Role="CustomerSubscription_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CustomerSubscription_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="CustomerSubscription_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CustomerSubscription_SubscriptionStatus">
+        <End Role="CustomerSubscription_SubscriptionStatus_Source" Type="Exigo.Api.Models.CustomerSubscription" Multiplicity="*" />
+        <End Role="CustomerSubscription_SubscriptionStatus_Target" Type="Exigo.Api.Models.SubscriptionStatus" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CustomerSubscription_SubscriptionStatus_Target">
+            <PropertyRef Name="SubscriptionStatusID" />
+          </Principal>
+          <Dependent Role="CustomerSubscription_SubscriptionStatus_Source">
+            <PropertyRef Name="SubscriptionStatusID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CustomerPointAccount_PointAccount">
+        <End Role="CustomerPointAccount_PointAccount_Source" Type="Exigo.Api.Models.CustomerPointAccount" Multiplicity="*" />
+        <End Role="CustomerPointAccount_PointAccount_Target" Type="Exigo.Api.Models.PointAccount" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CustomerPointAccount_PointAccount_Target">
+            <PropertyRef Name="PointAccountID" />
+          </Principal>
+          <Dependent Role="CustomerPointAccount_PointAccount_Source">
+            <PropertyRef Name="PointAccountID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CustomerPointAccount_Customer">
+        <End Role="CustomerPointAccount_Customer_Source" Type="Exigo.Api.Models.CustomerPointAccount" Multiplicity="*" />
+        <End Role="CustomerPointAccount_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CustomerPointAccount_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="CustomerPointAccount_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CommissionRun_Period">
+        <End Role="CommissionRun_Period_Source" Type="Exigo.Api.Models.CommissionRun" Multiplicity="*" />
+        <End Role="CommissionRun_Period_Target" Type="Exigo.Api.Models.Period" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CommissionRun_Period_Target">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+          </Principal>
+          <Dependent Role="CommissionRun_Period_Source">
+            <PropertyRef Name="PeriodTypeID" />
+            <PropertyRef Name="PeriodID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Commission_CommissionRun">
+        <End Role="Commission_CommissionRun_Source" Type="Exigo.Api.Models.Commission" Multiplicity="*" />
+        <End Role="Commission_CommissionRun_Target" Type="Exigo.Api.Models.CommissionRun" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Commission_CommissionRun_Target">
+            <PropertyRef Name="CommissionRunID" />
+          </Principal>
+          <Dependent Role="Commission_CommissionRun_Source">
+            <PropertyRef Name="CommissionRunID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="Commission_Customer">
+        <End Role="Commission_Customer_Source" Type="Exigo.Api.Models.Commission" Multiplicity="*" />
+        <End Role="Commission_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="Commission_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="Commission_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CommissionBonus_Commission">
+        <End Role="CommissionBonus_Commission_Source" Type="Exigo.Api.Models.CommissionBonus" Multiplicity="*" />
+        <End Role="CommissionBonus_Commission_Target" Type="Exigo.Api.Models.Commission" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CommissionBonus_Commission_Target">
+            <PropertyRef Name="CommissionRunID" />
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="CommissionBonus_Commission_Source">
+            <PropertyRef Name="CommissionRunID" />
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CommissionBonus_CommissionRun">
+        <End Role="CommissionBonus_CommissionRun_Source" Type="Exigo.Api.Models.CommissionBonus" Multiplicity="*" />
+        <End Role="CommissionBonus_CommissionRun_Target" Type="Exigo.Api.Models.CommissionRun" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CommissionBonus_CommissionRun_Target">
+            <PropertyRef Name="CommissionRunID" />
+          </Principal>
+          <Dependent Role="CommissionBonus_CommissionRun_Source">
+            <PropertyRef Name="CommissionRunID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CommissionDetail_FromCustomer">
+        <End Role="CommissionDetail_FromCustomer_Source" Type="Exigo.Api.Models.CommissionDetail" Multiplicity="*" />
+        <End Role="CommissionDetail_FromCustomer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CommissionDetail_FromCustomer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="CommissionDetail_FromCustomer_Source">
+            <PropertyRef Name="FromCustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CommissionDetail_Commission">
+        <End Role="CommissionDetail_Commission_Source" Type="Exigo.Api.Models.CommissionDetail" Multiplicity="*" />
+        <End Role="CommissionDetail_Commission_Target" Type="Exigo.Api.Models.Commission" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CommissionDetail_Commission_Target">
+            <PropertyRef Name="CommissionRunID" />
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="CommissionDetail_Commission_Source">
+            <PropertyRef Name="CommissionRunID" />
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CommissionDetail_Bonus">
+        <End Role="CommissionDetail_Bonus_Source" Type="Exigo.Api.Models.CommissionDetail" Multiplicity="*" />
+        <End Role="CommissionDetail_Bonus_Target" Type="Exigo.Api.Models.CommissionBonus" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CommissionDetail_Bonus_Target">
+            <PropertyRef Name="CommissionRunID" />
+            <PropertyRef Name="CustomerID" />
+            <PropertyRef Name="BonusID" />
+          </Principal>
+          <Dependent Role="CommissionDetail_Bonus_Source">
+            <PropertyRef Name="CommissionRunID" />
+            <PropertyRef Name="CustomerID" />
+            <PropertyRef Name="BonusID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CommissionDetail_CommissionRun">
+        <End Role="CommissionDetail_CommissionRun_Source" Type="Exigo.Api.Models.CommissionDetail" Multiplicity="*" />
+        <End Role="CommissionDetail_CommissionRun_Target" Type="Exigo.Api.Models.CommissionRun" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CommissionDetail_CommissionRun_Target">
+            <PropertyRef Name="CommissionRunID" />
+          </Principal>
+          <Dependent Role="CommissionDetail_CommissionRun_Source">
+            <PropertyRef Name="CommissionRunID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CustomerExtendedDetail_Customer">
+        <End Role="CustomerExtendedDetail_Customer_Source" Type="Exigo.Api.Models.CustomerExtendedDetail" Multiplicity="*" />
+        <End Role="CustomerExtendedDetail_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CustomerExtendedDetail_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="CustomerExtendedDetail_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="CustomerExtendedDetail_CustomerExtendedGroup">
+        <End Role="CustomerExtendedDetail_CustomerExtendedGroup_Source" Type="Exigo.Api.Models.CustomerExtendedDetail" Multiplicity="*" />
+        <End Role="CustomerExtendedDetail_CustomerExtendedGroup_Target" Type="Exigo.Api.Models.CustomerExtendedGroup" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="CustomerExtendedDetail_CustomerExtendedGroup_Target">
+            <PropertyRef Name="CustomerExtendedGroupID" />
+          </Principal>
+          <Dependent Role="CustomerExtendedDetail_CustomerExtendedGroup_Source">
+            <PropertyRef Name="CustomerExtendedGroupID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="EmailFromSetting_Customer">
+        <End Role="EmailFromSetting_Customer_Source" Type="Exigo.Api.Models.EmailFromSetting" Multiplicity="*" />
+        <End Role="EmailFromSetting_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="EmailFromSetting_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="EmailFromSetting_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="PointTransaction_Customer">
+        <End Role="PointTransaction_Customer_Source" Type="Exigo.Api.Models.PointTransaction" Multiplicity="*" />
+        <End Role="PointTransaction_Customer_Target" Type="Exigo.Api.Models.Customer" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="PointTransaction_Customer_Target">
+            <PropertyRef Name="CustomerID" />
+          </Principal>
+          <Dependent Role="PointTransaction_Customer_Source">
+            <PropertyRef Name="CustomerID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="PointTransaction_PointAccount">
+        <End Role="PointTransaction_PointAccount_Source" Type="Exigo.Api.Models.PointTransaction" Multiplicity="*" />
+        <End Role="PointTransaction_PointAccount_Target" Type="Exigo.Api.Models.PointAccount" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="PointTransaction_PointAccount_Target">
+            <PropertyRef Name="PointAccountID" />
+          </Principal>
+          <Dependent Role="PointTransaction_PointAccount_Source">
+            <PropertyRef Name="PointAccountID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="PointTransaction_PointTransactionType">
+        <End Role="PointTransaction_PointTransactionType_Source" Type="Exigo.Api.Models.PointTransaction" Multiplicity="*" />
+        <End Role="PointTransaction_PointTransactionType_Target" Type="Exigo.Api.Models.PointTransactionType" Multiplicity="1">
+          <OnDelete Action="Cascade" />
+        </End>
+        <ReferentialConstraint>
+          <Principal Role="PointTransaction_PointTransactionType_Target">
+            <PropertyRef Name="PointTransactionTypeID" />
+          </Principal>
+          <Dependent Role="PointTransaction_PointTransactionType_Source">
+            <PropertyRef Name="PointTransactionTypeID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+    </Schema>
+    <Schema Namespace="System.Data.Objects" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityContainer Name="ExigoContext" m:IsDefaultEntityContainer="true">
+        <FunctionImport Name="GetUniLevelBottomCustomerID" EntitySet="NodeSearchResults" ReturnType="Collection(Exigo.Api.Models.NodeSearchResult)" m:HttpMethod="GET">
+          <Parameter Name="topCustomerID" Type="Edm.Int32" Mode="In" />
+          <Parameter Name="side" Type="Edm.Int32" Mode="In" />
+        </FunctionImport>
+        <FunctionImport Name="GetUniLevelUpline" EntitySet="NodeSearchResults" ReturnType="Collection(Exigo.Api.Models.NodeSearchResult)" m:HttpMethod="GET">
+          <Parameter Name="bottomCustomerID" Type="Edm.Int32" Mode="In" />
+          <Parameter Name="topCustomerID" Type="Edm.Int32" Mode="In" />
+        </FunctionImport>
+        <FunctionImport Name="GetBinaryBottomCustomerID" EntitySet="NodeSearchResults" ReturnType="Collection(Exigo.Api.Models.NodeSearchResult)" m:HttpMethod="GET">
+          <Parameter Name="topCustomerID" Type="Edm.Int32" Mode="In" />
+          <Parameter Name="side" Type="Edm.Int32" Mode="In" />
+        </FunctionImport>
+        <FunctionImport Name="GetBinaryUpline" EntitySet="NodeSearchResults" ReturnType="Collection(Exigo.Api.Models.NodeSearchResult)" m:HttpMethod="GET">
+          <Parameter Name="bottomCustomerID" Type="Edm.Int32" Mode="In" />
+          <Parameter Name="topCustomerID" Type="Edm.Int32" Mode="In" />
+        </FunctionImport>
+        <FunctionImport Name="GetPaymentTotals" EntitySet="PaymentTotals" ReturnType="Collection(Exigo.Api.Models.PaymentTotal)" m:HttpMethod="GET">
+          <Parameter Name="startDate" Type="Edm.DateTime" Mode="In" />
+          <Parameter Name="endDate" Type="Edm.DateTime" Mode="In" />
+        </FunctionImport>
+        <FunctionImport Name="AuthenticateLogin" EntitySet="Customers" ReturnType="Collection(Exigo.Api.Models.Customer)" m:HttpMethod="GET">
+          <Parameter Name="loginName" Type="Edm.String" Mode="In" />
+          <Parameter Name="password" Type="Edm.String" Mode="In" />
+        </FunctionImport>
+        <EntitySet Name="Customers" EntityType="Exigo.Api.Models.Customer" />
+        <EntitySet Name="Ranks" EntityType="Exigo.Api.Models.Rank" />
+        <EntitySet Name="CustomerTypes" EntityType="Exigo.Api.Models.CustomerType" />
+        <EntitySet Name="PriceTypes" EntityType="Exigo.Api.Models.PriceType" />
+        <EntitySet Name="CustomerStatuses" EntityType="Exigo.Api.Models.CustomerStatus" />
+        <EntitySet Name="Orders" EntityType="Exigo.Api.Models.Order" />
+        <EntitySet Name="OrderDetails" EntityType="Exigo.Api.Models.OrderDetail" />
+        <EntitySet Name="Payments" EntityType="Exigo.Api.Models.Payment" />
+        <EntitySet Name="PaymentTypes" EntityType="Exigo.Api.Models.PaymentType" />
+        <EntitySet Name="OrderStatuses" EntityType="Exigo.Api.Models.OrderStatus" />
+        <EntitySet Name="Warehouses" EntityType="Exigo.Api.Models.Warehouse" />
+        <EntitySet Name="ShipMethods" EntityType="Exigo.Api.Models.ShipMethod" />
+        <EntitySet Name="OrderTypes" EntityType="Exigo.Api.Models.OrderType" />
+        <EntitySet Name="EmailAttachments" EntityType="Exigo.Api.Models.EmailAttachment" />
+        <EntitySet Name="Emails" EntityType="Exigo.Api.Models.Email" />
+        <EntitySet Name="EmailFolders" EntityType="Exigo.Api.Models.EmailFolder" />
+        <EntitySet Name="EmailFolderTypes" EntityType="Exigo.Api.Models.EmailFolderType" />
+        <EntitySet Name="EmailStatusTypes" EntityType="Exigo.Api.Models.EmailStatusType" />
+        <EntitySet Name="AutoOrders" EntityType="Exigo.Api.Models.AutoOrder" />
+        <EntitySet Name="AutoOrderDetails" EntityType="Exigo.Api.Models.AutoOrderDetail" />
+        <EntitySet Name="AutoOrderStatuses" EntityType="Exigo.Api.Models.AutoOrderStatus" />
+        <EntitySet Name="FrequencyTypes" EntityType="Exigo.Api.Models.FrequencyType" />
+        <EntitySet Name="AutoOrderPaymentTypes" EntityType="Exigo.Api.Models.AutoOrderPaymentType" />
+        <EntitySet Name="AutoOrderProcessTypes" EntityType="Exigo.Api.Models.AutoOrderProcessType" />
+        <EntitySet Name="Items" EntityType="Exigo.Api.Models.Item" />
+        <EntitySet Name="ItemPrices" EntityType="Exigo.Api.Models.ItemPrice" />
+        <EntitySet Name="ItemWarehousePrices" EntityType="Exigo.Api.Models.ItemWarehousePrice" />
+        <EntitySet Name="EnrollerTree" EntityType="Exigo.Api.Models.EnrollerNode" />
+        <EntitySet Name="EnrollerTreePeriodVolumes" EntityType="Exigo.Api.Models.EnrollerNodePeriodVolume" />
+        <EntitySet Name="PeriodVolumes" EntityType="Exigo.Api.Models.PeriodVolume" />
+        <EntitySet Name="Periods" EntityType="Exigo.Api.Models.Period" />
+        <EntitySet Name="PeriodTypes" EntityType="Exigo.Api.Models.PeriodType" />
+        <EntitySet Name="UniLevelTree" EntityType="Exigo.Api.Models.UniLevelNode" />
+        <EntitySet Name="UniLevelTreePeriodVolumes" EntityType="Exigo.Api.Models.UniLevelNodePeriodVolume" />
+        <EntitySet Name="BinaryTree" EntityType="Exigo.Api.Models.BinaryNode" />
+        <EntitySet Name="BinaryTreePeriodVolumes" EntityType="Exigo.Api.Models.BinaryNodePeriodVolume" />
+        <EntitySet Name="ShipCarriers" EntityType="Exigo.Api.Models.ShipCarrier" />
+        <EntitySet Name="CustomerContacts" EntityType="Exigo.Api.Models.CustomerContact" />
+        <EntitySet Name="Subscriptions" EntityType="Exigo.Api.Models.Subscription" />
+        <EntitySet Name="SubscriptionStatuses" EntityType="Exigo.Api.Models.SubscriptionStatus" />
+        <EntitySet Name="CustomerSubscriptions" EntityType="Exigo.Api.Models.CustomerSubscription" />
+        <EntitySet Name="PointAccounts" EntityType="Exigo.Api.Models.PointAccount" />
+        <EntitySet Name="CustomerPointAccounts" EntityType="Exigo.Api.Models.CustomerPointAccount" />
+        <EntitySet Name="CommissionRuns" EntityType="Exigo.Api.Models.CommissionRun" />
+        <EntitySet Name="Commissions" EntityType="Exigo.Api.Models.Commission" />
+        <EntitySet Name="CommissionBonuses" EntityType="Exigo.Api.Models.CommissionBonus" />
+        <EntitySet Name="CommissionDetails" EntityType="Exigo.Api.Models.CommissionDetail" />
+        <EntitySet Name="CustomerExtendedGroups" EntityType="Exigo.Api.Models.CustomerExtendedGroup" />
+        <EntitySet Name="CustomerExtendedDetails" EntityType="Exigo.Api.Models.CustomerExtendedDetail" />
+        <EntitySet Name="PaymentTotals" EntityType="Exigo.Api.Models.PaymentTotal" />
+        <EntitySet Name="NodeSearchResults" EntityType="Exigo.Api.Models.NodeSearchResult" />
+        <EntitySet Name="CustomerWall" EntityType="Exigo.Api.Models.WallItem" />
+        <EntitySet Name="ImageFiles" EntityType="Exigo.Api.Models.ImageFile" />
+        <EntitySet Name="CalendarItems" EntityType="Exigo.Api.Models.CalendarItem" />
+        <EntitySet Name="CalendarTypes" EntityType="Exigo.Api.Models.CalendarType" />
+        <EntitySet Name="CalendarViewTypes" EntityType="Exigo.Api.Models.CalendarViewType" />
+        <EntitySet Name="CalendarItemTypes" EntityType="Exigo.Api.Models.CalendarItemType" />
+        <EntitySet Name="CalendarItemStatusTypes" EntityType="Exigo.Api.Models.CalendarItemStatusType" />
+        <EntitySet Name="CalendarItemPriorityTypes" EntityType="Exigo.Api.Models.CalendarItemPriorityType" />
+        <EntitySet Name="Calendars" EntityType="Exigo.Api.Models.Calendar" />
+        <EntitySet Name="EmailFromSettings" EntityType="Exigo.Api.Models.EmailFromSetting" />
+        <EntitySet Name="EmailTemplates" EntityType="Exigo.Api.Models.EmailTemplate" />
+        <EntitySet Name="PointTransactionTypes" EntityType="Exigo.Api.Models.PointTransactionType" />
+        <EntitySet Name="PointTransactions" EntityType="Exigo.Api.Models.PointTransaction" />
+        <AssociationSet Name="Customer_Rank" Association="Exigo.Api.Models.Customer_Rank">
+          <End Role="Customer_Rank_Source" EntitySet="Customers" />
+          <End Role="Customer_Rank_Target" EntitySet="Ranks" />
+        </AssociationSet>
+        <AssociationSet Name="CustomerType_PriceType" Association="Exigo.Api.Models.CustomerType_PriceType">
+          <End Role="CustomerType_PriceType_Source" EntitySet="CustomerTypes" />
+          <End Role="CustomerType_PriceType_Target" EntitySet="PriceTypes" />
+        </AssociationSet>
+        <AssociationSet Name="Customer_CustomerType" Association="Exigo.Api.Models.Customer_CustomerType">
+          <End Role="Customer_CustomerType_Source" EntitySet="Customers" />
+          <End Role="Customer_CustomerType_Target" EntitySet="CustomerTypes" />
+        </AssociationSet>
+        <AssociationSet Name="Customer_CustomerStatus" Association="Exigo.Api.Models.Customer_CustomerStatus">
+          <End Role="Customer_CustomerStatus_Source" EntitySet="Customers" />
+          <End Role="Customer_CustomerStatus_Target" EntitySet="CustomerStatuses" />
+        </AssociationSet>
+        <AssociationSet Name="Order_Details" Association="Exigo.Api.Models.Order_Details">
+          <End Role="Order_Details_Source" EntitySet="Orders" />
+          <End Role="Order_Details_Target" EntitySet="OrderDetails" />
+        </AssociationSet>
+        <AssociationSet Name="Payment_PaymentType" Association="Exigo.Api.Models.Payment_PaymentType">
+          <End Role="Payment_PaymentType_Source" EntitySet="Payments" />
+          <End Role="Payment_PaymentType_Target" EntitySet="PaymentTypes" />
+        </AssociationSet>
+        <AssociationSet Name="Payment_Customer" Association="Exigo.Api.Models.Payment_Customer">
+          <End Role="Payment_Customer_Source" EntitySet="Payments" />
+          <End Role="Payment_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="Payment_Order" Association="Exigo.Api.Models.Payment_Order">
+          <End Role="Payment_Order_Source" EntitySet="Payments" />
+          <End Role="Payment_Order_Target" EntitySet="Orders" />
+        </AssociationSet>
+        <AssociationSet Name="Order_Customer" Association="Exigo.Api.Models.Order_Customer">
+          <End Role="Order_Customer_Source" EntitySet="Orders" />
+          <End Role="Order_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="Order_OrderStatus" Association="Exigo.Api.Models.Order_OrderStatus">
+          <End Role="Order_OrderStatus_Source" EntitySet="Orders" />
+          <End Role="Order_OrderStatus_Target" EntitySet="OrderStatuses" />
+        </AssociationSet>
+        <AssociationSet Name="Order_Warehouse" Association="Exigo.Api.Models.Order_Warehouse">
+          <End Role="Order_Warehouse_Source" EntitySet="Orders" />
+          <End Role="Order_Warehouse_Target" EntitySet="Warehouses" />
+        </AssociationSet>
+        <AssociationSet Name="Order_ShipMethod" Association="Exigo.Api.Models.Order_ShipMethod">
+          <End Role="Order_ShipMethod_Source" EntitySet="Orders" />
+          <End Role="Order_ShipMethod_Target" EntitySet="ShipMethods" />
+        </AssociationSet>
+        <AssociationSet Name="Order_PriceType" Association="Exigo.Api.Models.Order_PriceType">
+          <End Role="Order_PriceType_Source" EntitySet="Orders" />
+          <End Role="Order_PriceType_Target" EntitySet="PriceTypes" />
+        </AssociationSet>
+        <AssociationSet Name="Order_OrderType" Association="Exigo.Api.Models.Order_OrderType">
+          <End Role="Order_OrderType_Source" EntitySet="Orders" />
+          <End Role="Order_OrderType_Target" EntitySet="OrderTypes" />
+        </AssociationSet>
+        <AssociationSet Name="EmailFolder_MailFolderType" Association="Exigo.Api.Models.EmailFolder_MailFolderType">
+          <End Role="EmailFolder_MailFolderType_Source" EntitySet="EmailFolders" />
+          <End Role="EmailFolder_MailFolderType_Target" EntitySet="EmailFolderTypes" />
+        </AssociationSet>
+        <AssociationSet Name="Email_MailFolder" Association="Exigo.Api.Models.Email_MailFolder">
+          <End Role="Email_MailFolder_Source" EntitySet="Emails" />
+          <End Role="Email_MailFolder_Target" EntitySet="EmailFolders" />
+        </AssociationSet>
+        <AssociationSet Name="Email_MailStatusType" Association="Exigo.Api.Models.Email_MailStatusType">
+          <End Role="Email_MailStatusType_Source" EntitySet="Emails" />
+          <End Role="Email_MailStatusType_Target" EntitySet="EmailStatusTypes" />
+        </AssociationSet>
+        <AssociationSet Name="Email_Attachments" Association="Exigo.Api.Models.Email_Attachments">
+          <End Role="Email_Attachments_Source" EntitySet="Emails" />
+          <End Role="Email_Attachments_Target" EntitySet="EmailAttachments" />
+        </AssociationSet>
+        <AssociationSet Name="AutoOrderDetail_AutoOrder" Association="Exigo.Api.Models.AutoOrderDetail_AutoOrder">
+          <End Role="AutoOrderDetail_AutoOrder_Source" EntitySet="AutoOrderDetails" />
+          <End Role="AutoOrderDetail_AutoOrder_Target" EntitySet="AutoOrders" />
+        </AssociationSet>
+        <AssociationSet Name="AutoOrder_Customer" Association="Exigo.Api.Models.AutoOrder_Customer">
+          <End Role="AutoOrder_Customer_Source" EntitySet="AutoOrders" />
+          <End Role="AutoOrder_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="AutoOrder_AutoOrderStatus" Association="Exigo.Api.Models.AutoOrder_AutoOrderStatus">
+          <End Role="AutoOrder_AutoOrderStatus_Source" EntitySet="AutoOrders" />
+          <End Role="AutoOrder_AutoOrderStatus_Target" EntitySet="AutoOrderStatuses" />
+        </AssociationSet>
+        <AssociationSet Name="AutoOrder_FrequencyType" Association="Exigo.Api.Models.AutoOrder_FrequencyType">
+          <End Role="AutoOrder_FrequencyType_Source" EntitySet="AutoOrders" />
+          <End Role="AutoOrder_FrequencyType_Target" EntitySet="FrequencyTypes" />
+        </AssociationSet>
+        <AssociationSet Name="AutoOrder_Warehouse" Association="Exigo.Api.Models.AutoOrder_Warehouse">
+          <End Role="AutoOrder_Warehouse_Source" EntitySet="AutoOrders" />
+          <End Role="AutoOrder_Warehouse_Target" EntitySet="Warehouses" />
+        </AssociationSet>
+        <AssociationSet Name="AutoOrder_ShipMethod" Association="Exigo.Api.Models.AutoOrder_ShipMethod">
+          <End Role="AutoOrder_ShipMethod_Source" EntitySet="AutoOrders" />
+          <End Role="AutoOrder_ShipMethod_Target" EntitySet="ShipMethods" />
+        </AssociationSet>
+        <AssociationSet Name="AutoOrder_AutoOrderPaymentType" Association="Exigo.Api.Models.AutoOrder_AutoOrderPaymentType">
+          <End Role="AutoOrder_AutoOrderPaymentType_Source" EntitySet="AutoOrders" />
+          <End Role="AutoOrder_AutoOrderPaymentType_Target" EntitySet="AutoOrderPaymentTypes" />
+        </AssociationSet>
+        <AssociationSet Name="AutoOrder_AutoOrderProcessType" Association="Exigo.Api.Models.AutoOrder_AutoOrderProcessType">
+          <End Role="AutoOrder_AutoOrderProcessType_Source" EntitySet="AutoOrders" />
+          <End Role="AutoOrder_AutoOrderProcessType_Target" EntitySet="AutoOrderProcessTypes" />
+        </AssociationSet>
+        <AssociationSet Name="ItemPrice_Item" Association="Exigo.Api.Models.ItemPrice_Item">
+          <End Role="ItemPrice_Item_Source" EntitySet="ItemPrices" />
+          <End Role="ItemPrice_Item_Target" EntitySet="Items" />
+        </AssociationSet>
+        <AssociationSet Name="ItemWarehousePrice_Item" Association="Exigo.Api.Models.ItemWarehousePrice_Item">
+          <End Role="ItemWarehousePrice_Item_Source" EntitySet="ItemWarehousePrices" />
+          <End Role="ItemWarehousePrice_Item_Target" EntitySet="Items" />
+        </AssociationSet>
+        <AssociationSet Name="EnrollerNode_Customer" Association="Exigo.Api.Models.EnrollerNode_Customer">
+          <End Role="EnrollerNode_Customer_Source" EntitySet="EnrollerTree" />
+          <End Role="EnrollerNode_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="EnrollerNodePeriodVolume_Customer" Association="Exigo.Api.Models.EnrollerNodePeriodVolume_Customer">
+          <End Role="EnrollerNodePeriodVolume_Customer_Source" EntitySet="EnrollerTreePeriodVolumes" />
+          <End Role="EnrollerNodePeriodVolume_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="PeriodVolume_Rank" Association="Exigo.Api.Models.PeriodVolume_Rank">
+          <End Role="PeriodVolume_Rank_Source" EntitySet="PeriodVolumes" />
+          <End Role="PeriodVolume_Rank_Target" EntitySet="Ranks" />
+        </AssociationSet>
+        <AssociationSet Name="PeriodVolume_PaidRank" Association="Exigo.Api.Models.PeriodVolume_PaidRank">
+          <End Role="PeriodVolume_PaidRank_Source" EntitySet="PeriodVolumes" />
+          <End Role="PeriodVolume_PaidRank_Target" EntitySet="Ranks" />
+        </AssociationSet>
+        <AssociationSet Name="Period_PeriodType" Association="Exigo.Api.Models.Period_PeriodType">
+          <End Role="Period_PeriodType_Source" EntitySet="Periods" />
+          <End Role="Period_PeriodType_Target" EntitySet="PeriodTypes" />
+        </AssociationSet>
+        <AssociationSet Name="PeriodVolume_Period" Association="Exigo.Api.Models.PeriodVolume_Period">
+          <End Role="PeriodVolume_Period_Source" EntitySet="PeriodVolumes" />
+          <End Role="PeriodVolume_Period_Target" EntitySet="Periods" />
+        </AssociationSet>
+        <AssociationSet Name="EnrollerNodePeriodVolume_PeriodVolume" Association="Exigo.Api.Models.EnrollerNodePeriodVolume_PeriodVolume">
+          <End Role="EnrollerNodePeriodVolume_PeriodVolume_Source" EntitySet="EnrollerTreePeriodVolumes" />
+          <End Role="EnrollerNodePeriodVolume_PeriodVolume_Target" EntitySet="PeriodVolumes" />
+        </AssociationSet>
+        <AssociationSet Name="EnrollerNodePeriodVolume_Period" Association="Exigo.Api.Models.EnrollerNodePeriodVolume_Period">
+          <End Role="EnrollerNodePeriodVolume_Period_Source" EntitySet="EnrollerTreePeriodVolumes" />
+          <End Role="EnrollerNodePeriodVolume_Period_Target" EntitySet="Periods" />
+        </AssociationSet>
+        <AssociationSet Name="UniLevelNode_Customer" Association="Exigo.Api.Models.UniLevelNode_Customer">
+          <End Role="UniLevelNode_Customer_Source" EntitySet="UniLevelTree" />
+          <End Role="UniLevelNode_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="UniLevelNodePeriodVolume_Customer" Association="Exigo.Api.Models.UniLevelNodePeriodVolume_Customer">
+          <End Role="UniLevelNodePeriodVolume_Customer_Source" EntitySet="UniLevelTreePeriodVolumes" />
+          <End Role="UniLevelNodePeriodVolume_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="UniLevelNodePeriodVolume_PeriodVolume" Association="Exigo.Api.Models.UniLevelNodePeriodVolume_PeriodVolume">
+          <End Role="UniLevelNodePeriodVolume_PeriodVolume_Source" EntitySet="UniLevelTreePeriodVolumes" />
+          <End Role="UniLevelNodePeriodVolume_PeriodVolume_Target" EntitySet="PeriodVolumes" />
+        </AssociationSet>
+        <AssociationSet Name="UniLevelNodePeriodVolume_Period" Association="Exigo.Api.Models.UniLevelNodePeriodVolume_Period">
+          <End Role="UniLevelNodePeriodVolume_Period_Source" EntitySet="UniLevelTreePeriodVolumes" />
+          <End Role="UniLevelNodePeriodVolume_Period_Target" EntitySet="Periods" />
+        </AssociationSet>
+        <AssociationSet Name="BinaryNode_Customer" Association="Exigo.Api.Models.BinaryNode_Customer">
+          <End Role="BinaryNode_Customer_Source" EntitySet="BinaryTree" />
+          <End Role="BinaryNode_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="BinaryNodePeriodVolume_Customer" Association="Exigo.Api.Models.BinaryNodePeriodVolume_Customer">
+          <End Role="BinaryNodePeriodVolume_Customer_Source" EntitySet="BinaryTreePeriodVolumes" />
+          <End Role="BinaryNodePeriodVolume_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="BinaryNodePeriodVolume_PeriodVolume" Association="Exigo.Api.Models.BinaryNodePeriodVolume_PeriodVolume">
+          <End Role="BinaryNodePeriodVolume_PeriodVolume_Source" EntitySet="BinaryTreePeriodVolumes" />
+          <End Role="BinaryNodePeriodVolume_PeriodVolume_Target" EntitySet="PeriodVolumes" />
+        </AssociationSet>
+        <AssociationSet Name="BinaryNodePeriodVolume_Period" Association="Exigo.Api.Models.BinaryNodePeriodVolume_Period">
+          <End Role="BinaryNodePeriodVolume_Period_Source" EntitySet="BinaryTreePeriodVolumes" />
+          <End Role="BinaryNodePeriodVolume_Period_Target" EntitySet="Periods" />
+        </AssociationSet>
+        <AssociationSet Name="CustomerSubscription_Subscription" Association="Exigo.Api.Models.CustomerSubscription_Subscription">
+          <End Role="CustomerSubscription_Subscription_Source" EntitySet="CustomerSubscriptions" />
+          <End Role="CustomerSubscription_Subscription_Target" EntitySet="Subscriptions" />
+        </AssociationSet>
+        <AssociationSet Name="CustomerSubscription_Customer" Association="Exigo.Api.Models.CustomerSubscription_Customer">
+          <End Role="CustomerSubscription_Customer_Source" EntitySet="CustomerSubscriptions" />
+          <End Role="CustomerSubscription_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="CustomerSubscription_SubscriptionStatus" Association="Exigo.Api.Models.CustomerSubscription_SubscriptionStatus">
+          <End Role="CustomerSubscription_SubscriptionStatus_Source" EntitySet="CustomerSubscriptions" />
+          <End Role="CustomerSubscription_SubscriptionStatus_Target" EntitySet="SubscriptionStatuses" />
+        </AssociationSet>
+        <AssociationSet Name="CustomerPointAccount_PointAccount" Association="Exigo.Api.Models.CustomerPointAccount_PointAccount">
+          <End Role="CustomerPointAccount_PointAccount_Source" EntitySet="CustomerPointAccounts" />
+          <End Role="CustomerPointAccount_PointAccount_Target" EntitySet="PointAccounts" />
+        </AssociationSet>
+        <AssociationSet Name="CustomerPointAccount_Customer" Association="Exigo.Api.Models.CustomerPointAccount_Customer">
+          <End Role="CustomerPointAccount_Customer_Source" EntitySet="CustomerPointAccounts" />
+          <End Role="CustomerPointAccount_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="CommissionRun_Period" Association="Exigo.Api.Models.CommissionRun_Period">
+          <End Role="CommissionRun_Period_Source" EntitySet="CommissionRuns" />
+          <End Role="CommissionRun_Period_Target" EntitySet="Periods" />
+        </AssociationSet>
+        <AssociationSet Name="Commission_CommissionRun" Association="Exigo.Api.Models.Commission_CommissionRun">
+          <End Role="Commission_CommissionRun_Source" EntitySet="Commissions" />
+          <End Role="Commission_CommissionRun_Target" EntitySet="CommissionRuns" />
+        </AssociationSet>
+        <AssociationSet Name="Commission_Customer" Association="Exigo.Api.Models.Commission_Customer">
+          <End Role="Commission_Customer_Source" EntitySet="Commissions" />
+          <End Role="Commission_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="CommissionBonus_Commission" Association="Exigo.Api.Models.CommissionBonus_Commission">
+          <End Role="CommissionBonus_Commission_Source" EntitySet="CommissionBonuses" />
+          <End Role="CommissionBonus_Commission_Target" EntitySet="Commissions" />
+        </AssociationSet>
+        <AssociationSet Name="CommissionBonus_CommissionRun" Association="Exigo.Api.Models.CommissionBonus_CommissionRun">
+          <End Role="CommissionBonus_CommissionRun_Source" EntitySet="CommissionBonuses" />
+          <End Role="CommissionBonus_CommissionRun_Target" EntitySet="CommissionRuns" />
+        </AssociationSet>
+        <AssociationSet Name="CommissionDetail_FromCustomer" Association="Exigo.Api.Models.CommissionDetail_FromCustomer">
+          <End Role="CommissionDetail_FromCustomer_Source" EntitySet="CommissionDetails" />
+          <End Role="CommissionDetail_FromCustomer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="CommissionDetail_Commission" Association="Exigo.Api.Models.CommissionDetail_Commission">
+          <End Role="CommissionDetail_Commission_Source" EntitySet="CommissionDetails" />
+          <End Role="CommissionDetail_Commission_Target" EntitySet="Commissions" />
+        </AssociationSet>
+        <AssociationSet Name="CommissionDetail_Bonus" Association="Exigo.Api.Models.CommissionDetail_Bonus">
+          <End Role="CommissionDetail_Bonus_Source" EntitySet="CommissionDetails" />
+          <End Role="CommissionDetail_Bonus_Target" EntitySet="CommissionBonuses" />
+        </AssociationSet>
+        <AssociationSet Name="CommissionDetail_CommissionRun" Association="Exigo.Api.Models.CommissionDetail_CommissionRun">
+          <End Role="CommissionDetail_CommissionRun_Source" EntitySet="CommissionDetails" />
+          <End Role="CommissionDetail_CommissionRun_Target" EntitySet="CommissionRuns" />
+        </AssociationSet>
+        <AssociationSet Name="CustomerExtendedDetail_Customer" Association="Exigo.Api.Models.CustomerExtendedDetail_Customer">
+          <End Role="CustomerExtendedDetail_Customer_Source" EntitySet="CustomerExtendedDetails" />
+          <End Role="CustomerExtendedDetail_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="CustomerExtendedDetail_CustomerExtendedGroup" Association="Exigo.Api.Models.CustomerExtendedDetail_CustomerExtendedGroup">
+          <End Role="CustomerExtendedDetail_CustomerExtendedGroup_Source" EntitySet="CustomerExtendedDetails" />
+          <End Role="CustomerExtendedDetail_CustomerExtendedGroup_Target" EntitySet="CustomerExtendedGroups" />
+        </AssociationSet>
+        <AssociationSet Name="EmailFromSetting_Customer" Association="Exigo.Api.Models.EmailFromSetting_Customer">
+          <End Role="EmailFromSetting_Customer_Source" EntitySet="EmailFromSettings" />
+          <End Role="EmailFromSetting_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="PointTransaction_Customer" Association="Exigo.Api.Models.PointTransaction_Customer">
+          <End Role="PointTransaction_Customer_Source" EntitySet="PointTransactions" />
+          <End Role="PointTransaction_Customer_Target" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="PointTransaction_PointAccount" Association="Exigo.Api.Models.PointTransaction_PointAccount">
+          <End Role="PointTransaction_PointAccount_Source" EntitySet="PointTransactions" />
+          <End Role="PointTransaction_PointAccount_Target" EntitySet="PointAccounts" />
+        </AssociationSet>
+        <AssociationSet Name="PointTransaction_PointTransactionType" Association="Exigo.Api.Models.PointTransaction_PointTransactionType">
+          <End Role="PointTransaction_PointTransactionType_Source" EntitySet="PointTransactions" />
+          <End Role="PointTransaction_PointTransactionType_Target" EntitySet="PointTransactionTypes" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

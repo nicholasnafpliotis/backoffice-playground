@@ -1,0 +1,3442 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Pannonia - responsive admin template. Full documentation</title>
+	
+	<meta name="description" content="Pannonia - responsive admin template. Full documentation">
+	<meta name="author" content="Eugene Kopyov">
+	<meta name="copyright" content="Eugene Kopyov">
+    
+	<link href="http://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="css/custom.css" media="screen">
+
+	<script src="js/jquery.1.6.4.js"></script>
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushAS3.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script src="js/shBrushPlain.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=450,easing='easeOutExpo';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#F3F3F3;color:#585858;background-image:url(assets/images/image_15.png);background-repeat:repeat;background-attachment:fixed;}
+		::-moz-selection{background:#111111;color:#F1F1F1;}
+		::selection{background:#111111;color:#F1F1F1;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/logo.png);}
+		a{color:#111111;}
+		table td { padding: 10px; }
+		hr{border-top:1px solid #E5E5E5;border-bottom:1px solid #F9F9F9; margin-bottom: 40px;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#333333;color:#F1F1F1;background-image:url(assets/images/image_17.gif);background-repeat:repeat-y;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #444444;-moz-text-shadow:1px 1px 0px #444444;text-shadow:1px 1px 0px #444444;}
+		#documenter_sidebar ol{border-top:1px solid #222222;}
+		#documenter_sidebar ol a{border-top:1px solid #444444;border-bottom:1px solid #222222;color:#F1F1F1;}
+		#documenter_sidebar ol a:hover{background:#282828;color:#F1F1F1;border-top:1px solid #222;}
+		#documenter_sidebar ol a.current{background:#282828;color:#F1F1F1;border-top:1px solid #222;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		
+		table { background: #fafafa; border-left: 1px solid #d5d5d5; border-right: 1px solid #d5d5d5; border-bottom: 1px solid #d5d5d5; }
+		table th { background: #f5f5f5; font-weight: bold; padding: 10px; white-space: nowrap; } 
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+    
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#filesStructure">Files Structure</a></li>
+			<li><a href="#htmlStructure">HTML structure</a></li>
+			<li><a href="#phpFiles">PHP files</a></li>
+			<li><a href="#cssStructure">CSS structure</a></li>
+			<li><a href="#jsStructure">JS structure</a></li>
+			<li><a href="#plugins">Jquery Plugins</a></li>
+            <li><a href="#bootstrap">Twitter Bootstrap</a></li>
+			<li><a href="#loaders">Jquery plugins loaders</a></li>
+			<li><a href="#psd">PSD files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			<li><a href="#changelog">Changelog</a></li>
+		</ol>
+		<div id="documenter_copyright">Copyright Eugene Kopyov 2013<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.5</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+    
+        <section id="documenter_cover">
+            <h1>Pannonia - responsive admin template for backend panels</h1>
+            <h2>Full documentation</h2>
+            <hr>
+            <ul>
+                <li>Created: 23/03/2013</li>
+                <li>latest Update: 23/03/2013</li>
+                <li>By: Eugene Kopyov</li>
+            </ul>
+            <hr>
+            <p>First of all i want to thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!</p>
+        </section>
+        
+        <section id="features">
+            <h3>Pannonia template main features:</h3><hr class="notop">
+            Pannonia is an extremely easy to customize admin template, based on Twitter Bootstrap framework. Main features are:
+            <ul>	
+                <li><strong>Liquid</strong> 2 columns responsive layout</li>
+                <li><strong>Integrated Flot charts:</strong>
+                	<ul>
+                    	<li>Lines</li>
+                        <li>Bars (vertical and horizontal with tooltips)</li>
+                        <li>Pies</li>
+                        <li>Auto updating chart</li>
+                        <li>Widgets with charts</li>
+                    </ul>
+                </li>
+                <li><strong>Form elements:</strong>
+                	<ul>
+                        <li>Full set of input fields with default stylings.</li>
+                        <li>Appended, prepended elements</li>
+                        <li>Textareas options: characters counter and elastic</li>
+                        <li>Tags input</li>
+                        <li>Full set of HTML5 inputs</li>
+                        <li>Masked inputs</li>
+                        <li>Styled dropdowns: Uniform and Select2 plugins with options</li>
+                        <li>Styled and unstyled checkboxes and radios</li>
+                        <li>Stacked pills, stacked tabs</li>
+                        <li>Radio and checkbox buttons</li>
+                        <li>2 directions form related buttons</li>
+                        <li>WYSIWYG editor (CKEditor)</li>
+                        <li>Dual multiple selects with filter feature</li>
+                        <li>3 forms versions: default (block), inline and horizontal</li>
+                        <li>2 label positions for controls</li>
+                        <li>Fields validation</li>
+                        <li>3 types of wizards: with ajax submit, with standard submit, with different animation</li>
+                        <li>Set of inputs grid</li>
+                    </ul>
+                </li>
+                <li><strong>Components:</strong>
+                	<ul>
+                        <li>Collapsible action tabs with buttons, statistics and integrated google maps</li>
+
+                        <li>jQuery sliders set</li>
+                        <li>jQuery UI datepickers: default with input field, inline liquid, inline fixed, icon trigger, dates range</li>
+                        <li>Color picker with options: HEX format, RGBa format, as a component.</li>
+                        <li>Timepicker with options: with duration feature, 2 time formats</li>
+                        <li>Set of navbar elements:
+                            <ul>
+                                <li>Collapsible wigets: opened and closed by default</li>
+                                <li>Progress bars</li>
+                                <li>Input fields</li>
+                                <li>Buttons</li>
+                                <li>Toolbar tabs</li>
+                                <li>Pager and pagination</li>
+                                <li>Links list with dropdowns</li>
+                                <li>Labels and badges</li>
+                                <li>Glyphicons, FamFam and Font Awesome icons: only icon or icons list with dropdowns</li>
+                                <li>Caret only dropdown</li>
+                                <li>Datepicker input</li>
+                                <li>Checkboxes, radios</li>
+                                <li>Simple icons list</li>
+                                <li>Toolbar</li>
+                                <li>Navbar form elements</li>
+                                <li>Simple loader</li>
+                            </ul>
+                        </li>
+                        <li>Styled Growl like notification for success, warning, error and info messages</li>
+                        <li>Animated gif loaders</li>
+                        <li>Tooltip in 4 positions</li>
+                    </ul>
+                </li>
+                <li><strong>Bootstrap components:</strong>
+                    <ul>
+                        <li>Progress bars with options</li>
+                        <li>Left, right, top, bottom, navbar (left and right aligned), toolbar tabs with optional fade effect</li>
+                        <li>4 sizes pagination: left, center, right aligned</li>
+                        <li>Pager: boxed and unboxed</li>
+                        <li>6 options for well element: 
+                            <ul>
+                                <li>Well large</li>
+                                <li>Well default</li>
+                                <li>Well small</li>
+                                <li>Well smoke</li>
+                                <li>Well white</li>
+                                <li>Nested wells with subtitles</li>
+                            </ul>
+                        </li>
+                        <li>Breadcrumbs</li>
+                        <li>Scrollspy example</li>
+                        <li>Accordions and toggles</li>
+                        <li>Labels and badges</li>
+                        <li>Alerts in 4 colors: line notifications, block notifications, general top notifications</li>
+                        <li>Popovers in 4 directions</li>
+                        <li>Modals:
+                            <ul>
+                                <li>Alert, confirm and prompt dialogs</li>
+                                <li>Multiple dialogs</li>
+                                <li>Programmatic close</li>
+                                <li>Generic modal</li>
+                                <li>Dynamic content</li>
+                                <li>With iconified buttons</li>
+                                <li>Override alert and confirm icons</li>
+                                <li>Callbacks</li>
+                                <li>Prompt with default value</li>
+                            </ul>
+                        </li>
+                        <li>Buttons and icons:
+                            <ul>
+                                <li>8 default button colors</li>
+                                <li>5 button sizes: block with 100% width, large, default medium, small, mini</li>
+                                <li>Vertical and horizontal button groups</li>
+                                <li>Button dropdowns: top and bottom directions, splitted and standard</li>
+                                <li>With icons: Font Awesome, FamFam and Glyphicons</li>
+                                <li>Font Awesome, FamFam and Glyphicon icons</li>
+                            </ul>
+                        </li>
+                        <li>Basic and advanced thumbnails</li>
+                    </ul>
+                </li>
+                <li>12 columns responsive content grid with offset</li>
+                <li><strong>Charts:</strong>
+                    <ul>
+                        <li>Default line chart</li>
+                        <li>Vertical and horizontal bars</li>
+                        <li>Pie chart</li>
+                        <li>Auto updating chart</li>
+                        <li>Sidebar line chart and horizontal/vertical bars</li>
+                        <li>Custom widgets with charts</li>
+                    </ul>
+                </li>
+                <li>Calendar with schedule</li>
+                <li><strong>Tables:</strong>
+                    <ul>
+                        <li>Default without side borders</li>
+                        <li>Striped table</li>
+                        <li>Bordered table</li>
+                        <li>Bordered table inside content</li>
+                        <li>Hover class</li>
+                        <li>Condensed table</li>
+                        <li>Datatable</li>
+                        <li>Table with footer</li>
+                        <li>Table with gradient</li>
+                        <li>Table with checkboxes</li>
+                        <li>Table with toolbar</li>
+                        <li>Tabbed table</li>
+                    </ul>
+                </li>
+                <li><strong>Error pages:</strong>
+                    <ul>
+                        <li>403 error</li>
+                        <li>404 error</li>
+                        <li>405 error</li>
+                        <li>500 error</li>
+                        <li>503 error</li>
+                        <li>Website is offline</li>
+                    </ul>
+                </li>
+                <li><strong>Typography:</strong>
+                    <ul>
+                        <li>Headings and default css stylings</li>
+                        <li>Syntax highlighter</li>
+                        <li>Left and right blockquotes</li>
+                        <li>Emphasys styles</li>
+                        <li>8 default list styles</li>
+                        <li>Horizontal and vertical descriptions</li>
+                    </ul>
+                </li>
+                <li><strong>File manipulations:</strong>
+                    <ul>
+                        <li>File manager</li>
+                        <li>Multiple file uploader with drag and drop functions</li>
+                    </ul>
+                </li>
+                <li>Page with media elements</li>
+            </ul>
+        </section>
+
+        <section id="filesStructure">
+            <h3>Files structure</h3><hr class="notop">
+            <p>There are 5 main folders with files and HTML files. </p>
+            <p><img alt="" src="assets/images/files_structure.png" /></p>
+            <p><strong>CSS folder</strong> contains all css files, including folder "Font" with Font Awesome files</p>
+            <p><img alt="" src="assets/images/css_structure.png" /></p>
+            <p><strong>Img folder</strong> contains all images, sorted by type and place of usage</p>
+            <p><img alt="" src="assets/images/img_structure.png" /></p>
+            <p><strong>JS folder</strong> contains all js files: charts settings, functions files and all js plugins</p>
+            <p><img alt="" src="assets/images/js_structure.png" /></p>
+            <p><strong>PHP folder</strong> contains php files (plugin connector mostly).</p>
+            <p><img alt="" src="assets/images/php_structure.png" /></p>
+            <p><strong>ckeditor folder</strong> contains all CKEditor files. It should be in the root folder.</p>
+            <p><img alt="" src="assets/images/ckeditor_structure.png" /></p>
+        </section>
+
+        <section id="htmlStructure">
+            <h3>HTML Structure</h3><hr class="notop">
+            <p>In general there are 26 main theme .html files:</p>
+            <ul>	
+                <li><strong>no_breadcrumbs.html</strong> - Layout without breadcrumbs line</li>
+                <li><strong>no_sidebar_tabs.html</strong> - Layout without sidebar tabs</li>
+                <li><strong>no_action_tabs.html</strong> - Layout without action tabs</li>
+                <li><strong>actions_on_top.html</strong> - Action tabs on top</li>
+
+                <li><strong>index.html</strong> - Dashboard page</li>
+                <li><strong>typography.html</strong> - Page with typography elements</li>
+                <li><strong>file_manipulation.html</strong> - page with multiple file uploader and file explorer</li>
+                <li><strong>calendar.html</strong> - page with calendar</li>
+                <li><strong>tables.html</strong> - page with tables</li>
+                <li><strong>icons.html</strong> - page with 3 types of icons</li>
+                <li><strong>media.html</strong> - page with media elements (images, videos, media table)</li>
+                <li><strong>components.html</strong> - page with content and bootstrap components</li>
+                <li><strong>content_grid.html</strong> - general content grid</li>
+                <li><strong>forms.html</strong> - general form elements</li>
+                <li><strong>form_wizards.html</strong> - wizards</li>
+                <li><strong>wysiwyg.html</strong> - CKEditor. WYSIWYG editor</li>
+                <li><strong>login.html</strong> - login form page</li>
+                <li><strong>offline.html</strong> - website is offline page</li>
+                <li><strong>403.html</strong> - 403 error page</li>
+                <li><strong>404.html</strong> - 404 error page</li>
+                <li><strong>405.html</strong> - 405 error page</li>
+                <li><strong>500.html</strong> - 500 error page</li>
+                <li><strong>503.html</strong> - 503 error page</li>
+                <li><strong>blank.html</strong> - blank page. Includes only necessary HTML elements</li>
+                <li><strong>charts.html</strong> - page with charts</li>
+                <li><strong>invoice.html</strong> - invoice template</li>
+            </ul>
+            <p>All these html files have certain html blocks in their source code. All the html blocks are clearly commented out and should be easy to spot. The main structure of a typical 2 columns page would be:</p>
+            
+            
+            <pre class="brush: css">
+            
+                <!-- Fixed top -->
+                &lt;div id="top">...&lt;/div>
+                
+            	<!-- Content container -->
+                &lt;div id="container">
+
+                    <!-- Left sidebar -->
+                    &lt;div id="sidebar">...&lt;/div>
+
+                    <!-- Content -->
+                    &lt;div id="content">
+
+                        <!-- Content wrapper -->
+                        &lt;div class="wrapper">...&lt;/div>
+
+                    &lt;/div>
+
+                &lt;/div>
+
+                <!-- Footer -->
+                &lt;div id="footer">...&lt;/div>
+                    
+            </pre>
+
+            
+            <p>Pannonia template has fully responsive layout - it means that it was adapted for different screen resolutions and mobile devices.</p>
+            
+            <p>Pannonia is available in 2 columns layout version only. On small screens sidebar is hidden by default. To Show or Hide sidebar you need to click on the button on the top menu. When sidebar is visible, content part is hidden with hidden horizontal overflow. After resizing to 1025px and more, sidebar becomes visible without hidden overflow.</p>
+            <p>Please note, that all sidebar widgets are visible on any screen size. To hide some of them you'll need to add an additional class and set necessary rule in media queries.</p>
+            
+            <h5>Icons</h5>
+            <p>Pannonia contains 3 types of icons: Font Awesome font, FamFam font and default Bootstrap Glyphicons. Default usage is:</p>
+
+                <pre class="brush: css">
+                	&lt;i class="ico-heart">&lt;/i>                // Glyphicons dark
+                    &lt;i class="ico-heart icon-white">&lt;/i>     // Glyphicons white
+                    &lt;i class="icon-heart">&lt;/i>                // Font awesome dark
+                    &lt;i class="fam-heart">&lt;/i>                // FamFam icons
+                </pre>
+        </section>
+
+        <section id="phpFiles">
+            <h3>PHP files</h3><hr class="notop">
+            <p>There are 6 .php files included to the package:</p>
+            <ul>	
+                <li><strong>connector.php</strong> - php connector for file manager</li>
+                <li><strong>elFinder.class.php</strong> - elfinder core class</li>
+                <li><strong>elFinderConnector.class.php</strong> -default elfinder connector</li>
+                <li><strong>elFinderVolumeDriver.class.php</strong> - base class for elfinder volume</li>
+                <li><strong>elFinderVolumeLocalFileSystem.class.php</strong> - driver for local filesystem</li>
+                <li><strong>upload.php</strong> - multiple uploader connector</li>
+            </ul>
+            <p>In <strong>upload.php</strong> file you can set folder for uploaded files. All PHP files are well commented so just follow those tips to setup theme features for your needs.</p>
+            
+            <h4>Elfinder connector configuration options</h4>
+            <pre class="brush: php">
+            &lt;?php
+            
+            $opts = array(
+              // 'debug' => true,
+              'roots' => array(
+                array(
+                  'driver'        => 'LocalFileSystem',   // driver for accessing file system (REQUIRED)
+                  'path'          => '/home/kopyov/public_html/',         // path to files (REQUIRED)
+                  'URL'           => 'http://kopyov.com/', // URL to files (REQUIRED)
+                  'accessControl' => 'access'             // disable and hide dot starting files (OPTIONAL)
+                )
+              )
+            );
+
+            ?&gt;
+            </pre>
+            <p>Full list of options you can find <a href="https://github.com/Studio-42/elFinder/wiki/Connector-configuration-options">here</a></p>
+            
+            <h4>Options table</h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>root</td>
+                  <td>String</td>
+                  <td>Path to root directory. Required parameter</td>
+                </tr>
+                <tr>
+                  <td>URL</td>
+                  <td>String</td>
+                  <td>URL of root directory. Required parameter</td>
+                </tr>
+                <tr>
+                  <td>rootAlias</td>
+                  <td>String</td>
+                  <td>Alias for root directory</td>
+                </tr>
+                <tr>
+                  <td>disabled</td>
+                  <td>Array</td>
+                  <td>List of disabled commands</td>
+                </tr>
+                <tr>
+                  <td>dotFiles</td>
+                  <td>Boolean</td>
+                  <td>Show dot files. Default: <strong>true</strong></td>
+                </tr>
+                <tr>
+                  <td>dirSize</td>
+                  <td>Boolean</td>
+                  <td>Calculate directory sizes</td>
+                </tr>
+                <tr>
+                  <td>fileMode</td>
+                  <td>Octal</td>
+                  <td>mode for new files</td>
+                </tr>
+                <tr>
+                  <td>dirMode</td>
+                  <td>Octal</td>
+                  <td>mode for new directories</td>
+                </tr>
+                <tr>
+                  <td>mimeDetect</td>
+                  <td>String</td>
+                  <td>MIME-type detection method (possible values: <strong>finfo</strong>, <strong>php</strong>, <strong>linux</strong> (file -ib), <strong>bsd</strong> (file -Ib), <strong>internal</strong> (based on file extensions))</td>
+                </tr>
+                <tr>
+                  <td>uploadAllow</td>
+                  <td>Array</td>
+                  <td>List of mime-types allowed to upload. Can be set exactly <strong>image/jpeg</strong> or to group <strong>application</strong></td>
+                </tr>
+                <tr>
+                  <td>uploadDeny</td>
+                  <td>Array</td>
+                  <td>List of mime-types disallowed to upload</td>
+                </tr>
+                <tr>
+                  <td>uploadOrder</td>
+                  <td>String</td>
+                  <td>Order of upload rules execution. <strong>allow,deny</strong> only what is allowed, except what is disallowed (AND). <strong>deny,allow</strong> what is not disallowed or allowed (OR)</td>
+                </tr>
+                <tr>
+                  <td>imgLib</td>
+                  <td>String</td>
+                  <td>Library for thumbnail creation (possible values: <strong>imagick, mogrify, gd</strong>). If not set will try detect automatically</td>
+                </tr>
+                <tr>
+                  <td>tmbDir</td>
+                  <td>String</td>
+                  <td>Thumbnail direcroty. If not set thumbnails will be disabled</td>
+                </tr>
+                <tr>
+                  <td>tmbCleanProb</td>
+                  <td>Integer</td>
+                  <td>How often to clean thumbnails. Possible values: from <strong>0</strong> to <strong>200</strong>. 0 - never, 200 - on each client init request</td>
+                </tr>
+                <tr>
+                  <td>tmbAtOnce</td>
+                  <td>Integer</td>
+                  <td>How many thumbnails to create per background request. Default: <strong>5</strong></td>
+                </tr>
+                <tr>
+                  <td>tmbSize</td>
+                  <td>Integer</td>
+                  <td>Thumbnail size in pixels</td>
+                </tr>
+                <tr>
+                  <td>fileURL</td>
+                  <td>Boolean</td>
+                  <td>Show real URLs to files in client. Default: <strong>true</strong></td>
+                </tr>
+                <tr>
+                  <td>dateFormat</td>
+                  <td>String</td>
+                  <td>Time format. Default: <strong>j M Y H:i</strong></td>
+                </tr>
+                <tr>
+                  <td>logger</td>
+                  <td>Object</td>
+                  <td>Object-logger</td>
+                </tr>
+                <tr>
+                  <td>defaults</td>
+                  <td>Array</td>
+                  <td>Default access for files/directories. Default: <strong>array( 'read' =&gt; true, 'write' =&gt; true, 'rm' =&gt; true )</strong></td>
+                </tr>
+                <tr>
+                  <td>perms</td>
+                  <td>Array</td>
+                  <td>Permission for files/directories. More information on this page</td>
+                </tr>
+                <tr>
+                  <td>archiveMimes</td>
+                  <td>Array</td>
+                  <td>List of file archives allowed to create. If not set will allow all detected archvies</td>
+                </tr>
+                <tr>
+                  <td>archivers</td>
+                  <td>Array</td>
+                  <td>Information about archivers. If not set will try detect all available</td>
+                </tr>
+                <tr>
+                  <td>debug</td>
+                  <td>Boolean</td>
+                  <td>Send debug information to client</td>
+                </tr>
+              </tbody>
+            </table>
+            
+        </section>
+
+        <section id="cssStructure">
+          <h3>CSS files and structure</h3><hr class="notop">
+            <h4>CSS files structure</h4>
+            <p>In total there are 9 css files:</p>
+            <ul>	
+                <li><strong>main.css</strong> - main css file with general styles</li>
+                <li><strong>elfinder.css</strong> - styles for file manager</li>
+                <li><strong>jquery.custom.css</strong> - Jquery UI custom styles</li>
+                <li><strong>icons.css</strong> - separated file with styles for Glyphicons</li>
+                <li><strong>ie8.css</strong> - IE8 styles</li>
+                <li><strong>ie9.css</strong> - IE9 styles</li>
+                <li><strong>fam-icons.css</strong> - styles for FamFam icons</li>
+                <li><strong>font-awesome.css</strong> - styles for Font Awesome icons</li>
+                <li><strong>plugins.css</strong> - heavy plugins styles, moved to separated file for easy deleting if they're unnecessary</li>
+            </ul>
+            <p><strong>main.css</strong> file imports all alternative stylesheets, so you don't need to include all .css files in each HTML page, simply add/remove necessary line in main.css (first lines):</p>
+            <pre class="brush: css">
+                /*===== Import css files =====*/
+
+                @import "plugins.css";
+                @import "font-awesome.css";
+                @import "fam-icons.css";
+                @import "icons.css";
+                @import "jquery.custom.css";
+                @import "elfinder.css";
+            </pre>
+            <p>and inside HTML page include only one main file:</p>
+            <pre class="brush: css">
+                <link href="css/main.css" rel="stylesheet" type="text/css" />
+            </pre>
+            
+            <h4>Responsive layout</h4>
+            <p>Pannonia includes media queries, it means that general layout changes general look depending on the screen resolution.</p>
+            <p>All media query styles are placed into <strong>main.css</strong> at the bottom</p>
+            
+            <p>All CSS files are well commented, so you can easily find and edit any class in any CSS file. If you don't want to use responsive layout, delete all media queries and don't forget to remove 
+            <pre class="brush: html">
+            	&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            </pre>
+            from HTML files, this line prevents scaling in mobile device browsers.
+            </p>
+            
+            <h4>Note</h4>
+            <p>All tables in the template are responsive, it works this way - all tables should be wrapped by 
+                <pre>&lt;div class="table-overflow">...&lt;/div></pre>
+                and on small screens all tables will have horizontal scrolling inside block and <strong>white-space: nowrap;</strong> applied to table cells.
+            </p>
+        </section>
+        
+        <section id="jsStructure">
+            <h3>JS files and structure</h3><hr class="notop">
+            <h4>JS files structure</h4>
+            <p>In total there are 54 JS files:</p>
+            <ul>	
+                <li><strong>functions.js</strong> - plugins functions</li>
+                <li><strong>functions_blank.js</strong> - blank js file with necessary js files inside for blank page</li>
+                <li><strong>login.js</strong> - file for login page, it doesn't have all .js file included, so i moved necessary functions in 1 separated file</li>
+                <li><strong>bootstrap.min.js</strong> - minified bootstrap plugins</li>
+
+                <li><strong>chart1.js, chart2.js, chart3.js</strong> charts for 3 statistic widgets</li>
+                <li><strong>updating_widget_1.js, updating_widget_2.js, updating_widget_3.js</strong> - Charts settings for 3 widgets with auto updating charts</li>
+                <li><strong>filled1.js, filled2.js, filled3.js</strong> - 3 filled charts with different colors</li>
+                <li><strong>updating.js</strong> - auto updating chart</li>
+                <li><strong>graph.js</strong> - simple chart</li>
+                <li><strong>bar.js</strong> - file with bars chart parameters</li>
+                <li><strong>hBar.js</strong> - horizontal bars chart</li>
+                <li><strong>pie.js</strong> - pie chart</li>
+                <li><strong>pie_full.js</strong> - pie chart, full size</li>
+                <li><strong>donut.js</strong> - donut pie chart</li>
+                
+                <li><strong>jquery.flot.js</strong> - jquery flot library</li>
+                <li><strong>excanvas.min.js</strong> - excanvas plugin for flot charts</li>
+                <li><strong>jquery.flot.orderBars.js</strong> - order bars flot plugin</li>
+                <li><strong>jquery.flot.pie.js</strong> - flot plugin for rendering pie charts</li>
+                <li><strong>jquery.flot.resize.js</strong> - flot plugin for auto redrawing plot on window resize</li>
+                <li><strong>jquery.sparkline.min.js</strong> - small charts plugin</li>
+            
+                <li><strong>jquery.fullcalendar.min.js</strong> - kquery fullcalendar plugin</li>
+                <li><strong>prettify.js</strong> - syntax highlighter</li>
+                <li><strong>jquery.jgrowl.js</strong> - jquery jGrowl plugin</li>
+                <li><strong>jquery.timepicker.min.js</strong> - timepicker plugin</li>
+                <li><strong>jquery.collapsible.min.js</strong> - collapsible plugin for main nav</li>
+                <li><strong>jquery.elfinder.js</strong> - jquery elfinder plugin</li>
+                <li><strong>jquery.mousewheel.js</strong> - mousewheel support</li>
+                <li><strong>jquery.fancybox.js</strong> - lightbox plugin </li>
+                <li><strong>jquery.easytabs.min.js</strong> - easytabs plugin </li>
+                <li><strong>jquery.bootbox.min.js</strong> - extended plugin for Bootstrap modals </li>
+                <li><strong>jquery.colorpicker.js</strong> - colorpicker plugin </li>
+
+                <li><strong>jquery.tagsinput.min.js</strong> - tagsinput plugin</li>
+                <li><strong>jquery.uniform.min.js</strong> - uniform plugin for selects/checkboxes/radios styling</li>
+                <li><strong>jquery.autosize.js</strong> - elastic textarea</li>
+                <li><strong>jquery.select2.min.js</strong> - select2 plugin for dropdowns</li>
+                <li><strong>jquery.inputlimiter.min.js</strong> - input limiter plugin for textareas </li>
+                <li><strong>jquery.inputmask.js</strong> - masked inputs plugin</li>
+                <li><strong>jquery.validation.js</strong> - validation plugin</li>
+                <li><strong>jquery.listbox.js</strong> - dual multiple selects with filtering</li>
+                <li><strong>jquery.validationEngine-en.js</strong> - language file for validation engine</li>
+                <li><strong>jquery.form.js</strong> - jquery form plugin (ajax submit for wizards)</li>
+                <li><strong>jquery.form.wizard.js</strong> - worm wizards plugin</li>
+
+                <li><strong>jquery.dataTables.min.js</strong> - datatables plugin</li>
+                
+                <li><strong>jquery.plupload.queue.js</strong> - settings for multiple uploader</li>
+                <li><strong>plupload.html4.js</strong> - html4 support for multiple file uploader</li>
+                <li><strong>plupload.html4.js</strong> - html5 support for multiple file uploader</li>
+                <li><strong>plupload.js</strong> - multiple files uploader</li>
+
+                <li><strong>globalize.culture.ja-JP.js</strong> - globalize culture - Japan</li>
+                <li><strong>globalize.culture.de-DE.js</strong> - globalize culture - Germany</li>
+                <li><strong>globalize.js</strong> - globalize culture - English (default)</li>
+
+            </ul>
+            
+            <p>And 3 .js files (jQuery library, Jquery UI and Google maps) loads from external resource:</p>
+            <pre class="brush: html">
+			&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">&lt;/script>
+            &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js">&lt;/script>
+            &lt;script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false">&lt;/script>
+            </pre>
+                        
+            <h4>JS files inside HTML pages</h4>
+            <p>In general each HTML page loads 30+ .js files. In your project you can minify all these files into 1 or do whatever you want, but in download package i included all files so you can easily edit/remove/add new files. And depending on the page you can include prettify.js file and mousewheel.js file, they don't have any functions in functions.js file, so i didn't include them to all pages
+<br />Each JS file is in proper folder: all files, which are used for forms are placed in /forms/ folder, the same path is in HTML page:</p>
+            <pre class="brush: html">
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+&lt;script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false"></script>
+
+&lt;script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js">&lt;/script>
+
+&lt;script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/ui/jquery.mousewheel.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/ui/jquery.bootbox.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/ui/jquery.timepicker.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/ui/jquery.fancybox.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/ui/jquery.fullcalendar.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/ui/jquery.elfinder.js">&lt;/script>
+
+&lt;script type="text/javascript" src="js/plugins/uploader/plupload.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/uploader/plupload.html4.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/uploader/plupload.html5.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js">&lt;/script>
+
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.uniform.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.autosize.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.inputmask.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.select2.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.listbox.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.validation.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.form.wizard.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/forms/jquery.form.js">&lt;/script>
+
+&lt;script type="text/javascript" src="js/globalize/globalize.js">&lt;/script>
+&lt;script type="text/javascript" src="js/globalize/globalize.culture.de-DE.js">&lt;/script>
+&lt;script type="text/javascript" src="js/globalize/globalize.culture.ja-JP.js">&lt;/script>
+
+&lt;script type="text/javascript" src="js/plugins/tables/jquery.dataTables.min.js">&lt;/script>
+
+&lt;script type="text/javascript" src="js/files/bootstrap.min.js">&lt;/script>
+
+&lt;script type="text/javascript" src="js/files/functions.js">&lt;/script>
+
+
+            </pre>
+
+            <p>These files need to be included only in charts.html page:
+
+                <pre class="brush: html">
+&lt;script type="text/javascript" src="js/plugins/charts/jquery.flot.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/charts/jquery.flot.orderBars.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/charts/jquery.flot.pie.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/charts/jquery.flot.threshold.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/charts/jquery.flot.fillbetween.js">&lt;/script>
+&lt;script type="text/javascript" src="js/plugins/charts/jquery.flot.resize.js">&lt;/script>
+                </pre>
+
+            </p>
+
+            <p>Javascript files which contain jQuery Flot parameters load only on those pages, which have a graph. There is a well known flot issue with plot drawing, when parameters are loaded, but the chart isn't included in the page:
+            <pre class="brush: html">
+&lt;script type="text/javascript" src="js/charts/chart1.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/chart2.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/chart3.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/updating.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/graph.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/bar.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/hBar.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/pie.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/pie_full.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/donut.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/filled1.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/filled2.js">&lt;/script>
+&lt;script type="text/javascript" src="js/charts/filled3.js">&lt;/script>
+            </pre>
+            </p>
+
+        </section>
+
+        <section id="plugins">
+            <h3>Jquery Plugins</h3>
+
+            <hr class="notop">
+            <p>List of Jquery plugins which were used in Pannonia theme, with details:</p>
+            
+
+            <h4>Dual select boxes</h4>
+            <h5>Overview</h5>
+            <p>This plug-in allows you to "transfer" the &lt;option&gt; elements between the &lt;select&gt;s in two distinct ways:</p>
+            <ul>
+              <li><strong>Move</strong> - In this mode, &lt;option&gt; elements will be removed from the &lt;select&gt; in which they currently reside and moved to the other &lt;select&gt;. This is the default.</li>
+              <li><strong>Copy</strong> - In this mode, items in the first &lt;select&gt; will ALWAYS remain in the first &lt;select&gt;(unless they are hidden by filtering). When they are selected for transfer they will be copied to the second &lt;select&gt; and will be given the class 'copiedOption' in the first &lt;select&gt; (my default styling for this class is yellow background but you may choose whatever styling suits you). If they are then transferred from the second &lt;select&gt;, they disappear from the second&lt;select&gt;, and the 'copiedOption' class is removed from the corresponding &lt;option&gt; in the first &lt;select&gt;.</li>
+            </ul>
+            
+            <h5>Options</h5>
+            <p>The following table has a listing of all the possible option settings, their default values, their valid values, and a brief description of each.</p>
+            <table>
+                <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>Default Value</th>
+                  <th>Values</th>
+                  <th>Description</th>
+                </tr>
+                </thead>
+              <tbody>
+                <tr>
+                  <td>box1View</td>
+                  <td>'box1View'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the first visible &lt;select&gt; element.</td>
+                </tr>
+                <tr>
+                  <td>box1Storage</td>
+                  <td>'box1Storage'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the first hidden &lt;select&gt; element. (See section <a href="http://www.meadmiracle.com/dlb/DLBDocumentation.aspx#structure">Document Structure</a> for an explanation of visible/hidden &lt;select&gt; elements.)</td>
+                </tr>
+                <tr>
+                  <td>box1Filter</td>
+                  <td>'box1Filter'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the textbox used to filter the first&lt;select&gt; element.</td>
+                </tr>
+                <tr>
+                  <td>box1Clear</td>
+                  <td>'box1Clear'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the element used to clear the filter for the first &lt;select&gt; element. This is typically a button, but can technically be any element.</td>
+                </tr>
+                <tr>
+                  <td>box1Counter</td>
+                  <td>'box1Counter'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the element used to display counts of visible/total &lt;option&gt;s in the first &lt;select&gt;element. (used when filtering).</td>
+                </tr>
+                <tr>
+                  <td>box2View</td>
+                  <td>'box2View'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the second visible &lt;select&gt;element.</td>
+                </tr>
+                <tr>
+                  <td>box2Storage</td>
+                  <td>'box2Storage'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the second hidden &lt;select&gt;element.</td>
+                </tr>
+                <tr>
+                  <td>box2Filter</td>
+                  <td>'box2Filter'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the textbox used to filter the second&lt;select&gt; element.</td>
+                </tr>
+                <tr>
+                  <td>box2Clear</td>
+                  <td>'box2Clear'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the element used to clear the filter for the second &lt;select&gt; element. This is typically a button, but can technically be any element.</td>
+                </tr>
+                <tr>
+                  <td>box2Counter</td>
+                  <td>'box2Counter'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the element used to display counts of visible/total &lt;option&gt;s in the second &lt;select&gt;element. (used when filtering).</td>
+                </tr>
+                <tr>
+                  <td>to1</td>
+                  <td>'to1'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the element used to transfer only selected &lt;option&gt;s from the second &lt;select&gt; to the first.</td>
+                </tr>
+                <tr>
+                  <td>to2</td>
+                  <td>'to2'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the element used to transfer only selected &lt;option&gt;s from the first &lt;select&gt; to the second.</td>
+                </tr>
+                <tr>
+                  <td>allTo1</td>
+                  <td>'allTo1'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the element used to transfer ALL&lt;option&gt;s from the second &lt;select&gt; to the first.</td>
+                </tr>
+                <tr>
+                  <td>allTo2</td>
+                  <td>'allTo2'</td>
+                  <td>Any valid HTML id string.</td>
+                  <td>The id attribute of the element used to transfer ALL&lt;option&gt;s from the first &lt;select&gt; to the second.</td>
+                </tr>
+                <tr>
+                  <td>transferMode</td>
+                  <td>'move'</td>
+                  <td>'move','copy'</td>
+                  <td>The type of transfer to perform on moved items. See section <a href="http://www.meadmiracle.com/dlb/DLBDocumentation.aspx#transfer">Transfer Modes</a> for a full description of each.</td>
+                </tr>
+                <tr>
+                  <td>sortBy</td>
+                  <td>'text'</td>
+                  <td>'text','value'</td>
+                  <td>The value to sort &lt;option&gt; elements by. 'text' causes them to sort alphanumerically (ascending) by the visible text of the option. 'value' causes them to sort alphanumerically (ascending) by their 'value' attribute.</td>
+                </tr>
+                <tr>
+                  <td>useFilters</td>
+                  <td>true</td>
+                  <td>true,false</td>
+                  <td>True to enable filtering, false to disable it. If this setting is false, it is recommended that useCounters also be set to false, as the counters will not serve a purpose.</td>
+                </tr>
+                <tr>
+                  <td>useCounters</td>
+                  <td>true</td>
+                  <td>true,false</td>
+                  <td>True to enable counters, false to disable them.</td>
+                </tr>
+                <tr>
+                  <td>useSorting</td>
+                  <td>true</td>
+                  <td>true,false</td>
+                  <td>Sorting enforces a consistent sort order on the&lt;option&gt; elements, regardless of what order they are transferred in. Set this to false if you do not want them to (or do not care if they) maintain a consistent order.</td>
+                </tr>
+                <tr>
+                  <td>selectOnSubmit</td>
+                  <td>true</td>
+                  <td>true,false</td>
+                  <td>In order for options in box 2 to be recieved by POST, they must be selected before the form is submitted. Since this is most often the desired behavior, it is enabled by default. Set this option to false to disable.</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://www.meadmiracle.com/dlb/DLBDocumentation.aspx" target="_blank">http://www.meadmiracle.com/dlb/DLBDocumentation.aspx</a></p>
+
+
+
+            <hr class="notop">
+            
+            <h4>Time picker</h4>
+            <h5>Overview</h5>
+            <p>jquery.timepicker is a lightweight timepicker plugin for jQuery inspired by Google Calendar. It supports both mouse and keyboard navigation, and weighs in at 2.5kb minified and gzipped.
+                <strong>Default markup:</strong>
+                <pre class="brush: html">
+                &lt;span class="ui-timepicker-container">
+                    &lt;input value="5:00pm" class="ui-timepicker-input" type="text">
+                    &lt;ul class="ui-timepicker-list optional-custom-classname" tabindex="-1">
+                        &lt;li>12:00am&lt;/li>
+                        &lt;li>12:30am&lt;/li>
+                        ...
+                        &lt;li>4:30pm&lt;/li>
+                        &lt;li class="ui-timepicker-selected">5:00pm&lt;/li>
+                        &lt;li>5:30pm&lt;/li>
+                        ...
+                        &lt;li>11:30pm&lt;/li>
+                    &lt;/ul>
+                &lt;/span>
+                </pre>
+            </p>
+            
+            <h5>Options</h5>
+            <ul>
+                <li>
+                    <p><strong>className</strong> A class name to apply to the HTML element that contains the timepicker dropdown. <em>default: null</em></p>
+                </li>
+                <li>
+                    <p><strong>minTime</strong> The time that should appear first in the dropdown list. <em>default: 12:00am</em></p>
+                </li>
+                <li>
+                    <p><strong>maxTime</strong> The time that should appear last in the dropdown list. Can be used to limit the range of time options. <em>default: 24 hours after minTime</em></p>
+                </li>
+                <li>
+                    <p><strong>showDuration</strong> Shows the relative time for each item in the dropdown. minTime or durationTime must be set. <em>default: false</em></p>
+                </li>
+                <li>
+                    <p><strong>durationTime</strong> The time against which showDuration will compute relative times. <em>default: minTime</em></p>
+                </li>
+                <li>
+                    <p><strong>step</strong> The amount of time, in minutes, between each item in the dropdown. <em>default: 30</em></p>
+                </li>
+                <li>
+                    <p><strong>timeFormat</strong> How times should be displayed in the list and input element. Uses <a href="http://php.net/manual/en/function.date.php">PHP's date() formatting syntax</a>. <em>default: 'g:ia'</em></p>
+                </li>
+                <li>
+                    <p><strong>scrollDefaultNow</strong> If no time value is selected, set the dropdown scroll position to show the current time. <em>default: false</em></p>
+                </li>
+                <li>
+                    <p><strong>selectOnBlur</strong> Update the input with the currently highlighted time value when the timepicker loses focus. <em>default: false</em></p>
+                </li>
+                <li>
+                    <p><strong>appendTo</strong> Override where the dropdown is appended. Takes either a string to use as a selector, a function that gets passed the clicked input element as argument or a jquery object to use directly <em>default: "body"</em></p>
+                </li>
+                <li>
+                    <p><strong>lang</strong> Language constants used in the timepicker. Can override the defaults by passing an object with one or more of the following properties: decimal, mins, hr, hrs. <em>default:</em> { decimal: '.', mins: 'mins', hr: 'hr', hrs: 'hrs' }</p>
+                </li>
+            </ul>
+            
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://jonthornton.github.com/jquery-timepicker/" target="_blank">http://jonthornton.github.com/jquery-timepicker/</a></p>
+
+
+
+            <hr class="notop">
+            
+            <h4>Form wizard</h4>
+            <h5>Overview</h5>
+            <p>The form wizard plugin is a jQuery plugin which can be used to create wizard like page flows for forms without having to reload the page in between wizard steps. The plugin is unobtrusive and gives the developer great freedom on how they set up the flow of the different steps in their wizards, as the plugin supports creating specific routes in the form; depending on the user input. </p>
+
+			<h5>Features</h5>
+            <ul>
+                <li>Built on top of jQuery UI for flexible theming</li>
+                <li>Divides a single form into different steps to simulate a flow of steps rather than one big form.</li>
+                <li>Supports different routes to be taken in the form, depending on user input.</li>
+                <li>Submits only input fields located on visited steps in the form.</li>
+                <li>Supports multiple "submit"-steps</li>
+                <li>Supports both back and forward navigation.</li>
+                <li>Supports the usage of browser back- and forward-buttons through integration with the jQuery BBQ: Back Button &amp; Query Library plugin</li>
+                <li>Supports client-side validation through integration with the jQuery validation plugin</li>
+                <li>Supports posting the form using AJAX through integration with the jQuery.form plugin</li>
+                <li>Integrated plugins are fully configurable, providing e.g. possibility for localization, extra validation rules and custom callbacks used during the AJAX-request.</li>
+            </ul>
+            
+            <p>For options and parameters please visit <a href="http://thecodemine.org/">official plugin website</a>.</p>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://thecodemine.org/" target="_blank">http://thecodemine.org/</a></p>
+
+
+
+            <hr class="notop">
+
+            <h4>Color Picker for Bootstrap</h4>
+			<h5>About</h5>
+			<p>Add color picker to field or to any other element.
+                <ul>
+                    <li>can be used as a component</li>
+                    <li>alpha picker</li>
+                    <li>multiple formats: hex, rgb, rgba, hsl, hsla</li>
+                </ul>
+            </p>
+
+            <h5>Default markup</h5>
+            <pre class="brush: html">
+                &lt;div class="input-append color" data-color="rgb(255, 146, 180)" data-color-format="rgb">
+                &lt;input type="text" class="span2" value="" >
+                &lt;span class="add-on">&lt;i style="background-color: rgb(255, 146, 180)">&lt;/i>&lt;/span>
+                &lt;/div>
+            </pre>
+            
+            <h5>Events</h5>
+            <table>
+                <thead>
+                <tr>
+                <th>Event</th>
+                <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>show</td>
+                <td>This event fires immediately when the color picker is displayed.</td>
+                </tr>
+                <tr>
+                <td>hide</td>
+                <td>This event is fired immediately when the color picker is hidden.</td>
+                </tr>
+                <tr>
+                <td>changeColor</td>
+                <td>This event is fired when the color is changed.</td>
+                </tr>
+                </tbody>
+            </table>            
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://www.eyecon.ro/bootstrap-colorpicker/" target="_blank">http://www.eyecon.ro/bootstrap-colorpicker/</a></p>
+
+
+
+            <hr class="notop">
+
+            <h4>Datatables</h4>
+			<h5>Introduction</h5>
+			<p>DataTables operates on the principle of progressive enhancement, whereby an enhanced and interactive table will be presented to the end user if their browser has the required capabilities. When you initialise the jQuery.dataTable object, information about the table is read directly from the HTML page. In combination with the default values for the features in DataTables, this makes it very easy to integrate directly into your web-site or web-application. Optionally, you can use the initialisation parameters to load data from locations other than the DOM, such as a server-side processing script or an Ajax obtained JSON file.</p>
+			
+            <h5>Features</h5>
+			<p>By default the majority of features that DataTables provides are enabled, such that a richly interactive table is presented to end users. However, you may wish to disable various features to customise DataTables to your specific application. This is possible using the following initialisation parameters.</p>
+			<table border="0" cellspacing="5" cellpadding="5">
+			  <tbody>
+			    <tr>
+			      <td width="114" valign="top"><strong>bAutoWidth</strong> <br></td>
+			      <td width="1665" valign="top">Enable or disable automatic column width calculation. This can be disabled as an optimisation (it takes some time to calculate the widths) if the tables widths are passed in using aoColumns.</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bDeferRender</strong> <br></td>
+			      <td valign="top">Deferred rendering can provide DataTables with a huge speed boost when you are using an Ajax or JS data source for the table. This option, when set to true, will cause DataTables to defer the creation of the table elements for each row until they are needed for a draw - saving a significant amount of time.</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bFilter</strong> <br></td>
+			      <td valign="top">Enable or disable filtering of data. Filtering in DataTables is "smart" in that it allows the end user to input multiple words (space separated) and will match a row containing those words, even if not in the order that was specified (this allow matching across multiple columns). Note that if you wish to use filtering in DataTables this must remain 'true' - to remove the default filtering input box and retain filtering abilities, please use <a href="http://datatables.net/usage/options#sDom">sDom</a>.</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bInfo</strong> <br></td>
+			      <td valign="top">Enable or disable the table information display. This shows information about the data that is currently visible on the page, including information about filtered data if that action is being performed.</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bJQueryUI</strong> <br></td>
+			      <td valign="top">Enable jQuery UI ThemeRoller support (required as ThemeRoller requires some slightly different and additional mark-up from what DataTables has traditionally used).</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bLengthChange</strong> <br></td>
+			      <td valign="top">Allows the end user to select the size of a formatted page from a select menu (sizes are 10, 25, 50 and 100). Requires pagination (bPaginate).</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bPaginate</strong> <br></td>
+			      <td valign="top">Enable or disable pagination.</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bProcessing</strong> <br></td>
+			      <td valign="top">Enable or disable the display of a 'processing' indicator when the table is being processed (e.g. a sort). This is particularly useful for tables with large amounts of data where it can take a noticeable amount of time to sort the entries.</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bScrollInfinite</strong> <br></td>
+			      <td valign="top">Enable infinite scrolling for DataTables (to be used in combination with sScrollY). Infinite scrolling means that DataTables will continually load data as a user scrolls through a table, which is very useful for large dataset. This cannot be used with pagination, which is automatically disabled.</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bSort</strong> <br></td>
+			      <td valign="top">Enable or disable sorting of columns. Sorting of individual columns can be disabled by the "bSortable" option for each column.</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bSortClasses</strong> <br></td>
+			      <td valign="top">Enable or disable the addition of the classes 'sorting_1', 'sorting_2' and 'sorting_3' to the columns which are currently being sorted on. This is presented as a feature switch as it can increase processing time (while classes are removed and added) so for large data sets you might want to turn this off.</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>bStateSave</strong> <br></td>
+			      <td valign="top">Enable or disable state saving. When enabled a cookie will be used to save table display information such as pagination information, display length, filtering and sorting. As such when the end user reloads the page the display display will match what thy had previously set up.</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>sScrollX</strong> <br></td>
+			      <td valign="top">Enable horizontal scrolling. When a table is too wide to fit into a certain layout, or you have a large number of columns in the table, you can enable x-scrolling to show the table in a viewport, which can be scrolled. This property can by any CSS unit, or a number (in which case it will be treated as a pixel measurement).</td>
+		        </tr>
+			    <tr>
+			      <td valign="top"><strong>sScrollY</strong> <br></td>
+			      <td valign="top">Enable vertical scrolling. Vertical scrolling will constrain the DataTable to the given height, an enable scrolling for any data which overflows the current viewport. This can be used as an alternative to paging to display a lot of data in a small area (although paging and scrolling can both be enabled at the same time). This property can by any CSS unit, or a number (in which case it will be treated as a pixel measurement).</td>
+		        </tr>
+		      </tbody>
+		  </table>
+
+          <h5>Options</h5>
+            <p>Where the DataTables features can be considered rough grain tuning of your DataTables integration, there are many other parameters which will let you obtain the fine grain tuning you might need to make the integration truly seamless. Almost every function that DataTables provides can be fine tuned in some manner using the initialisation options shown below.</p>
+            <table border="0" cellspacing="5" cellpadding="5">
+              <tbody>
+                <tr>
+                  <td width="117" valign="top"><strong>aaData</strong> <br></td>
+                  <td width="1682" valign="top">An array of data to use for the table, passed in at initialisation which will be used in preference to any data which is already in the DOM. This is particularly useful for constructing tables purely in Javascript, for example with a custom Ajax call.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>aaSorting</strong> <br></td>
+                  <td valign="top">If sorting is enabled, then DataTables will perform a first pass sort on initialisation. You can define which column(s) the sort is performed upon, and the sorting direction, with this variable. The aaSorting array should contain an array for each column to be sorted initially containing the column's index and a direction string ('asc' or 'desc').</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>aaSortingFixed</strong></td>
+                  <td valign="top">This parameter is basically identical to the aaSorting parameter, but cannot be overridden by user interaction with the table. What this means is that you could have a column (visible or hidden) which the sorting will always be forced on first - any sorting after that (from the user) will then be performed as required. This can be useful for grouping rows together.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>aLengthMenu</strong> <br></td>
+                  <td valign="top">This parameter allows you to readily specify the entries in the length drop down menu that DataTables shows when pagination is enabled. It can be either a 1D array of options which will be used for both the displayed option and the value, or a 2D array which will use the array in the first position as the value, and the array in the second position as the displayed options (useful for language strings such as 'All').</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>aoSearchCols</strong> <br></td>
+                  <td valign="top">Basically the same as oSearch, this parameter defines the individual column filtering state at initialisation time. The array must be of the same size as the number of columns, and each element be an object with the parameters "sSearch" and "bEscapeRegex" (the latter is optional). 'null' is also accepted and the default will be used.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>asStripClasses</strong> <br></td>
+                  <td valign="top">An array of CSS classes that should be applied to displayed rows. This array may be of any length, and DataTables will apply each class sequentially, looping when required.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>bDestroy</strong> <br></td>
+                  <td valign="top">Replace a DataTable which matches the given selector and replace it with one which has the properties of the new initialisation object passed. If no table matches the selector, then the new DataTable will be constructed as per normal.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>bRetrieve</strong> <br></td>
+                  <td valign="top">Retrieve the DataTables object for the given selector. Note that if the table has already been initialised, this parameter will cause DataTables to simply return the object that has already been set up - it will not take account of any changes you might have made to the initialisation object passed to DataTables (setting this parameter to true is an acknowledgement that you understand this). bDestroy can be used to reinitialise a table if you need.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>bScrollCollapse</strong></td>
+                  <td valign="top">When vertical (y) scrolling is enabled, DataTables will force the height of the table's viewport to the given height at all times (useful for layout). However, this can look odd when filtering data down to a small data set, and the footer is left "floating" further down. This parameter (when enabled) will cause DataTables to collapse the table's viewport down when the result set will fit within the given Y height.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>bSortCellsTop</strong> <br></td>
+                  <td valign="top">Allows control over whether DataTables should use the top (true) unique cell that is found for a single column, or the bottom (false - default). This is useful when using complex headers.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>iCookieDuration</strong> <br></td>
+                  <td valign="top">Duration of the cookie which is used for storing session information. This value is given in seconds.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>iDeferLoading</strong> <br></td>
+                  <td valign="top">When enabled DataTables will not make a request to the server for the first page draw - rather it will use the data already on the page (no sorting etc will be applied to it), thus saving on an XHR at load time. iDeferLoading is used to indicate that deferred loading is required, but it is also used to tell DataTables how many records there are in the full table (allowing the information element and pagination to be displayed correctly).</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>iDisplayLength</strong> <br></td>
+                  <td valign="top">Number of rows to display on a single page when using pagination. If feature enabled (bLengthChange) then the end user will be able to over-ride this to a custom setting using a pop-up menu.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>iDisplayStart</strong> <br></td>
+                  <td valign="top">Define the starting point for data display when using DataTables with pagination. Note that this parameter is the number of records, rather than the page number, so if you have 10 records per page and want to start on the third page, it should be "20".</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>iScrollLoadGap</strong> <br></td>
+                  <td valign="top">The scroll gap is the amount of scrolling that is left to go before DataTables will load the next 'page' of data automatically. You typically want a gap which is big enough that the scrolling will be smooth for the user, while not so large that it will load more data than need.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>oSearch</strong> <br></td>
+                  <td valign="top">This parameter allows you to have define the global filtering state at initialisation time. As an object the "sSearch" parameter must be defined, but the "bRegex" and "bSmart" parameters are optional. When "bRegex" is true, the search string will be treated as a regular expression, when false (default) it will be treated as a straight string. When "bSmart" DataTables will use it's smart filtering methods (to word match at any point in the data), when false this will not be done.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>sAjaxDataProp</strong> <br></td>
+                  <td valign="top">By default DataTables will look for the property 'aaData' when obtaining data from an Ajax source or for server-side processing - this parameter allows that property to be changed. You can use Javascript dotted object notation to get a data source for multiple levels of nesting.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>sAjaxSource</strong> <br></td>
+                  <td valign="top">You can instruct DataTables to load data from an external source using this parameter (use aData if you want to pass data in you already have). Simply provide a url a JSON object can be obtained from. This object must include the parameter 'aaData' which is a 2D array with the source data.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>sCookiePrefix</strong> <br></td>
+                  <td valign="top">This parameter can be used to override the default prefix that DataTables assigns to a cookie when state saving is enabled.</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>sDom</strong></td>
+                  <td valign="top">This initialisation variable allows you to specify exactly where in the DOM you want DataTables to inject the various controls it adds to the page (for example you might want the pagination controls at the top of the table). DIV elements (with or without a custom class) can also be added to aid styling. The follow syntax is used:
+                    <ul>
+                      <li>The following options are allowed:
+                        <ul>
+                          <li>'l' - Length changing</li>
+                          <li>'f' - Filtering input</li>
+                          <li>'t' - The table!</li>
+                          <li>'i' - Information</li>
+                          <li>'p' - Pagination</li>
+                          <li>'r' - pRocessing</li>
+                        </ul>
+                      </li>
+                      <li>The following constants are allowed:
+                        <ul>
+                          <li>'H' - jQueryUI theme "header" classes ('fg-toolbar ui-widget-header ui-corner-tl ui-corner-tr ui-helper-clearfix')</li>
+                          <li>'F' - jQueryUI theme "footer" classes ('fg-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix')</li>
+                        </ul>
+                      </li>
+                      <li>The following syntax is expected:
+                        <ul>
+                          <li>'&lt;' and '&gt;' - div elements</li>
+                          <li>'&lt;"class" and '&gt;' - div with a class</li>
+                          <li>'&lt;"#id" and '&gt;' - div with an ID</li>
+                        </ul>
+                      </li>
+                      <li>Examples:
+                        <ul>
+                          <li>'&lt;"wrapper"flipt&gt;', '&lt;lf&lt;t&gt;ip&gt;'</li>
+                        </ul>
+                      </li>
+                    </ul></td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>sPaginationType</strong> <br></td>
+                  <td valign="top">DataTables features two different built-in pagination interaction methods ('two_button' or 'full_numbers') which present different page controls to the end user. Further methods can be added using the API (see below).</td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>sScrollXInner</strong></td>
+                  <td valign="top">This property can be used to force a DataTable to use more width than it might otherwise do when x-scrolling is enabled. For example if you have a table which requires to be well spaced, this parameter is useful for "over-sizing" the table, and thus forcing scrolling. This property can by any CSS unit, or a number (in which case it will be treated as a pixel measurement).</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://datatables.net/" target="_blank">http://datatables.net/</a></p>
+
+
+
+            <hr class="notop">
+            
+            
+            
+        <h4>Easy tabs</h4>
+          <h5>Overview</h5>
+
+            <ul>
+              <li>Lightweight: <strong>the minified version is only 8KB - vs 20KB for only the jQueryUI core + tabs widget</strong></li>
+              <li>Provides smooth transitions between panels when tab is selected</li>
+              <li>Allows complete customization of appearance, layout, and style via CSS</li>
+              <li>Supports back-button and forward-button in browsers</li>
+              <li>Tabs are bookmarkable and SEO-friendly</li>
+              <li>Loads AJAX content, or anything not already on the page</li>
+              <li>Tabs can automatically cycle at a specified interval</li>
+              <li>Adds NO global JS variables</li>
+              <li>Can have multiple EasyTabs instances on one page</li>
+              <li>Written in jQuery plugin format, chain-able with other jQuery commands</li>
+              <li>Completely valid HTML markup</li>
+              <li>Open-source and dual licensed under the MIT and GPL licenses</li>
+              <li>Does not style your tabs in any way (either through javascript or CSS), making it easier to customize</li>
+          </ul>
+            <p></p>
+            
+          <h5>Configuration</h5>
+            <table>
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Description</th>
+                  <th>Values (default)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>animate</td>
+                  <td>Makes content panels fade out and in when a new tab is clicked.</td>
+                  <td>true, false <br>
+                    (true)</td>
+                </tr>
+                <tr>
+                  <td>animationSpeed</td>
+                  <td>Controls the speed of the fading effect if animate: true.</td>
+                  <td>"slow", "normal", "fast", integer in milliseconds <br>
+                    ("normal")</td>
+                </tr>
+                <tr>
+                  <td>cache<br>
+                    <em>v2.3</em></td>
+                  <td>Caches the content retrieved for ajax tabs after the first request, such that subsequent tab clicks only hide/show the content.</td>
+                  <td>true, false <br>
+                    (true)</td>
+                </tr>
+                <tr>
+                  <td>collapsedByDefault<br>
+                    <em>v2.1</em></td>
+                  <td>Makes tabs collapsed by default (when the page is loaded) if collapsible: true. Note that ifdefaultTab is specified, then collapsedByDefault defaults to false.</td>
+                  <td>true, false <br>
+                    (true)</td>
+                </tr>
+                <tr>
+                  <td>collapsedClass<br>
+                    <em>v2.1</em></td>
+                  <td>Adds specified class to tab when panel is collapsed. Only works for collapsible: true.</td>
+                  <td>any class name string <br>
+                    ("collapsed")</td>
+                </tr>
+                <tr>
+                  <td>collapsible<br>
+                    <em>v2.1</em></td>
+                  <td>Makes panels collapse and un-collapse if active tab is clicked repeatedly.</td>
+                  <td>true, false <br>
+                    (false)</td>
+                </tr>
+                <tr>
+                  <td>containerClass<br>
+                    <em>v2.3.4</em></td>
+                  <td>Adds class(es) to the container on instantiation.</td>
+                  <td>String of desired CSS classes separated by spaces <br>
+                    ("")</td>
+                </tr>
+                <tr>
+                  <td>cycle<br>
+                    <em>v1.1.2</em></td>
+                  <td>Turns on automatic cycling through tabs, with the specified cycling interval in milliseconds.</td>
+                  <td>false, integer in milliseconds <br>
+                    (false)</td>
+                </tr>
+                <tr>
+                  <td>defaultTab</td>
+                  <td>Selects the &lt;li&gt; tab to activate when page first loads.</td>
+                  <td>any single jquery selector <br>
+                    <em>e.g. "li:first-child" or "li#tab-2"</em> <br>
+                    ("li:first-child")</td>
+                </tr>
+                <tr>
+                  <td>panelActiveClass</td>
+                  <td>Adds specified class to the currently-selected content &lt;div&gt;</td>
+                  <td>any class name string <br>
+                    <em>e.g. "active" or "selected"</em> <br>
+                    ("active")</td>
+                </tr>
+                <tr>
+                  <td>panelClass<br>
+                    <em>v2.3.4</em></td>
+                  <td>Adds class(es) to each panel element on instantiation.</td>
+                  <td>String of desired CSS classes separated by spaces <br>
+                    ("")</td>
+                </tr>
+                <tr>
+                  <td>panelContext<br>
+                    <em>v3.1.1</em></td>
+                  <td>Context in which to search for panels matching tabs.</td>
+                  <td>jQuery object <br>
+                    ($container - i.e. tab container on which easytabs was called)</td>
+                </tr>
+                <tr>
+                  <td>tabActiveClass</td>
+                  <td>Adds specified class to the currently-selected tab &lt;li&gt; (and it's descendants).</td>
+                  <td>any class name string <em>e.g. "active"or "selected"</em> <br>
+                    ("active")</td>
+                </tr>
+                <tr>
+                  <td>tabsClass<br>
+                    <em>v2.3.4</em></td>
+                  <td>Adds class(es) to the tab container on instantiation.</td>
+                  <td>String of desired CSS classes separated by spaces <br>
+                    ("")</td>
+                </tr>
+                <tr>
+                  <td>tabClass<br>
+                    <em>v2.3.4</em></td>
+                  <td>Adds class(es) to each tab on instantiation.</td>
+                  <td>String of desired CSS classes separated by spaces <br>
+                    ("")</td>
+                </tr>
+                <tr>
+                  <td>tabs<br>
+                    <em>v1.1.2</em></td>
+                  <td>The container element for your tabs, relative to the container element that easyTabs was applied to.</td>
+                  <td>any jquery selector referencing your collection of tabs <br>
+                    <em>e.g. "ul#tabs &gt; li" or "div#tab-container &gt; span"</em> <br>
+                    ("&gt; ul &gt; li", which selects the top-level
+                    <ul>
+                      within the container element)
+                    </ul></td>
+                </tr>
+                <tr>
+                  <td>transitionIn<br>
+                    <em>v2.2</em></td>
+                  <td>The <a href="http://api.jquery.com/category/effects/">jQuery effect</a> used to show the target panel when a tab is selected.</td>
+                  <td>'fadeIn', 'slideDown' <br>
+                    ('fadeIn')</td>
+                </tr>
+                <tr>
+                  <td>transitionInEasing<br>
+                    <em>v3.1</em></td>
+                  <td>The <a href="http://api.jquery.com/slideToggle/#easing">jQuery easing</a> speed for the transitionIn animation. May also be used with custom easing plugins, such as provided by the <a href="http://gsgd.co.uk/sandbox/jquery/easing/">jquery easing plugin</a></td>
+                  <td>'swing', 'linear' <br>
+                    ('swing')</td>
+                </tr>
+                <tr>
+                  <td>transitionOut<br>
+                    <em>v2.2</em></td>
+                  <td>The <a href="http://api.jquery.com/category/effects/">jQuery effect</a> used to hide the visible panel when a tab is selected.</td>
+                  <td>'fadeOut', 'slideUp' <br>
+                    ('fadeOut')</td>
+                </tr>
+                <tr>
+                  <td>transitionOutEasing<br>
+                    <em>v3.1</em></td>
+                  <td>The <a href="http://api.jquery.com/slideToggle/#easing">jQuery easing</a> speed for the transitionOut animation. May also be used with custom easing plugins, such as provided by the <a href="http://gsgd.co.uk/sandbox/jquery/easing/">jquery easing plugin</a></td>
+                  <td>'swing', 'linear' <br>
+                    ('swing')</td>
+                </tr>
+                <tr>
+                  <td>transitionCollapse<br>
+                    <em>v2.2</em></td>
+                  <td>The <a href="http://api.jquery.com/category/effects/">jQuery effect</a> used to collapse the panel if collapsible: true.</td>
+                  <td>'fadeOut', 'slideUp', 'hide' <br>
+                    (slideUp)</td>
+                </tr>
+                <tr>
+                  <td>transitionCollapseEasing<br>
+                    <em>v3.1</em></td>
+                  <td>The <a href="http://api.jquery.com/slideToggle/#easing">jQuery easing</a> speed for the transitionCollapse animation. May also be used with custom easing plugins, such as provided by the <a href="http://gsgd.co.uk/sandbox/jquery/easing/">jquery easing plugin</a></td>
+                  <td>'swing', 'linear' <br>
+                    ('swing')</td>
+                </tr>
+                <tr>
+                  <td>transitionUncollapse<br>
+                    <em>v2.2</em></td>
+                  <td>The <a href="http://api.jquery.com/category/effects/">jQuery effect</a> used to un-collapse the panel if collapsible: true.</td>
+                  <td>'fadeIn', 'slideDown', 'show' <br>
+                    (slideDown)</td>
+                </tr>
+                <tr>
+                  <td>transitionUncollapseEasing<br>
+                    <em>v3.1</em></td>
+                  <td>The <a href="http://api.jquery.com/slideToggle/#easing">jQuery easing</a> speed for the transitionUncollapse animation. May also be used with custom easing plugins, such as provided by the <a href="http://gsgd.co.uk/sandbox/jquery/easing/">jquery easing plugin</a></td>
+                  <td>'swing', 'linear' <br>
+                    ('swing')</td>
+                </tr>
+                <tr>
+                  <td>updateHash<br>
+                    <em>v1.1.2</em></td>
+                  <td>Tells easyTabs whether or not to update the browser window's URL hash, useful for SEO and bookmarking.</td>
+                  <td>true, false <br>
+                    (true)</td>
+                </tr>
+                <tr>
+                  <td>uiTabs<br>
+                    <em>v2.1</em></td>
+                  <td>Automatically uses class names and defaults of jQuery UI tabs, making it easy to switch from jQuery-UI tabs without needing to change any HTML or CSS styles.</td>
+                  <td>true, false <br>
+                    (false)</td>
+                </tr>
+              </tbody>
+            </table>
+            <p></p>
+
+            
+            <p class="warning"><strong>Note:</strong> Original tutorial you can find here: <a href="http://os.alfajango.com/easytabs/#browser-compatibility" target="_blank">http://os.alfajango.com/easytabs/</a></p>
+
+
+
+            <hr class="notop">
+
+            <h4>Elfinder plugin</h4>
+			<h5>File manager for website</h5>
+			<p><strong>elFinder</strong> is an open-source file manager for web, written in JavaScript using jQuery UI. As you can see its creation is inspired by simplicity and convenience of Finder program used in Mac OS X operating system.</p>
+			<p>The main goal of our file manager - is to make you work with remote files the same convenient, as on your computer.<br>
+			  You can select files the usual way as on your computer and then just drag them to desired folder to move.<br>
+			  If you prefer to use "hot keys" then you will not notice any difference using elFinder.<br>
+			  Furthermore elFinder can create and extract archives, and QuickLook function allows you to preview common types of files like images, flash, text, audio, video and even pdf.<br>
+			  It allows to create and edit any text files and resize images.<br>
+			  Flexible configuration options allows to control: access rights, upload files types, log user evens; so everything that need system administrator.<br>
+			  Connectors in different programming languages gives ability to easy integrate our product in your solutions.</p>
+
+			<h5>Features</h5>
+			<ul>
+			  <li>All general operations with files and folders on a remote server (copy, move, upload, create folder/file, rename, etc.)</li>
+			  <li>Two types of view: list and icons</li>
+			  <li>High performance of server and client parts</li>
+			  <li>Multifile upload</li>
+			  <li>Standart methods of file/group selection using mouse or keyboard</li>
+			  <li>Context menu</li>
+			  <li>"Hot keys" for most actions</li>
+			  <li>Move/Copy files with Drag &amp; Drop</li>
+			  <li>Work with archives</li>
+			  <li>Preview for most types of files</li>
+			  <li>Edit text files and resize images</li>
+			  <li>"Places" for your favorites</li>
+			  <li>Calculate directory sizes</li>
+			  <li>Background creation of thumbnails for image files</li>
+			  <li>Easy to integrate with web editors (elRTE, CKEditor, TinyMCE)</li>
+			  <li>Flexible configuration of access rights, upload file types, user interface and other</li>
+			  <li>Extensibility</li>
+			  <li>Simple client-server API based on JSON</li>
+		  </ul>
+
+          <h5>Requirements</h5>
+            <strong>Client:</strong>
+            <ul>
+              <li>Modern browser. elFinder was tested in Firefox 3.5+, Internet Explorer 7 &amp; 8, Safari 4, Opera 10 and Chrome</li>
+            </ul>
+            <strong>Server:</strong>
+            <ul>
+              <li>Connector, at the moment there are connectors for PHP and Python</li>
+              <li>Image preview and thumbnails creation requires:
+                <ul>
+                  <li>PHP: mogrify utility or GD/Imagick module</li>
+                  <li>Python: PIL library</li>
+                </ul>
+              </li>
+            </ul>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://elrte.org/elfinder/" target="_blank">http://elrte.org/elfinder/</a></p>
+            
+
+
+            <hr class="notop">
+
+            <h4>Flot, flot pie, excanvas, order bars ( jquery.flot.js, jquery.flot.pie.js, excanvas.min.js etc. )</h4>
+
+            <h5>Introduction</h5>
+			<p>Flot is a pure Javascript plotting library for <a href="http://jquery.com/" rel="nofollow">jQuery</a>. It produces graphical <strong>plots</strong> of arbitrary datasets on-the-fly client-side.
+			The focus is on <strong>simple</strong> usage (all settings are optional), <strong>attractive</strong> looks and <strong>interactive</strong> features like zooming and mouse tracking.
+			<br>The plugin works with Internet Explorer 6+, Firefox 2.x+, Safari 3.0+, Opera 9.5+ and Konqueror 4.x+ with the HTML canvas tag (the <a href="http://excanvas.sourceforge.net/" rel="nofollow">excanvas</a>Javascript emulation helper is used for IE &lt; 9).</p>
+
+			<h5>Installation</h5>
+            <p>Just include the Javascript file after you've included jQuery. Generally, all browsers that support the HTML5 canvas tag are supported. <br>For support for Internet Explorer &lt; 9, you can use Excanvas - a canvas emulator; this is used in the examples bundled with Flot. You just include the excanvas script like this: 
+            <pre class="brush: css">&lt;!--[if lte IE 8]&gt;&lt;script language="javascript" type="text/javascript" src="excanvas.min.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;</pre>
+            If it's not working on your development IE 6.0, check that it has support for VML which Excanvas is relying on. It appears that some stripped down versions used for test environments on virtual machines lack the VML support.You can also try using Flashcanvas (see <a href="http://code.google.com/p/flashcanvas/">http://code.google.com/p/flashcanvas/</a>), which uses Flash to do the emulation. Although Flash can be a bit slower to load than VML, if you've got a lot of points, the Flash version can be much faster overall. Flot contains some wrapper code for activating Excanvas which Flashcanvas is compatible with.<br>You need at least jQuery 1.2.6, but try at least 1.3.2 for interactive charts because of performance improvements in event handling.</p>
+
+            <h5>Basic usage</h5>
+            <p>Create a placeholder div to put the graph in:
+            <pre class="brush: css">&lt;div id="placeholder"&gt;&lt;/div&gt;</pre>
+            You need to set the width and height of this div, otherwise the plot library doesn't know how to scale the graph. You can do it inline like this:
+            <pre class="brush: css">&lt;div id="placeholder" style="width:600px;height:300px"&gt;&lt;/div&gt;</pre>
+            You can also do it with an external stylesheet. Make sure that the placeholder isn't within something with a display:none CSS property - in that case, Flot has trouble measuring label dimensions which results in garbled looks and might have trouble measuring the placeholder dimensions which is fatal (it'll throw an exception). <br>Then when the div is ready in the DOM, which is usually on document ready, run the plot function:
+            <pre class="brush: css">$.plot($("#placeholder"), data, options);</pre>
+            Here, data is an array of data series and options is an object with settings if you want to customize the plot. Take a look at the examples for some ideas of what to put in or look at the reference in the file "API.txt". Here's a quick example that'll draw a line from (0, 0) to (1, 1):
+            <pre class="brush: css">$.plot($("#placeholder"), [ [[0, 0], [1, 1]] ], { yaxis: { max: 1 } });</pre>
+            The plot function immediately draws the chart and then returns a plot object with a couple of methods.
+            <p>Please visit official website of Flot plugin for more detailed documentation</p>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://code.google.com/p/flot/" target="_blank">http://code.google.com/p/flot/</a></p>
+            
+
+
+            <hr class="notop">
+
+            <h4>jQuery Autosize</h4>
+
+            <h5>About</h5>
+            <p>A plugin to enable automatic height for textarea elements.</p>  
+
+            <h5>Settings</h5>
+            <table>
+                <tbody>
+                  <tr>
+                    <th>Property</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>className</td>
+                    <td>'autosizejs'</td>
+                    <td>The className property is used to specify a class for the mirrored element, in case it's necessary to explicitly set a style on the mirrored element (see the note about line-height below).</td>
+                  </tr>
+                  <tr>
+                    <td>append</td>
+                    <td>''</td>
+                    <td>For appending whitespace to the end of the height calculation (an extra newline improves the apperance when animating). Example $('.textarea').autosize({append: "\n"});</td>
+                  </tr>
+                  <tr>
+                    <td>callback</td>
+                    <td>false</td>
+                    <td>A function to call when the textarea is resized.</td>
+                  </tr>
+                </tbody>
+            </table>
+
+            <h5>Example usage</h5>
+            <pre class="brush: css">
+                // Example:
+                $(document).ready(function(){
+                $('textarea').autosize();  
+                });
+            </pre>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://www.jacklmoore.com/autosize" target="_blank">http://www.jacklmoore.com/autosize</a></p>
+            
+
+
+            <hr class="notop">
+
+            <h4>Inputmask plugin</h4>
+            <h5>Introduction</h5>
+			<p>Input masks can be used to force the user to enter data conform a specific format. Unlike validation, the user can't enter any other key than the ones specified by the mask.
+            </p>
+          
+            <h5>Usage</h5>
+            <strong>Via data attributes</strong>          
+            <p>Add data attributes to register an element with inputmask functionality as shown in the example above.</p>
+
+            <strong>Via Javascript</strong> 
+            <p>Call the input mask via javascript:
+                <pre class="brush: js">
+                    $('.inputmask').inputmask()
+                </pre>
+            </p>
+
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://jasny.github.com/bootstrap/javascript.html#inputmask" target="_blank">http://jasny.github.com/bootstrap/javascript.html#inputmask</a></p>
+            
+
+
+
+            <hr class="notop">
+            
+            <h4>Fancybox lightbox</h4>
+			<h5>Overview</h5>
+            <p>FancyBox is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page. </p>
+            
+            <h5>Features</h5>
+            <ul>
+                <li>Can display images, HTML elements, SWF movies, Iframes and also Ajax requests</li>
+                <li>Customizable through settings and CSS</li>
+                <li>Groups related items and adds navigation.</li>
+                <li>If the mouse wheel plugin is included in the page then FancyBox will respond to mouse wheel events as well</li>
+                <li>Support fancy transitions by using easing plugin</li>
+                <li>Adds a nice drop shadow under the zoomed item</li>
+            </ul>
+			
+            <h5>Default usage</h5>
+            <pre class="brush: css"> 
+              $(document).ready(function() {
+
+                    /* This is basic - uses default settings */
+                    
+                    $("a#single_image").fancybox();
+                    
+                    /* Using custom settings */
+                    
+                    $("a#inline").fancybox({
+                        'hideOnContentClick': true
+                    });
+                
+                    /* Apply fancybox to multiple items */
+                    
+                    $("a.group").fancybox({
+                        'transitionIn'	:	'elastic',
+                        'transitionOut'	:	'elastic',
+                        'speedIn'		:	600, 
+                        'speedOut'		:	200, 
+                        'overlayShow'	:	false
+                    });
+                    
+                });
+                </pre>
+            
+            <h5>Options</h5>
+            
+            <table>
+              <thead>
+                <tr>
+                  <th width="120" height="30">Key</th>
+                  <th width="80">Default value</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>padding</td>
+                  <td>10</td>
+                  <td>Space between FancyBox wrapper and content</td>
+                </tr>
+                <tr>
+                  <td>margin</td>
+                  <td>20</td>
+                  <td>Space between viewport and FancyBox wrapper</td>
+                </tr>
+                <tr>
+                  <td>opacity</td>
+                  <td>false</td>
+                  <td>When true, transparency of content is changed for elastic transitions</td>
+                </tr>
+                <tr>
+                  <td>modal</td>
+                  <td>false</td>
+                  <td>When true, 'overlayShow' is set to 'true' and 'hideOnOverlayClick', 'hideOnContentClick', 'enableEscapeButton', 'showCloseButton' are set to 'false'</td>
+                </tr>
+                <tr>
+                  <td>cyclic</td>
+                  <td>false</td>
+                  <td>When true, galleries will be cyclic, allowing you to keep pressing next/back.</td>
+                </tr>
+                <tr>
+                  <td>scrolling</td>
+                  <td>'auto'</td>
+                  <td>Set the overflow CSS property to create or hide scrollbars. Can be set to 'auto', 'yes', or 'no'</td>
+                </tr>
+                <tr>
+                  <td>width</td>
+                  <td>560</td>
+                  <td>Width for content types 'iframe' and 'swf'. Also set for inline content if 'autoDimensions' is set to 'false'</td>
+                </tr>
+                <tr>
+                  <td>height</td>
+                  <td>340</td>
+                  <td>Height for content types 'iframe' and 'swf'. Also set for inline content if 'autoDimensions' is set to 'false'</td>
+                </tr>
+                <tr>
+                  <td>autoScale</td>
+                  <td>true</td>
+                  <td>If true, FancyBox is scaled to fit in viewport</td>
+                </tr>
+                <tr>
+                  <td>autoDimensions</td>
+                  <td>true</td>
+                  <td>For inline and ajax views, resizes the view to the element recieves. Make sure it has dimensions otherwise this will give unexpected results</td>
+                </tr>
+                <tr>
+                  <td>centerOnScroll</td>
+                  <td>false</td>
+                  <td>When true, FancyBox is centered while scrolling page</td>
+                </tr>
+                <tr>
+                  <td>ajax</td>
+                  <td>{ }</td>
+                  <td>Ajax options <br>
+                    Note: 'error' and 'success' will be overwritten by FancyBox</td>
+                </tr>
+                <tr>
+                  <td>swf</td>
+                  <td>{wmode: 'transparent'}</td>
+                  <td>Params to put on the swf object</td>
+                </tr>
+                <tr>
+                  <td>hideOnOverlayClick</td>
+                  <td>true</td>
+                  <td>Toggle if clicking the overlay should close FancyBox</td>
+                </tr>
+                <tr>
+                  <td>hideOnContentClick</td>
+                  <td>false</td>
+                  <td>Toggle if clicking the content should close FancyBox</td>
+                </tr>
+                <tr>
+                  <td>overlayShow</td>
+                  <td>true</td>
+                  <td>Toggle overlay</td>
+                </tr>
+                <tr>
+                  <td>overlayOpacity</td>
+                  <td>0.3</td>
+                  <td>Opacity of the overlay (from 0 to 1; default - 0.3)</td>
+                </tr>
+                <tr>
+                  <td>overlayColor</td>
+                  <td>'#666'</td>
+                  <td>Color of the overlay</td>
+                </tr>
+                <tr>
+                  <td>titleShow</td>
+                  <td>true</td>
+                  <td>Toggle title</td>
+                </tr>
+                <tr>
+                  <td>titlePosition</td>
+                  <td>'outside'</td>
+                  <td>The position of title. Can be set to 'outside', 'inside' or 'over'</td>
+                </tr>
+                <tr>
+                  <td>titleFormat</td>
+                  <td>null</td>
+                  <td>Callback to customize title area. You can set any html - custom image counter or even custom navigation</td>
+                </tr>
+                <tr>
+                  <td>transitionIn, transitionOut</td>
+                  <td>'fade'</td>
+                  <td>The transition type. Can be set to 'elastic', 'fade' or 'none'</td>
+                </tr>
+                <tr>
+                  <td>speedIn, speedOut</td>
+                  <td>300</td>
+                  <td>Speed of the fade and elastic transitions, in milliseconds</td>
+                </tr>
+                <tr>
+                  <td>changeSpeed</td>
+                  <td>300</td>
+                  <td>Speed of resizing when changing gallery items, in milliseconds</td>
+                </tr>
+                <tr>
+                  <td>changeFade</td>
+                  <td>'fast'</td>
+                  <td>Speed of the content fading while changing gallery items</td>
+                </tr>
+                <tr>
+                  <td>easingIn, easingOut</td>
+                  <td>'swing'</td>
+                  <td>Easing used for elastic animations</td>
+                </tr>
+                <tr>
+                  <td>showCloseButton</td>
+                  <td>true</td>
+                  <td>Toggle close button</td>
+                </tr>
+                <tr>
+                  <td>showNavArrows</td>
+                  <td>true</td>
+                  <td>Toggle navigation arrows</td>
+                </tr>
+                <tr>
+                  <td>enableEscapeButton</td>
+                  <td>true</td>
+                  <td>Toggle if pressing Esc button closes FancyBox</td>
+                </tr>
+                <tr>
+                  <td>onStart</td>
+                  <td>null</td>
+                  <td>Will be called right before attempting to load the content</td>
+                </tr>
+                <tr>
+                  <td>onCancel</td>
+                  <td>null</td>
+                  <td>Will be called after loading is canceled</td>
+                </tr>
+                <tr>
+                  <td>onComplete</td>
+                  <td>null</td>
+                  <td>Will be called once the content is displayed</td>
+                </tr>
+                <tr>
+                  <td>onCleanup</td>
+                  <td>null</td>
+                  <td>Will be called just before closing</td>
+                </tr>
+                <tr>
+                  <td>onClosed</td>
+                  <td>null</td>
+                  <td>Will be called once FancyBox is closed</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://fancybox.net/home" target="_blank">http://fancybox.net/home</a></p>
+            
+
+
+            <hr class="notop">
+
+            <h4>Custom form elements ( uniform.js )</h4>
+
+			<h5>Usage</h5>
+            <p><strong>Uniform masks your standard form controls with custom themed controls. It works in sync with your real form elements to ensure accessibility and compatibility.</strong></p>
+            
+            <h5>Installation</h5>
+            <p>Installation of Uniform is quite simple. First, make sure you have jQuery 1.3+ installed. Then you'll want to link to the jquery.uniform.js file and uniform.default.css in the head area of your page:</p>
+            <pre class="brush: html">
+            &lt;script src="jquery.uniform.js" type="text/javascript">&lt;/script>
+            &lt;link rel="stylesheet" href="uniform.default.css" type="text/css" media="screen" charset="utf-8" />
+            </pre>
+            
+            <h5>Basic usage</h5>
+            <p>Using Uniform can be quite easy as well. Simply call:</p>
+            <pre class="brush: js">
+            $(function(){ $("select").uniform(); });            
+            </pre>
+            <p>To "uniform" all possible form elements, just do something like this:</p>
+            <pre class="brush: js">
+            $("select, input:checkbox, input:radio, input:file").uniform();            
+            </pre>
+            
+            <h5>Extra parameters</h5>
+            <p>You can pass in extra parameters to control certain aspects of Uniform. To pass in parameters, use syntax like this:</p>
+            <pre class="brush: js">
+            $("select").uniform({
+              param1: value,
+              param2: value,
+              param3: value
+            });           
+            </pre>
+            
+            <h5>Tips and tricks</h5>
+            <p>Uniform is supposed to be pretty simple, but there are a few things that can be tricky. Here are some tips that may make your experience simpler:<br>
+            Remember to change the CSS classes in the theme if you change the parameters for elements' classes. This can be tedious work, but if you don't do it, it's not going to look correct. Find and Replace is your friend.<br>
+            Uniform cannot automatically sniff out dynamic value changes. If you make changes to elements in Javascript or using a Reset button of some kind remember to call $.uniform.update(); to sync the changes with Uniform.<br>
+            Uniform is disabled in IE6. It's not possible to fix due to the way IE6 handles form elements. If you care about IE6 users, give it a quick look to make sure your "naked" form elements look alright in there.<br>
+            You're on your own for styling text inputs and more. Fortunately, things that are not handled by Uniform are pretty easy to skin. :)<br>
+            </p>
+            <p class="warning"><strong>Note:</strong> Original advanced documentation for this plugin you can find on official plugin's website: <a href="http://uniformjs.com/#docs" target="_blank">http://uniformjs.com/#docs</a></p>            
+
+
+
+            <hr class="notop">
+
+            <h4>Multiple file uploader</h4>
+			<h5>Configuration</h5>
+		    <p>Each plupload instance has a set of config options. Here is a short description about each available option.</p>
+          
+            <h5>General options</h5>
+            <p>Here is a list of options that are available in the core API. Some of them are runtime specific. Checkout the <a href="http://www.plupload.com/example_custom.php">custom example</a>to see these option used live.</p>
+            
+            <h6>runtimes</h6>
+            <p>This is a comma separated list of runtimes that you want to initialize the uploader instance with. It will try to initialize each runtime in order if one fails it will move on to the next one.</p>
+            
+            <h6>url</h6>
+            <p>Page URL to where the files will be uploaded to.
+            
+            <h6>max_file_size</h6>
+            <p>Maximum file size that the user can pick. This string can be in the following formats 100b, 10kb, 10mb.</p>
+            
+            <h6>chunk_size</h6>
+            <p>Enables you to chunk the file into smaller pieces for example if your PHP backend has a max post size of 1MB you can chunk a 10MB file into 10 requests. To <strong>disable</strong> chunking, remove this config option from your setup.</p>
+            
+            <h6>unique_names</h6>
+            <p>Generate unique filenames when uploading. This will generate unqiue filenames for the files so that they don't for example collide with existing ones on the server.</p>
+            
+            <h6>resize</h6>
+            <p>Enables plupload to resize the images to clientside to the specified width, height and quality. Set this to an object with those parameters.</p>
+            
+            <h6>filters</h6>
+            <p>List of filters to apply when the user selects files. This is currently file extension filters there are two items for each filter. title and extensions.</p>
+            <h6>flash_swf_url</h6>
+            <p>URL to where the SWF file is for the Flash runtime.</p>
+            <h6>silverlight_xap_url</h6>
+            <p>URL to where the XAP file is for the Silverlight runtime.</p>
+            <h6>browse_button</h6>
+            <p>String with the ID of the browse button. Flash, HTML 5 and Silverlight requires a shim so you need to specify the id of the button that the shim will be placed above for those runtimes. This option is not required for by the queue widget.</p>
+            <h6>drop_element</h6>
+            <p>String with the ID of the element that you want to be able to drop files into this is only used by some runtimes that support it.</p>
+           
+            <h6>container</h6>
+            <p>Element ID to add object elements to, this defaults to the document body element.</p>
+            
+            <h6>multipart</h6>
+            <p>Boolean state if the files should be uploaded using mutlipart instead of direct binary streams. Doesn't work on WebKit using the HTML 5 runtime.</p>
+            
+            <h6>multipart_params</h6>
+            <p>Object name/value collection with arguments to get posted together with the multipart file.</p>
+            
+            <h6>required_features</h6>
+            <p>Comma separated list of features that each runtime must have for it to initialize.</p>
+            
+            <h6>headers</h6>
+            <p>Name/value object with custom headers to add to HTTP requests.</p>
+            
+          <h5>Queue widget specific options</h5>
+          <p>Here is a list of options that is specific to the jQuery queue widget.</p>
+            <h6>preinit</h6>
+            <p>Function callback that enables you to bind events before the uploader is initialized.</p>
+            
+            <h6>dragdrop</h6>
+            <p>Boolean state if the drag/drop support for all runtimes should be enabled or disabled. Default is true.</p>
+            
+            <h6>rename</h6>
+            <p>Boolean state if it should be possible to rename files before uploading them. Default is false.</p>
+            
+            <h6>multiple_queues</h6>
+            <p>Boolean state if you should be able to upload multiple times or not.</p>
+           
+            <h6>urlstream_upload</h6>
+            <p>Boolean state if Flash should be forced to use URLStream instead of FileReference.upload.</p>
+
+			<h5>Example of the various config options</h5>
+            <pre class="brush: js">
+            var uploader = new plupload.Uploader({
+                runtimes : 'gears,html5,flash,silverlight,browserplus',
+                browse_button : 'pickfiles',
+                max_file_size : '10mb',
+                resize : {width : 320, height : 240, quality : 90},
+                url : 'upload.php',
+                flash_swf_url : '/plupload/js/plupload.flash.swf',
+                silverlight_xap_url : '/plupload/js/plupload.silverlight.xap',
+                filters : [
+                    {title : "Image files", extensions : "jpg,gif,png"},
+                    {title : "Zip files", extensions : "zip"}
+                ]
+            });
+
+            </pre>
+            
+            <p>In this implemented version i used only HTML5 and HTML4 runtimes. HTML4 works in IE and Opera only and doesn't support lots of features. More information <a href="http://www.plupload.com/index.php" target="_blank">here</a></p>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://www.plupload.com/index.php" target="_blank">http://www.plupload.com/index.php</a></p>
+            
+
+
+
+            <hr class="notop">
+
+            <h4>WYSIWYG editor (CKEditor)</h4>
+            <h5>Introduction</h5>
+			<p>CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. Enhance your website experience with our community maintained editor.</p>
+            <p>CKEditor is an Open source application, which means it can be modified any way you want. It benefits from an active community that is constantly evolving the application with free add-ons and a transparent development process.</p>
+            
+            <h5>Features</h5>
+            <strong>Inline editing</strong>
+            <p>To improve the editing experience CKEditor now includes inline editing - a tool that removes the editing area. Say goodbye to impractical text boxes! Now What You See Is Really What You Get.</p>
+
+            <strong>Spell check as you type</strong>
+            <p>CKEditor includes a zero installation spell check as you type (SCAYT) solution. No server integration required. The application is based on the quality spell checking services provided by WebSpellChecker.net.</p>
+
+            <strong>Safe undo function</strong>
+            <p>With CKEditor you don't need worry about mistakes because every single action can be safely reverted, guaranteeing that you'll never break things or lose your texts.</p>
+
+            <strong>Right to left interface</strong>
+            <p>Several languages are read from "right to left", like Arabic, Farsi or Hebrew. For those users, CKEditor will also render from right to left, making them right at home.</p>
+
+            <strong>UI language auto detection</strong>
+            <p>If you have international users CKEditor can automatically detect their language and localizes the interface accordingly. The editor is translated into over 60 languages!</p>
+
+            <strong>Quality XHTML output</strong>
+            <p>CKEditor uses advanced W3C DTD controls to ensure that HTML is properly generated. Users will not enter broken code so your pages will easily validate.</p>
+
+            <strong>Basic &amp; advanced styling</strong>
+            <p>Apply basic styles like bold and italic with ease, as well as more complex styling and semantic rules defined by the website developer. Rich styles, under control.</p>
+
+            <strong>Real block-quoting</strong>
+            <p>Properly quote text using the correct and semantics-aware &lt;blockquote> tag. Other editors simply focus on the visuals, adding margins to standard paragraphs (that's so 90s).</p>
+
+            <strong>Colors</strong>
+            <p>Plain text may be boring. It’s sometimes nice to distinguish or highlight text with color or give tables more personality. With the color selector this job is a few clicks away.</p>
+
+            <strong>Advanced paste from Word</strong>
+            <p>Most content is written in Microsoft Word and web browsers use HTML. CKEditor's powerful and unique Paste from Word feature makes it easy to convert text.</p>
+
+            <strong>Advanced linking</strong>
+            <p>Other than creating usual web links with ease, CKEditor makes it possible to build advanced links that can open popups, links to anchors, e-mails or any kind of web resource.</p>
+
+            <strong>E-mail linking</strong>
+            <p>Creating e-mail links with CKEditor is as simple as inserting the desired e-mail address. Even the message subject and text can be set, so e-mails will be pre-compiled.</p>
+
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://ckeditor.com/" target="_blank">http://ckeditor.com/</a></p>
+            
+
+
+
+            <hr class="notop">
+
+            <h4>Fullcalendar plugin</h4>
+			<p> FullCalendar is a <a href="http://jquery.com/">jQuery</a> plugin that provides a <strong>full-sized</strong>, <strong>drag &amp; drop</strong> calendar like the one below. It uses AJAX to fetch events on-the-fly for each month and is easily configured to use your own feed format (an extension is provided for<strong>Google Calendar</strong>). It is visually customizable and exposes hooks for user-triggered events (like clicking or dragging an event). It is open source and dual licensed under the <a href="http://arshaw.com/js/fullcalendar-1.5.2/MIT-LICENSE.txt">MIT</a> or <a href="http://arshaw.com/js/fullcalendar-1.5.2/GPL-LICENSE.txt">GPL</a> Version 2 licenses. </p>
+            
+            <h5>Basic Usage</h5>
+            <p>The first step in embedding a calendar on a web page is to have the right JavaScript and CSS files. Make sure you are including the FullCalendar stylesheet, as well as the FullCalendar and <a href="http://jquery.com/">jQuery</a> JS files, in the &lt;head&gt; of your page:</p>
+            <pre class="brush: html">
+                &lt;link rel='stylesheet' type='text/css' href='fullcalendar.css' /&gt;  
+                &lt;script type='text/javascript' src='jquery.js'&gt;&lt;/script&gt;  
+                &lt;script type='text/javascript' src='fullcalendar.js'&gt;&lt;/script&gt;  
+            </pre>
+            <p>If you plan on doing dragging or resizing, you need some additional <a href="http://jqueryui.com/download">jQuery UI</a> files (more information <a href="http://arshaw.com/fullcalendar/docs/event_ui/Requirements/">here</a>).</p>
+            <p>Once you have your dependencies, you need to write the JavaScript code that initializes the calendar. This code must be executed <em>after</em> the page has initialized. The best way to do this is with jQuery's $(document).ready like so:</p>
+            <pre class="brush: js"> 
+            $(document).ready(function() {      
+            
+                // page is now ready, initialize the calendar...       
+                $('#calendar').fullCalendar({          
+                
+                    // put your options and callbacks here      
+                
+                })    
+            }); 
+            </pre>
+            
+            <h5>Options</h5>
+            <p>Most of FullCalendar's documentation describes options that affect the look or behavior of the calendar. Options are usually set when the calendar is initialized, like so:</p>
+            <pre class="brush: js">
+                $('#calendar').fullCalendar({
+                    weekends: false // will hide Saturdays and Sundays
+                });
+            </pre>
+            
+            <h5>Callbacks</h5>
+            <p>Callbacks are sort of like options, but they are <em>functions</em> that get <em>called</em> whenever something special happens. In the following example, an alert box will appear whenever the user clicks on a day:</p>
+            <pre class="brush: js">
+                $('#calendar').fullCalendar({
+                    dayClick: function() {
+                        alert('a day has been clicked!');
+                    }
+                });
+            </pre>
+            
+            <h5>Methods</h5>
+            <p> Methods provide ways to manipulate the calendar from JavaScript code. A method operates on the jQuery object of a calendar that has already been initialized, using the familiar fullCalendar command, but in a completely different way: </p>
+            <pre class="brush: js">
+                $('#calendar').fullCalendar('next');
+            </pre>
+            <p>This will call the next method and will force to the calendar to move to the next month/week/day.</p>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://arshaw.com/fullcalendar/docs/usage/" target="_blank">http://arshaw.com/fullcalendar/docs/usage/</a></p>
+            
+
+
+            
+            <hr class="notop">
+
+            <h4>Collapsible ( jquery.collapsible.min.js )</h4>
+            <h5>Introduction</h5>
+            <p>This plugin enables site owners to control multiple collapsible panels by auto opening any defaults specified, and keeping those opened/closed by users as they left them while browsing your site.</p>
+            
+            <h5>Default settings</h5>
+			<pre class="brush: js">
+            {
+                cssClose: 'collapse-close',
+                cssOpen: 'collapse-open',
+                cookieName: 'collapsible',
+                cookieOptions: {
+                    path: '/',
+                    expires: 7,
+                    domain: '',
+                    secure: ''
+                },
+                defaultOpen: '',
+                speed: 300,
+                bind: 'click',
+                animateOpen: function (elem, opts) { 
+                    elem.next().slideUp(opts.speed);
+                },
+                animateClose: function (elem, opts) {
+                    elem.next().slideDown(opts.speed);
+                }
+            }
+            </pre>
+            
+            <h5>Default options</h5>
+            
+            <ul>
+                <li><strong>cssClose</strong> :  <br> This is the class you want assigned when it is closed.</li>
+                <li><strong>cssOpen</strong> : <br> This is the class you want assigned when it is opened.</li>
+                <li><strong>cookieName</strong> : <br> This is the name of the cookie that will store which collapsibles should be open.</li>
+                <li><strong>cookieOptions</strong> : <br> See the jquery.cookie plugin for more information.</li>
+                <li><strong>defaultOpen</strong> : <br> This is comma separated list of collapsible header ids.</li>
+                <li><strong>speed</strong> : <br> This is the animation speed for the slide up/down.</li>
+                <li><strong>bind</strong> : <br> This is the event that you want the collapsibles to function on. only 4 are supported: click, dblclick, mouseenter, and mouseover.</li>
+                <li><strong>animateOpen</strong> : <br> This is a custom callback to alter the way that an element is opened.</li>
+                <li><strong>animateClose</strong> : <br> This is a custom callback to alter the way that an element is closed.</li>
+            </ul>
+            
+            <h5>Methods</h5>
+            <p>You can call following methods on collapsible elements:
+            <ul>
+                <li><strong>collapsed</strong> : <br> returns 'true' if element is collapsed</li>
+                <li><strong>toggle</strong> : <br> toggle collapsible state</li>
+                <li><strong>open</strong> : <br> open a collapsible</li>
+                <li><strong>close</strong> : <br> close a collapsible</li>
+            </ul>
+            
+            <p>Call them using jquery-ui style:</p>
+            <pre class="brush: js">
+            $(selector).collapsible('method', [arg]);
+            </pre>
+            
+            <p>Examples:</p>
+            <pre class="brush: js">
+            if ( $('#nav-block').collapsible('collapsed') ) { ... }
+            
+            or
+            
+            appendToLog('Error: service is down!');
+            $('#nav-logs').collapsible('open');
+            </pre>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://www.snyderplace.com/2010/03/jquery-collapsible-plugin/" target="_blank">http://www.snyderplace.com/2010/03/jquery-collapsible-plugin/</a></p>
+            
+            
+            
+            
+            
+            <hr class="notop">
+
+            <h4>Input limiter plugin</h4>
+            <h5>Introduction</h5>
+            <p>This jQuery plugin will allow you to limit input into form fields. It can display a message as the user types to let them know how many characters they have remaining.</p>
+            
+            <h5>Options</h5>
+            <ul>
+            <li>
+                <strong>limit</strong>
+                <br>Type: Integer<br>
+                Default: 255
+                <p>Controls how many characters the Input Limiter will allow the user to type into the field it is attached to. Once the limit is reached the user's input will be truncated.</p>
+            </li>
+            <li>
+            <strong>boxAttach</strong>
+            <br>Type: Boolean<br>
+            Default: true
+            
+            <p>Determines whether the box containing the Input Limiter remText and limitText will attach itself to the bottom the field that is in focus.</p>
+            </li>
+            <li>
+            <strong>boxId</strong>
+            <br>Type: String<br>
+            Default: 'limiterBox'
+            
+            <p>Determines the id that will be assigned to the box that will display the remText and limitText.</p>
+            </li>
+            <li>
+            <strong>boxClass</strong>
+            <br>Type: String<br>
+            Default: 'limiterBox'
+            
+            <p>Determines the class that will be attached to the box (boxId) that will display the remText and limitText.</p>
+            </li>
+            <li>
+            <strong>remText</strong>
+            <br>Type: String<br>
+            Default: '%n character%s remaining.'
+            
+            <p>This string displayed the remaining characters. It will be updated as the user types into the input. Using the default remTextFilter; %n will be replaced with the number of characters remaining, %s a plural 's'. The %s will be replaced by the letter 's' except when %n is equals to 1, then %s will return nothing. If zeroPlural is set to false this will also return nothing when %n is equal to 0.</p>
+            </li>
+            
+            <li>
+            <strong>remTextFilter</strong>
+            <br>Type: Function<br>
+            Default:
+            <pre class="brush: js">
+            function (opts, charsRemaining) {
+                var remText = opts.remText;
+                remText = remText.replace(/\%n/g, charsRemaining);
+                remText = remText.replace(/\%s/g, ( charsRemaining == 1?'':'s' ));
+                return remText;
+            };
+            </pre>
+            <p>This function gets two arguments passed to it: the options, and the remaining characters. By Default this function replaces '%n' with the characters remaining and '%s' with the letter 's' when charsRemaining is anything but '1'.</p>
+            </li>
+            
+            <li>
+            <strong>remTextHideOnBlur</strong>
+            <br>Type: Boolean<br>
+            Default: true
+            
+            <p>Controls whether the remText is displayed after the input loses focus. The limitText will still be displayed. This option only applies if attachBox is false, otherwise the boxId will be hidden when the field loses focus.</p>
+            </li>
+            
+            <li>
+            <strong>remFullText</strong>
+            <br>Type: String<br>
+            Default: null
+            
+            <p>This string is displayed when the remaining characters is equals to zero. If this string is null remText will be displayed.</p>
+            </li>
+            
+            <li>
+            <strong>limitTextShow</strong>
+            <br>Type: Boolean<br>
+            Default: true
+            
+            <p>Determines whether the limitText will be displayed after the remText.</p>
+            </li>
+            <li>
+            <strong>limitText</strong>
+            <br>Type: String<br>
+            Default: 'Field limited to %n character%s.'
+            
+            <p>Text that informs the user about the limit. Using the default limitTextFilter; %n will be replaced with the number of characters thje field is limited to, %s adds a plural 's'. The %s will be replaced by the letter 's' except when %n is equals to 1, then %s will return nothing.</p>
+                        
+            </li>            
+            </ul>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://rustyjeans.com/jquery-plugins/input-limiter" target="_blank">http://rustyjeans.com/jquery-plugins/input-limiter</a></p>
+            
+            
+            
+                        
+            <hr class="notop">
+
+            <h4>Tags input</h4>
+            <h5>Introduction</h5>
+            <p>Do you use tags to organize content on your site? This plugin will turn your boring tag list into a magical input that turns each tag into a style-able object with its own delete link. The plugin handles all the data - your form just sees a comma-delimited list of tags!</p>
+            
+            <h5>Options</h5>
+			<pre class="brush: js">
+            $(selector).tagsInput({
+               'autocomplete_url': url_to_autocomplete_api,
+               'autocomplete': { option: value, option: value},
+               'height':'100px',
+               'width':'300px',
+               'interactive':true,
+               'defaultText':'add a tag',
+               'onAddTag':callback_function,
+               'onRemoveTag':callback_function,
+               'onChange' : callback_function,
+               'removeWithBackspace' : true,
+               'minChars' : 0,
+               'maxChars' : 0 //if not provided there is no limit,
+               'placeholderColor' : '#666666'
+            });            
+            </pre>
+
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://xoxco.com/projects/code/tagsinput/" target="_blank">http://xoxco.com/projects/code/tagsinput/</a></p>
+
+
+
+
+            <hr class="notop">
+
+            <h4>Mousewheel plugin</h4>
+            <h5>Introduction</h5>
+            <p>A jQuery plugin that adds cross-browser mouse wheel support.
+            In order to use the plugin, simply bind the "mousewheel" event to an element. It also provides two helper methods called mousewheel and unmousewheel that act just like other event helper methods in jQuery. The event callback receives an extra argument which is the normalized "delta" of the mouse wheel.</p>
+            
+            <h5>Example usage</h5>
+            <pre class="brush: js">
+                // using bind
+                $('#my_elem').bind('mousewheel', function(event, delta) {
+                    console.log(delta);
+                });
+
+                // using the event helper
+                $('#my_elem').mousewheel(function(event, delta) {
+                    console.log(delta);
+                });            
+            </pre>
+
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://brandonaaron.net/code/mousewheel/docs" target="_blank">http://brandonaaron.net/code/mousewheel/docs</a></p>
+
+
+
+            <hr class="notop">
+
+            <h4>Select2 plugin</h4>
+            <h5>Introduction</h5>
+            <p>Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results</p>
+            
+            <h5>Example usage</h5>
+            <pre class="brush: js">
+                &lt;head>
+                    &lt;link href="select2.css" rel="stylesheet"/>
+                    &lt;script src="select2.js">&lt;/script>
+                    &lt;script>
+                        $(document).ready(function() { $("#e1").select2(); });
+                    &lt;/script>
+                &lt;/head>
+                &lt;body>
+                    &lt;select id="e1">
+                        &lt;option value="AL">Alabama&lt;/option>
+                        ...
+                        &lt;option value="WY">Wyoming&lt;/option>
+                    &lt;/select>
+                &lt;/body>            
+            </pre>
+
+            <h5>Browser compatibility</h5>
+            <ul>
+            <li>IE 8+ (7 mostly works except for issue with z-index)</li>
+            <li>Chrome 8+</li>
+            <li>Firefox 3.5+</li>
+            <li>Safari 3+</li>
+            <li>Opera 10.6+</li>
+            </ul>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://ivaynberg.github.com/select2/" target="_blank">http://ivaynberg.github.com/select2/</a></p>
+
+
+
+
+            <hr class="notop">
+
+            <h4>jQuery validation plugin</h4>
+            <h5>Introduction</h5>
+            <p>When it comes to form validation, it’s hard to have a versatile solution that works with every form. Figuring out how to display errors is not a simple task. This is something I tried to remedy with this script. When an error needs to be displayed, the script creates a div and positions it in the top right corner of the input. This way you don’t have to worry about your HTML form structure. The rounded corner and shadow are done with CSS3 and degrade well in non compliant browsers. There is no images needed.</p>
+            
+            <h5>Default usage</h5>
+            <strong>Field validations</strong>
+
+            <p>Validations are defined using the field’s **class** attribute. Here are a few examples showing how it happens:
+            <pre class="brush: html">
+                &lt;input value="someone@nowhere.com" class="validate[required,custom[email]]" type="text" name="email" id="email" />
+                &lt;input value="2010-12-01" class="validate[required,custom[date]]" type="text" name="date" id="date" />
+                &lt;input value="too many spaces obviously" class="validate[required,custom[onlyLetterNumber]]" type="text" name="special" id="special" />
+            </pre>
+            For more details about validators, please refer to the section below.</p>
+
+            
+            <h5>Instantiation</h5>
+            <p>The validator is typically instantiated by using a call of the following form:
+            <pre class="brush: js">
+                $("#form.id").validationEngine(action or options);
+            </pre>
+            The method takes one or several optional parameters, either an action (and parameters) or a list of options to customize the behavior of the engine.</p>
+
+            <p>Here comes a glimpse: say you have a form is this kind
+                <pre class="brush: html">
+                    &lt;form id="formID" method="post" action="submit.action">
+                        &lt;input value="2010-12-01" class="validate[required,custom[date]]" type="text" name="date" id="date" />
+                    &lt;/form>
+                </pre>
+            </p>
+            <p>
+                The following code would instance the validation engine:
+                <pre class="brush: js">
+                    $(document).ready(function(){
+                        $("#formID").validationEngine('attach');
+                    });
+                </pre>
+            </p>          
+
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://www.position-absolute.com/articles/jquery-form-validator-because-form-validation-is-a-mess/" target="_blank">http://www.position-absolute.com/articles/jquery-form-validator-because-form-validation-is-a-mess/</a></p>
+
+
+
+            <hr class="notop">
+
+            <h4>Bootbox plugin</h4>
+            <h5>Introduction</h5>
+            <p><strong>Bootbox.js</strong> is a small JavaScript library which allows you to create programmatic dialog boxes using Twitter's Bootstrap modals, without having to worry about creating, managing or removing any of the required DOM elements or JS event handlers. Here's the simplest possible example:</p>
+
+            <h5>Defaul markup</h5>
+            <pre class="brush: html">
+                <!-- set up the modal to start hidden and fade in and out -->
+                &lt;div id="myModal" class="modal hide fade">
+                    <!-- dialog contents -->
+                    &lt;div class="modal-body">Hello world!&lt;/div>
+                    <!-- dialog buttons -->
+                    &lt;div class="modal-footer">&lt;a href="#" class="btn primary">OK&lt;/a>&lt;/div>
+                &lt;/div>
+            </pre>
+            
+            <h5>Example usage</h5>
+            <pre class="brush: js">
+                $("#myModal").on("show", function() {    // wire up the OK button to dismiss the modal when shown
+                    $("#myModal a.btn").on("click", function(e) {
+                        console.log("button pressed");   // just as an example...
+                        $("#myModal").modal('hide');     // dismiss the dialog
+                    });
+                });
+
+                $("#myModal").on("hide", function() {    // remove the event listeners when the dialog is dismissed
+                    $("#myModal a.btn").off("click");
+                });
+
+                $("#myModal").on("hidden", function() {  // remove the actual elements from the DOM when fully hidden
+                    $("#myModal").remove();
+                });
+
+                $("#myModal").modal({                    // finally, wire up the actual modal functionality and show the dialog
+                  "backdrop"  : "static",
+                  "keyboard"  : true,
+                  "show"      : true                     // ensure the modal is shown immediately
+                });            
+            </pre>
+            <p class="warning"><strong>Note:</strong> Original documentation for this plugin you can find on official plugin's website: <a href="http://bootboxjs.com/" target="_blank">http://bootboxjs.com/</a></p>
+
+
+        </section>
+
+
+
+        <section id="bootstrap">
+
+            <h3>Bootstrap documentation</h3>
+
+            <p>I didn't add to this documentation file any docs or explanations for Bootstrap plugins, because i won't describe it more detailed than official Bootstrap website.</p>
+            <p>I tried to keep original Bootstrap markup for all elements in html and css files, however some elements require additional classes like buttons with caret dropdown for proper alignment and others, but not too many. In general everything is equal to original markup.</p>
+            <p>Original Bootstrap documentation could be found here - http://twitter.github.com/bootstrap/</p>
+            <p>Please note - i tried to style almost all bootstrap elements, but anyway i didn't use something:
+                <ul>
+                    <li>Carousel plugin</li>
+                    <li>Affix plugin</li>
+                    <li>Images classes</li>
+                    <li>Original bootstrap responsive code</li>
+                    <li>Everything related to fixed layout</li>
+                </ul>
+            </p>
+
+        </section>
+
+
+
+
+        <section id="loaders">
+            <h3>Jquery plugin loaders and other code</h3>
+
+            <hr class="notop">
+            <p>Explanations for plugin loaders, which are placed into functions.js file and other jquery stuff.</p>
+            
+
+            <h4>Show/Hide sidebar</h4>
+            <pre class="brush: js">
+                $('.fullview').click(function(){
+                    $("body").toggleClass("clean");
+                    $('#sidebar').toggleClass("hide-sidebar mobile-sidebar");
+                    $('#content').toggleClass("full-content");
+                });
+            </pre> 
+
+
+            <h4>Show/Hide action tabs</h4>
+            <pre class="brush: js">
+                $('.showmenu').click(function () {
+                    $('.actions-wrapper').slideToggle(100);
+                });
+            </pre> 
+
+
+
+
+            
+            <h4>Wizards</h4>
+            <pre class="brush: js">
+                $("#wizard1").formwizard({
+                    formPluginEnabled: false, 
+                    validationEnabled: false,
+                    focusFirstInput : false,
+                    disableUIStyles : true
+                });
+
+                $("#wizard2").formwizard({
+                    formPluginEnabled: true, 
+                    validationEnabled: false,
+                    focusFirstInput : false,
+                    disableUIStyles : true,
+                
+                    formOptions :{
+                        success: function(data){$("#status1").fadeTo(500,1,function(){ $(this).html("<span>Form was submitted!</span>").fadeTo(5000, 0); })},
+                        beforeSubmit: function(data){$("#data1").html("<span>Form was submitted with ajax. Data sent to the server: " + $.param(data) + "</span>");},
+                        resetForm: true
+                    }
+                });
+
+                $("#wizard3").formwizard({ 
+                    formPluginEnabled: true,
+                    validationEnabled: false,
+                    focusFirstInput : false,
+                    formOptions :{
+                        success: function(data){$("#status2").fadeTo(500,1,function(){ $(this).html("<span>Form was submitted!</span>").fadeTo(5000, 0); })},
+                        beforeSubmit: function(data){$("#data2").html("<span>Form was submitted with ajax. Data sent to the server: " + $.param(data) + "</span>");},
+                        resetForm: true
+                    },
+                    inAnimation : {height: 'show'},
+                    outAnimation: {height: 'hide'},
+                    inDuration : 400,
+                    outDuration: 400,
+                    easing: 'easeInBack'    //see e.g. http://gsgd.co.uk/sandbox/jquery/easing/ for information on easing
+                 }
+                );
+            </pre> 
+
+
+
+
+            
+            <h4>Elfinder</h4>
+            <pre class="brush: js">
+                var elf = $('#file-manager').elfinder({
+                    url : 'php/connector.php',  // connector URL (REQUIRED)
+                    uiOptions : {
+                        // toolbar configuration
+                        toolbar : [
+                            ['back', 'forward'],
+                            ['info'],
+                            ['quicklook'],
+                            ['search']
+                        ]
+                    },
+                    contextmenu : {
+                      // Commands that can be executed for current directory
+                      cwd : ['reload', 'delim', 'info'], 
+                      // Commands for only one selected file
+                      files : ['select', 'open']
+                    }
+                }).elfinder('instance');    
+            </pre> 
+
+
+
+
+            
+            <h4>Plupload (multiple file uploader)</h4>
+            <pre class="brush: js">
+                $("#file-uploader").pluploadQueue({
+                    runtimes : 'html5,html4',
+                    url : 'php/upload.php',
+                    max_file_size : '1kb',
+                    unique_names : true,
+                    filters : [
+                        {title : "Image files", extensions : "jpg,gif,png"}
+                    ]
+                });
+            </pre> 
+
+
+
+
+            
+            <h4>Generate random values for bars in stats widgets</h4>
+            <pre class="brush: js">
+                function generateNumber(min, max) {
+                    min = typeof min !== 'undefined' ? min : 1;
+                    max = typeof max !== 'undefined' ? max : 100;
+                    return Math.floor((Math.random() * max) + min);
+                };
+
+                setInterval(function() {
+                    $('.info-aapl li span').each(function(index, elem) {
+                        $(elem).animate({
+                            height: generateNumber(1, 40)
+                        });
+                    });
+                }, 3000);
+            </pre> 
+            
+
+
+
+            
+            <h4>Fullcalendar</h4>
+            <pre class="brush: js">
+                var date = new Date();
+                var d = date.getDate();
+                var m = date.getMonth();
+                var y = date.getFullYear();
+                
+                $('#calendar').fullCalendar({
+                    header: {
+                        left: 'prev,next',
+                        center: 'title',
+                        right: 'month,agendaWeek,agendaDay'
+                    },
+                    editable: true,
+                    events: [
+                        {
+                            title: 'All Day Event',
+                            start: new Date(y, m, 1)
+                        },
+                        {
+                            title: 'Long Event',
+                            start: new Date(y, m, d-5),
+                            end: new Date(y, m, d-2)
+                        },
+                        {
+                            id: 999,
+                            title: 'Repeating Event',
+                            start: new Date(y, m, d-3, 16, 0),
+                            allDay: false
+                        },
+                        {
+                            id: 999,
+                            title: 'Repeating Event',
+                            start: new Date(y, m, d+4, 16, 0),
+                            allDay: false
+                        },
+                        {
+                            title: 'Meeting',
+                            start: new Date(y, m, d, 10, 30),
+                            allDay: false
+                        },
+                        {
+                            title: 'Lunch',
+                            start: new Date(y, m, d, 12, 0),
+                            end: new Date(y, m, d, 14, 0),
+                            allDay: false
+                        },
+                        {
+                            title: 'Birthday Party',
+                            start: new Date(y, m, d+1, 19, 0),
+                            end: new Date(y, m, d+1, 22, 30),
+                            allDay: false
+                        },
+                        {
+                            title: 'Click for Google',
+                            start: new Date(y, m, 28),
+                            end: new Date(y, m, 29),
+                            url: 'http://google.com/'
+                        }
+                    ]
+                });
+            </pre> 
+            
+
+
+
+
+            <h4>Prettyprint</h4>
+            <pre class="brush: js">
+                window.prettyPrint &amp;&amp; prettyPrint();
+            </pre> 
+
+
+
+
+
+            <h4>Media item hover overlay</h4>
+            <pre class="brush: js">
+                $('.view').hover(function(){
+                    $(this).children(".view-back").fadeIn(200);
+                },function(){
+                    $(this).children(".view-back").fadeOut(200);
+                });
+            </pre> 
+            
+            
+
+
+
+            <h4>Timepickers</h4>
+            <pre class="brush: js">
+                $('#defaultValueExample, #time').timepicker({ 'scrollDefaultNow': true });
+                
+                $('#durationExample').timepicker({
+                    'minTime': '2:00pm',
+                    'maxTime': '11:30pm',
+                    'showDuration': true
+                });
+                
+                $('#onselectExample').timepicker();
+                $('#onselectExample').on('changeTime', function() {
+                    $('#onselectTarget').text($(this).val());
+                });
+                
+                $('#timeformatExample1, #timeformatExample3').timepicker({ 'timeFormat': 'H:i:s' });
+                $('#timeformatExample2, #timeformatExample4').timepicker({ 'timeFormat': 'h:i A' });
+            </pre> 
+            
+            
+
+
+
+            <h4>Color picker</h4>
+            <pre class="brush: js">
+                $('#cp1').colorpicker({
+                    format: 'hex'
+                });
+                $('#cp2').colorpicker();
+                $('#cp3').colorpicker();
+                    var bodyStyle = $('html')[0].style;
+                $('#cp4').colorpicker().on('changeColor', function(ev){
+                    bodyStyle.background = ev.color.toHex();
+                });
+            </pre> 
+            
+
+
+
+            
+            <h4>Date pickers</h4>
+            <pre class="brush: js">
+                $( ".datepicker" ).datepicker({
+                            defaultDate: +7,
+                    showOtherMonths:true,
+                    autoSize: true,
+                    appendText: '(dd-mm-yyyy)',
+                    dateFormat: 'dd-mm-yy'
+                    });
+                    
+                $('.inlinepicker').datepicker({
+                    inline: true,
+                    showOtherMonths:true
+                });
+
+                var dates = $( "#fromDate, #toDate" ).datepicker({
+                    defaultDate: "+1w",
+                    changeMonth: false,
+                    showOtherMonths:true,
+                    numberOfMonths: 3,
+                    onSelect: function( selectedDate ) {
+                        var option = this.id == "fromDate" ? "minDate" : "maxDate",
+                            instance = $( this ).data( "datepicker" ),
+                            date = $.datepicker.parseDate(
+                                instance.settings.dateFormat ||
+                                $.datepicker._defaults.dateFormat,
+                                selectedDate, instance.settings );
+                        dates.not( this ).datepicker( "option", option, date );
+                    }
+                });
+                
+                $( "#datepicker-icon, .navbar-datepicker" ).datepicker({
+                    showOn: "button",
+                    buttonImage: "img/icons/date_picker.png",
+                    buttonImageOnly: true
+                });
+            </pre> 
+            
+
+
+
+            
+            <h4>Modals and dialogs</h4>
+            <pre class="brush: js">
+                $("a.bs-alert").click(function(e) {
+                    e.preventDefault();
+                    bootbox.alert("Hello world!", function() {
+                        console.log("Alert Callback");
+                    });
+                });
+                
+                $("a.confirm").click(function(e) {
+                    e.preventDefault();
+                    bootbox.confirm("Are you sure?", function(confirmed) {
+                        console.log("Confirmed: "+confirmed);
+                    });
+                });
+                
+                $("a.bs-prompt").click(function(e) {
+                    e.preventDefault();
+                    bootbox.prompt("What is your name?", function(result) {
+                        console.log("Result: "+result);
+                    });
+                });
+                
+                $("a.dialog").click(function(e) {
+                    e.preventDefault();
+                    bootbox.dialog("I am a custom dialog", [{
+                        "label" : "Success!",
+                        "class" : "btn-success",
+                        "callback": function() {
+                            console.log("great success");
+                        }
+                    }, {
+                        "label" : "Danger!",
+                        "class" : "btn-danger",
+                        "callback": function() {
+                            console.log("uh oh, look out!");
+                        }
+                    }, {
+                        "label" : "Click ME!",
+                        "class" : "btn-primary",
+                        "callback": function() {
+                            console.log("Primary button");
+                        }
+                    }, {
+                        "label" : "Just a button..."
+                    }, {
+                        "Condensed format": function() {
+                            console.log("condensed");
+                        }
+                    }]);
+                });
+                
+                $("a.multiple-dialogs").click(function(e) {
+                    e.preventDefault();
+
+                    bootbox.alert("Prepare for multiboxes...", "Argh!");
+
+                    setTimeout(function() {
+                        bootbox.confirm("Are you having fun?", "No :(", "Yeah!", function(result) {
+                            if (result) {
+                                bootbox.alert("Glad to hear it!");
+                            } else {
+                                bootbox.alert("Aww boo. Click the button below to get rid of all these popups", function() {
+                                    bootbox.hideAll();
+                                });
+                            }
+                        });
+                    }, 1000);
+                });
+                
+                $("a.dialog-close").click(function(e) {
+                    e.preventDefault();
+                    var box = bootbox.alert("This dialog will close in two seconds");
+                    setTimeout(function() {
+                        box.modal('hide');
+                    }, 2000);
+                });
+                
+                $("a.generic-modal").click(function(e) {
+                    e.preventDefault();
+                    bootbox.modal('&lt;img src="http://dummyimage.com/600x400/000/fff" alt=""/>', 'Modal popup!');
+                });
+                
+                $("a.dynamic").click(function(e) {
+                    e.preventDefault();
+                    var str = $("&lt;p>This content is actually a jQuery object, which will change in 3 seconds...&lt;/p>");
+                    bootbox.alert(str);
+                    setTimeout(function() {
+                        str.html("See?");
+                    }, 3000);
+                });
+                
+                $("a.prompt-default").click(function(e) {
+                    e.preventDefault();
+                    bootbox.prompt("What is your favourite JS library?", "Cancel", "OK", function(result) {
+                        console.log("Result: "+result);
+                    }, "Bootbox.js");
+                });
+                
+                $("a.onescape").click(function(e) {
+                    e.preventDefault();
+                    bootbox.dialog("Dismiss this dialog with the escape key...", {
+                        "label" : "Press Escape!",
+                        "class" : "btn-danger",
+                        "callback": function() {
+                            console.log("Oi! Press escape!");
+                        }
+                    }, {
+                        "onEscape": function() {
+                            bootbox.alert("This alert was triggered by the onEscape callback of the previous dialog", "Dismiss");
+                        }
+                    });
+                });
+
+                $("a.nofade").click(function(e) {
+                    e.preventDefault();
+                    bootbox.dialog("This dialog does not fade in or out, and thus does not depend on &lt;strong>bootstrap-transitions.js&lt;/strong>.",
+                    {
+                        "OK": function() {}
+                    }, {
+                        "animate": false
+                    });
+                });
+
+                $("a.nobackdrop").click(function(e) {
+                    e.preventDefault();
+                    bootbox.dialog("This dialog does not have a backdrop element",
+                    {
+                        "OK": function() {}
+                    }, {
+                        "backdrop": false
+                    });
+                });
+
+                $("a.icons-explicit").click(function(e) {
+                    e.preventDefault();
+                    bootbox.dialog("Custom dialog with icons being passed explicitly into &lt;b>bootbox.dialog&lt;/b>.", [{
+                        "label" : "Success!",
+                        "class" : "btn-success",
+                        "icon"  : "icon-ok-sign icon-white"
+                    }, {
+                        "label" : "Danger!",
+                        "class" : "btn-danger",
+                        "icon"  : "icon-warning-sign icon-white"
+                    }, {
+                        "label" : "&lt;span>Click ME!&lt;/span>",
+                        "class" : "btn-primary",
+                        "icon"  : "icon-ok icon-white"
+                    }, {
+                        "label" : "Just a button...",
+                        "icon"  : "icon-picture"
+                    }]);
+                });
+
+                $("a.icons-override").click(function(e) {
+                    e.preventDefault();
+                    bootbox.setIcons({
+                        "OK"      : "icon-ok icon-white",
+                        "CANCEL"  : "icon-ban-circle",
+                        "CONFIRM" : "icon-ok-sign icon-white"
+                    });
+
+                    bootbox.confirm("This dialog invokes &lt;b>bootbox.setIcons()&lt;/b> to set icons for the standard three labels of OK, CANCEL and CONFIRM, before calling a normal &lt;b>bootbox.confirm&lt;/b>", function(result) {
+                        bootbox.alert("This dialog is just a standard &lt;b>bootbox.alert()&lt;/b>. &lt;b>bootbox.setIcons()&lt;/b> only needs to be set once to affect all subsequent calls", function() {
+                            bootbox.setIcons(null);
+                        });
+                    });
+                });
+
+                $("a.no-close-button").click(function(e) {
+                    e.preventDefault();
+                    bootbox.dialog("If a button's handler now explicitly returns &lt;b>false&lt;/b>, the dialog will not be closed. Note that if anything &lt;b>!== false&lt;/b> - e.g. nothing, true, null etc - is returned, the dialog will close.", [{
+                        "I'll close on click": function() {
+                            console.log("close on click");
+                            return true;
+                        },
+                    }, {
+                        "I won't!": function() {
+                            console.log("returning false...");
+                            return false;
+                        }
+                    }]);
+                });
+            </pre> 
+            
+            
+
+
+
+            <h4>Jquery UI autocomplete</h4>
+            <pre class="brush: js">
+                var tags = [ "ActionScript", "AppleScript", "Asp", "BASIC", "C", "C++", "Clojure", "COBOL", "ColdFusion", "Erlang", "Fortran", "Groovy", "Haskell", "Java", "JavaScript", "Lisp", "Perl", "PHP", "Python", "Ruby", "Scala", "Scheme" ];
+                $( "#autocomplete" ).autocomplete({
+                    source: tags,
+                    appendTo: ".autocomplete-append"
+                }); 
+
+                function setSizes() {
+                    var containerHeight = $(".autocomplete-append input[type=text]").width();
+                    $(".autocomplete-append").width(containerWidth - 180);
+                };
+            </pre> 
+            
+
+
+
+            
+            <h4>Bootstrap typeahead</h4>
+            <pre class="brush: js">
+                $('#typeahead').typeahead({
+                    source: ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],
+                    appendToBody: false
+                });
+            </pre> 
+
+
+
+
+
+            <h4>Jquery UI sliders</h4>
+            <pre class="brush: js">
+                $( "#default-slider" ).slider();
+
+                $( "#increments-slider" ).slider({
+                    value:100,
+                    min: 0,
+                    max: 500,
+                    step: 50,
+                    slide: function( event, ui ) {
+                    $( "#donation-amount" ).val( "$" + ui.value );
+                }
+                });
+                $( "#donation-amount" ).val( "$" + $( "#increments-slider" ).slider( "value" ) );
+
+                $( "#range-slider, #range-slider1" ).slider({
+                    range: true,
+                    min: 0,
+                    max: 500,
+                    values: [ 75, 300 ],
+                    slide: function( event, ui ) {
+                        $( "#price-amount, #price-amount1" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                    }
+                });
+                $( "#price-amount, #price-amount1" ).val( "$" + $( "#range-slider, #range-slider1" ).slider( "values", 0 ) +
+                  " - $" + $( "#range-slider, #range-slider1" ).slider( "values", 1 ) );
+
+                $( "#slider-range-min, #slider-range-min1" ).slider({
+                    range: "min",
+                    value: 37,
+                    min: 1,
+                    max: 700,
+                    slide: function( event, ui ) {
+                        $( "#min-amount, #min-amount1" ).val( "$" + ui.value );
+                    }
+                });
+                $( "#min-amount, #min-amount1" ).val( "$" + $( "#slider-range-min, #slider-range-min1" ).slider( "value" ) );
+
+                $( "#slider-range-max, #slider-range-max1" ).slider({
+                    range: "max",
+                    min: 1,
+                    max: 10,
+                    value: 2,
+                    slide: function( event, ui ) {
+                        $( "#max-amount, #max-amount1" ).val( ui.value );
+                    }
+                });
+                $( "#max-amount, #max-amount1" ).val( $( "#slider-range-max, #slider-range-max1" ).slider( "value" ) );
+            </pre> 
+
+
+
+
+            
+            <h4>Loading button</h4>
+            <pre class="brush: js">
+                $('#loading').click(function () {
+                    var btn = $(this)
+                    btn.button('loading')
+                    setTimeout(function () {
+                      btn.button('reset')
+                    }, 3000);
+                });
+            </pre> 
+            
+
+
+
+            
+            <h4>Bootstrap popovers</h4>
+            <pre class="brush: js">
+                $('.popover-test').popover({
+                    placement: 'left'
+                })
+                .click(function(e) {
+                    e.preventDefault()
+                });
+
+                $("a[rel=popover]")
+                    .popover()
+                .click(function(e) {
+                    e.preventDefault()
+                });
+            </pre> 
+            
+
+
+
+            
+            <h4>Form validation engine</h4>
+            <pre class="brush: js">
+                $("#validate").validationEngine({promptPosition : "topRight:-122,-5"});
+            </pre>
+            
+            
+
+
+
+            <h4>Listbox plugin</h4>
+            <pre class="brush: js">
+                $.configureBoxes();
+            </pre>
+            
+
+
+
+            
+            <h4>Spinner options</h4>
+            <pre class="brush: js">
+                $( "#spinner-default" ).spinner();
+                
+                $( "#spinner-decimal" ).spinner({
+                    step: 0.01,
+                    numberFormat: "n"
+                });
+                
+                $( "#culture" ).change(function() {
+                    var current = $( "#spinner-decimal" ).spinner( "value" );
+                    Globalize.culture( $(this).val() );
+                    $( "#spinner-decimal" ).spinner( "value", current );
+                });
+                
+                $( "#currency" ).change(function() {
+                    $( "#spinner-currency" ).spinner( "option", "culture", $( this ).val() );
+                });
+                
+                $( "#spinner-currency" ).spinner({
+                    min: 5,
+                    max: 2500,
+                    step: 25,
+                    start: 1000,
+                    numberFormat: "C"
+                });
+                    
+                $( "#spinner-overflow" ).spinner({
+                    spin: function( event, ui ) {
+                        if ( ui.value > 10 ) {
+                            $( this ).spinner( "value", -10 );
+                            return false;
+                        } else if ( ui.value < -10 ) {
+                            $( this ).spinner( "value", 10 );
+                            return false;
+                        }
+                    }
+                });
+                
+                $.widget( "ui.timespinner", $.ui.spinner, {
+                    options: {
+                        // seconds
+                        step: 60 * 1000,
+                        // hours
+                        page: 60
+                    },
+
+                    _parse: function( value ) {
+                        if ( typeof value === "string" ) {
+                            // already a timestamp
+                            if ( Number( value ) == value ) {
+                                return Number( value );
+                            }
+                            return +Globalize.parseDate( value );
+                        }
+                        return value;
+                    },
+
+                    _format: function( value ) {
+                        return Globalize.format( new Date(value), "t" );
+                    }
+                });
+
+                $( "#spinner-time" ).timespinner();
+                $( "#culture-time" ).change(function() {
+                    var current = $( "#spinner-time" ).timespinner( "value" );
+                    Globalize.culture( $(this).val() );
+                    $( "#spinner-time" ).timespinner( "value", current );
+                });
+            </pre>
+            
+
+
+
+            
+            <h4>Select2 plugin</h4>
+            <pre class="brush: js">
+                $(".select").select2();
+                            
+                $("#loading-data").select2({
+                    placeholder: "Enter at least 1 character",
+                    allowClear: true,
+                    minimumInputLength: 1,
+                    query: function (query) {
+                        var data = {results: []}, i, j, s;
+                        for (i = 1; i < 5; i++) {
+                            s = "";
+                            for (j = 0; j < i; j++) {s = s + query.term;}
+                            data.results.push({id: query.term + i, text: s});
+                        }
+                        query.callback(data);
+                    }
+                });     
+
+                $("#max-select").select2({ maximumSelectionSize: 3 });      
+
+                $("#clear-results").select2({
+                    placeholder: "Select a State",
+                    allowClear: true
+                });
+
+                $("#min-select2").select2({
+                    minimumInputLength: 2
+                });
+                
+                $("#disableselect, #disableselect2").select2(
+                    "disable"
+                );
+
+                $("#minimum-input-single").select2({
+                    minimumInputLength: 2
+                });
+            </pre>
+            
+            
+
+
+
+            <h4>Tags input plugin</h4>
+            <pre class="brush: js">
+                $('.tags').tagsInput({width:'100%'});
+                $('.tags-autocomplete').tagsInput({
+                    width:'100%',
+                    autocomplete_url:'tags_autocomplete.html'
+                });
+            </pre>
+            
+            
+
+
+
+            <h4>Input limiter</h4>
+            <pre class="brush: js">
+                $('.limited').inputlimiter({
+                    limit: 100,
+                    boxId: 'limit-text',
+                    boxAttach: false
+                });
+            </pre>
+            
+
+
+
+            
+            <h4>Autosize - elastic textarea</h4>
+            <pre class="brush: js">
+                $('.auto').autosize();
+            </pre>
+            
+            
+
+
+
+            <h4>Bootstrap tooltips</h4>
+            <pre class="brush: js">
+                $('.tip').tooltip();
+                $('.focustip').tooltip({'trigger':'focus'});
+            </pre>
+            
+            
+
+
+
+            <h4>Datatables</h4>
+            <pre class="brush: js">
+                oTable = $('#data-table').dataTable({
+                    "bJQueryUI": false,
+                    "bAutoWidth": false,
+                    "sPaginationType": "full_numbers",
+                    "sDom": '&lt;"datatable-header"fl>t&lt;"datatable-footer"ip>',
+                    "oLanguage": {
+                        "sSearch": "&lt;span>Filter records:&lt;/span> _INPUT_",
+                        "sLengthMenu": "&lt;span>Show entries:&lt;/span> _MENU_",
+                        "oPaginate": { "sFirst": "First", "sLast": "Last", "sNext": ">", "sPrevious": "&lt;" }
+                    }
+                });
+
+
+                oTable = $(".media-table").dataTable({
+                    "bJQueryUI": false,
+                    "bAutoWidth": false,
+                    "sPaginationType": "full_numbers",
+                    "sDom": '&lt;"datatable-header"fl>t&lt;"datatable-footer"ip>',
+                    "oLanguage": {
+                        "sSearch": "&lt;span>Filter records:&lt;/span> _INPUT_",
+                        "sLengthMenu": "&lt;span>Show entries:&lt;/span> _MENU_",
+                        "oPaginate": { "sFirst": "First", "sLast": "Last", "sNext": ">", "sPrevious": "&lt;" }
+                    },
+                    "aoColumnDefs": [
+                      { "bSortable": false, "aTargets": [ 0, 4 ] }
+                    ]
+                });
+            </pre>
+            
+
+
+
+            
+            <h4>Fancybox lightbox plugin</h4>
+            <pre class="brush: js">
+                $(".lightbox").fancybox({
+                    'padding': 2
+                });
+            </pre>
+            
+
+
+
+            
+            <h4>Sparklines charts</h4>
+            <pre class="brush: js">
+                $('#total-visits').sparkline(
+                    'html', {type: 'bar', barColor: '#ef705b', height: '35px', barWidth: "5px", barSpacing: "2px", zeroAxis: "false"}
+                );
+                $('#balance').sparkline(
+                    'html', {type: 'bar', barColor: '#91c950', height: '35px', barWidth: "5px", barSpacing: "2px", zeroAxis: "false"}
+                );
+
+                $('#visits').sparkline(
+                    'html', {type: 'bar', barColor: '#ef705b', height: '35px', barWidth: "5px", barSpacing: "2px", zeroAxis: "false"}
+                );
+                $('#clicks').sparkline(
+                    'html', {type: 'bar', barColor: '#91c950', height: '35px', barWidth: "5px", barSpacing: "2px", zeroAxis: "false"}
+                );
+                $('#rate').sparkline(
+                    'html', {type: 'bar', barColor: '#5cb1ec', height: '35px', barWidth: "5px", barSpacing: "2px", zeroAxis: "false"}
+                );
+                $(window).resize(function () {
+                    $.sparkline_display_visible();
+                }).resize();
+            </pre>
+            
+
+
+
+            
+            <h4>Easytabs plugin</h4>
+            <pre class="brush: js">
+                $('.sidebar-tabs').easytabs({
+                    animationSpeed: 150,
+                    collapsible: false,
+                    tabActiveClass: "active"
+                });
+
+                $('.actions').easytabs({
+                    animationSpeed: 300,
+                    collapsible: false,
+                    tabActiveClass: "current"
+                });
+            </pre>    
+
+
+
+
+
+            <h4>Make Google maps visible inaide tabs</h4>
+            <pre class="brush: js">
+                function initialize()
+                {
+                    var mapProp= {
+                        center: new google.maps.LatLng(-37.814666,144.982452),
+                        zoom: 12,
+                        mapTypeId:google.maps.MapTypeId.ROADMAP
+                    };
+                    var map=new google.maps.Map(document.getElementById("google-map"),mapProp);
+
+                    $('.actions').bind('easytabs:after', function() {
+                        google.maps.event.trigger(map, 'resize');
+                        map.setCenter(new google.maps.LatLng(-37.814666,144.982452));
+                    });
+
+                };
+                google.maps.event.addDomListener(window, 'load', initialize);
+            </pre>    
+
+
+
+
+            <h4>Collapsible plugin</h4>
+            <pre class="brush: js">
+                $('.expand').collapsible({
+                    defaultOpen: 'current,third',
+                    cookieName: 'navAct',
+                    cssOpen: 'subOpened',
+                    cssClose: 'subClosed',
+                    speed: 200
+                });
+            </pre>    
+
+
+
+
+            <h4>Uniform plugin</h4>
+            <pre class="brush: js">
+                $(".ui-datepicker-month, .styled, .dataTables_length select").uniform({ radioClass: 'choice' });
+            </pre>   
+            
+
+            
+            <hr class="notop">
+
+            <h3>Blank pages and functions.js files</h3>
+            <p>In blank html files and functions_blank.js file you will find clean and empty pages without any content and js file with necessary js code without plugins needed for layout. Usage is very simple - just take this file as a base and add necessary content to html and js files, only that content you'll be using.</p>
+
+        </section>
+
+            <section id="psd">
+                <h3>PSD files</h3><hr class="notop">
+                <p>I included only 2 .psd files:
+                <ul>
+                    <li>General concept</li>
+                    <li>UI elements</li>
+                </ul>
+             	   
+                </p>
+                <p>Please note - these psd files aren't complete, there is a general styles only, everything other i designed directly in browser. But if you need to update UI, i'd suggest to use <a href="http://www.bentdesignstudio.com/v2/2012/03/twitter-bootstrap-2-photoshop-template-psd/">Twitter Bootstrap PSD toolkit. Since Bootstrap doesn't have an original psd sources and provides all its design in html/css only, i customized main bootstrap theme in css without psd files.</a></p>
+            </section>
+
+            <section id="credits">
+                <h3>Credits and sources</h3><hr class="notop">
+                <h4>Plugins</h4>
+                <ul>
+                	<li><a href="http://twitter.github.com/bootstrap/">Twitter bootstrap</a></li>
+                	<li><a href="http://www.snyderplace.com/collapsible/">Collapsible, jQuery Plugin</a></li>
+                	<li><a href="http://bootboxjs.com/">Bootbox plugin</a></li>
+                	<li><a href="http://arshaw.com/fullcalendar/">FullCalendar</a></li>
+                	<li><a href="www.eyecon.ro">Color picker for bootstrap</a></li>
+                	<li><a href="http://www.datatables.net">jQuery DataTables</a></li>
+                	<li><a href="http://elrte.org/elfinder/demo">elFinder</a></li>
+                	<li><a href="http://code.google.com/p/flot/">Javascript plotting library for jQuery, v. 0.7</a></li>
+                	<li><a href="http://stanlemon.net/24">jGrowl</a></li>
+                    <li><a href="http://www.meadmiracle.com/dlb/DLBDocumentation.aspx">Dual select boxes</a></li>
+                    <li><a href="http://thecodemine.org/">Form to wizard plugin</a></li>
+                    <li><a href="http://uniformjs.com/#docs">jQuery Uniform</a></li>
+                    <li><a href="http://www.position-absolute.com/articles/jquery-form-validator-because-form-validation-is-a-mess/">Validation engine</a></li>
+                    <li><a href="http://jonthornton.github.com/jquery-timepicker/">Time picker</a></li>
+                    <li><a href="http://ckeditor.com/">CKEditor</a></li>
+
+                    <li><a href="http://www.jacklmoore.com/autosize">jQuery Autosize</a></li>
+                    <li><a href="http://fancybox.net/home">Fancybox</a></li>
+                    <li><a href="http://www.plupload.com/index.php">Plupload</a></li>
+                    
+                </ul>
+                
+                <h4>Icons</h4>
+                <ul>
+                	<li><a href="http://twitter.github.com/bootstrap/base-css.html#icons">Glyphicons</a></li>
+                    <li><a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome icons</a></li>
+                    <li><a href="http://www.plugolabs.com/custom-twitter-bootstrap-button-generator-with-famfamfam-icons/">FamFam icons</a></li>
+                </ul>
+
+                <h4>Demo images</h4>
+                <p>Thanks to <a href="http://freebiesbug.com/fonts-patterns/">FreebiesBug</a> for demo images</p>
+            </section>
+
+            <section id="changelog">
+                <h3>Changelog</h3><hr class="notop">
+                <h4>Version 1.0 released</h4>
+
+            </section>
+
+	</div>
+</body>
+</html>
